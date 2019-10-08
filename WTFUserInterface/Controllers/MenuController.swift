@@ -8,14 +8,19 @@
 
 import UIKit
 
-class MenuController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
+final class MenuController: UIViewController {
+    
+    @IBOutlet private weak var tableView: UITableView!
         
-    }
     
 
+}
 
+// MARK: - Life Cycle
+
+extension MenuController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+    }
 }
