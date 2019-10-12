@@ -33,4 +33,10 @@ extension UITableView {
             self.endUpdates()
         }
     }
+    
+    func registerCell(with id: String) {
+        
+        let nib = UINib(nibName: id, bundle: nil)
+        self.register(nib, forCellReuseIdentifier: id)
+    }
 }

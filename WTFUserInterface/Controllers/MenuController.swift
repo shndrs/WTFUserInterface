@@ -22,6 +22,7 @@ final class MenuController: UIViewController {
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
+            tableView.registerCell(with: Ids.menuTVC.rawValue)
         }
     }
 }
@@ -48,10 +49,12 @@ extension MenuController: MenuView {
 
 extension MenuController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: Ids.menuTVC.rawValue) as! MenuTVC
+        return cell
     }
 }
