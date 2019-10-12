@@ -19,4 +19,19 @@ final class MenuPresenter: NSObject {
     internal init(view: MenuView) {
         self.view = view
     }
+    
+    
+    internal func getData() {
+        
+        let dwi = DispatchWorkItem {
+            for i in 1...5 {
+                print("DispatchWorkItem \(i)")
+            }
+        }
+//
+//        dwi.perform()
+//        
+        DispatchQueue.global().async(execute: dwi)
+        
+    }
 }

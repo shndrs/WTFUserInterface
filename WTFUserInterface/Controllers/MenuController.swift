@@ -32,7 +32,7 @@ final class MenuController: UIViewController {
 extension MenuController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        presenter.getData()
     }
 }
 
@@ -48,13 +48,23 @@ extension MenuController: MenuView {
 // MARK: - TableView DataSource and Delegate
 
 extension MenuController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return (section == 0) ? 1 : items.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: Ids.menuTVC.rawValue) as! MenuTVC
-        return cell
+        let cell0 = tableView.dequeueReusableCell(withIdentifier: Ids.bannerTVC.rawValue) as! BannerTVC
+        let cell1 = tableView.dequeueReusableCell(withIdentifier: Ids.menuTVC.rawValue) as! MenuTVC
+        return (indexPath.section == 0) ? cell0 : cell1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return (indexPath.section == 0) ? 213 : 130
     }
 }

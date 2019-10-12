@@ -1,5 +1,5 @@
 //
-//  MenuTVC.swift
+//  BannerTVC.swift
 //  WTFUserInterface
 //
 //  Created by NP2 on 10/12/19.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class MenuTVC: UITableViewCell {
+final class BannerTVC: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -18,6 +18,7 @@ final class MenuTVC: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
+        
     }
     
 }
