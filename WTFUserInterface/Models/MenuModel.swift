@@ -15,7 +15,8 @@ final class MenuModel {
     private(set) var description: String!
     private(set) var title: String!
     
-    init(image: UIImage, action: @escaping () -> Void, description: String, title: String) {
+    init(image: UIImage, action: @escaping () -> Void,
+         description: String, title: String) {
         self.image = image
         self.action = action
         self.description = description

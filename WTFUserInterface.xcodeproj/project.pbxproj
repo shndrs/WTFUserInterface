@@ -11,6 +11,8 @@
 		2F413157233DD8E900DA0C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F413155233DD8E900DA0C11 /* Main.storyboard */; };
 		2F413159233DD8EB00DA0C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F413158233DD8EB00DA0C11 /* Assets.xcassets */; };
 		2F41315C233DD8EB00DA0C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F41315A233DD8EB00DA0C11 /* LaunchScreen.storyboard */; };
+		F4961C9F2351B40F005C356E /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961C9D2351B40F005C356E /* MenuTVC.swift */; };
+		F4961CA02351B40F005C356E /* MenuTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4961C9E2351B40F005C356E /* MenuTVC.xib */; };
 		F49F3809233F3FC000E1703B /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F3808233F3FC000E1703B /* MenuController.swift */; };
 		F4DDB318234C639B0098D0D0 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDB317234C639B0098D0D0 /* MenuPresenter.swift */; };
 		F4DDB31A234C63FD0098D0D0 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDB319234C63FD0098D0D0 /* MenuModel.swift */; };
@@ -23,6 +25,8 @@
 		2F413158233DD8EB00DA0C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F41315B233DD8EB00DA0C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F41315D233DD8EB00DA0C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4961C9D2351B40F005C356E /* MenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTVC.swift; sourceTree = "<group>"; };
+		F4961C9E2351B40F005C356E /* MenuTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTVC.xib; sourceTree = "<group>"; };
 		F49F3808233F3FC000E1703B /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		F4DDB317234C639B0098D0D0 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		F4DDB319234C63FD0098D0D0 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
@@ -83,6 +87,8 @@
 		F49F3805233F3E3600E1703B /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F4961C9D2351B40F005C356E /* MenuTVC.swift */,
+				F4961C9E2351B40F005C356E /* MenuTVC.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -171,6 +177,7 @@
 			files = (
 				2F41315C233DD8EB00DA0C11 /* LaunchScreen.storyboard in Resources */,
 				2F413159233DD8EB00DA0C11 /* Assets.xcassets in Resources */,
+				F4961CA02351B40F005C356E /* MenuTVC.xib in Resources */,
 				2F413157233DD8E900DA0C11 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -183,6 +190,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4DDB31A234C63FD0098D0D0 /* MenuModel.swift in Sources */,
+				F4961C9F2351B40F005C356E /* MenuTVC.swift in Sources */,
 				F49F3809233F3FC000E1703B /* MenuController.swift in Sources */,
 				2F413152233DD8E900DA0C11 /* AppDelegate.swift in Sources */,
 				F4DDB318234C639B0098D0D0 /* MenuPresenter.swift in Sources */,
