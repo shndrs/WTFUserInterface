@@ -10,6 +10,14 @@ import UIKit
 
 final class MenuController: UIViewController {
     
+    private lazy var items: Array<MenuModel> = {
+        return Array<MenuModel>()
+    }()
+    
+    private lazy var presenter: MenuPresenter = {
+        return MenuPresenter(view: self)
+    }()
+    
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
             tableView.delegate = self
@@ -24,6 +32,15 @@ extension MenuController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+    }
+}
+
+// MARK: - View Implementation
+
+extension MenuController: MenuView {
+    func setTableView(with array: Array<MenuModel>) {
+        items = array
+        tableView.asyncReload()
     }
 }
 

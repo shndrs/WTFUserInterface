@@ -8,10 +8,15 @@
 
 import UIKit
 
+protocol MenuView: AnyObject {
+    func setTableView(with array: Array<MenuModel>) -> Void
+}
+
 final class MenuPresenter: NSObject {
     
+    private weak var view: MenuView?
     
-    
-    
-    
+    internal init(view: MenuView) {
+        self.view = view
+    }
 }
