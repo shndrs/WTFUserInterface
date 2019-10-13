@@ -69,4 +69,10 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return (indexPath.section == 0) ? 230 : 130
     }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = HeaderLabel()
+        view.text = (section == 0) ? "  Ibanez Prestige Series" : "  Specs"
+        return view
+    }
 }
