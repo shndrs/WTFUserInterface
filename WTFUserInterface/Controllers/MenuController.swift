@@ -23,6 +23,7 @@ final class MenuController: UIViewController {
             tableView.delegate = self
             tableView.dataSource = self
             tableView.registerCell(with: Ids.menuTVC.rawValue)
+            tableView.registerCell(with: Ids.bannerTVC.rawValue)
         }
     }
 }
@@ -33,6 +34,7 @@ extension MenuController {
     override func viewDidLoad() {
         super.viewDidLoad()
         presenter.getData()
+        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 

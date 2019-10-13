@@ -21,18 +21,7 @@
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ogt-cR-rny">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="212.5"/>
-                        <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="105033" translatesAutoresizingMaskIntoConstraints="NO" id="CIu-lK-3JB">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="212.5"/>
-                            </imageView>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="CIu-lK-3JB" firstAttribute="leading" secondItem="ogt-cR-rny" secondAttribute="leading" id="JlU-cg-uea"/>
-                            <constraint firstAttribute="trailing" secondItem="CIu-lK-3JB" secondAttribute="trailing" id="NWb-nN-8Wf"/>
-                            <constraint firstItem="CIu-lK-3JB" firstAttribute="top" secondItem="ogt-cR-rny" secondAttribute="top" id="pKX-dU-MlD"/>
-                            <constraint firstAttribute="bottom" secondItem="CIu-lK-3JB" secondAttribute="bottom" id="uQw-hz-Eon"/>
-                        </constraints>
                     </view>
                 </subviews>
                 <constraints>
@@ -46,7 +35,4 @@
             <point key="canvasLocation" x="47.826086956521742" y="92.075892857142847"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="105033" width="1355" height="900"/>
-    </resources>
 </document>
