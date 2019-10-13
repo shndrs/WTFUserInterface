@@ -67,6 +67,6 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return (indexPath.section == 0) ? 213 : 130
+        return (indexPath.section == 0) ? 230 : 130
     }
 }

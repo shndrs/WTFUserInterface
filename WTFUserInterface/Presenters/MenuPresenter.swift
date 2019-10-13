@@ -23,6 +23,12 @@ final class MenuPresenter: NSObject {
     
     internal func getData() {
         
+        
+        
+        
+        
+        
+        
         let dwi = DispatchWorkItem {
             for i in 1...5 {
                 print("DispatchWorkItem \(i)")

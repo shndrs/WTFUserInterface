@@ -9,15 +9,23 @@
 import UIKit
 
 final class MenuTVC: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        
+    
+    @IBOutlet private weak var collectionView: UICollectionView! {
+        didSet {
+            collectionView.delegate = self
+            collectionView.dataSource = self
+        }
     }
+}
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
+extension MenuTVC: UICollectionViewDataSource, UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
     }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+    
     
 }
