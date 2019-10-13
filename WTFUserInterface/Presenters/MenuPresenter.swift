@@ -20,24 +20,16 @@ final class MenuPresenter: NSObject {
         self.view = view
     }
     
-    
     internal func getData() {
         
-        
-        
-        
-        
-        
-        
         let dwi = DispatchWorkItem {
-            for i in 1...5 {
-                print("DispatchWorkItem \(i)")
-            }
+            var array = Array<MenuModel>()
+            let item0 = MenuModel(image: UIImage(named: "80259")!, action: {
+                print("item0")
+            }, description: "item0", title: "item0")
+            array.append(item0)
         }
-//
-//        dwi.perform()
-//        
-        DispatchQueue.global().async(execute: dwi)
-        
+          
+        DispatchQueue.global(qos: .background).async(execute: dwi)
     }
 }

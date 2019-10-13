@@ -24,7 +24,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("*****",sub)
             }
         }
-        
         return true
     }
 }

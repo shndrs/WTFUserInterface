@@ -22,6 +22,7 @@ final class MenuController: UIViewController {
         didSet {
             tableView.delegate = self
             tableView.dataSource = self
+            tableView.sectionFooterHeight = 39.0
             tableView.registerCell(with: Ids.menuTVC.rawValue)
             tableView.registerCell(with: Ids.bannerTVC.rawValue)
         }
@@ -72,6 +73,7 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         let view = HeaderLabel()
+        view.backgroundColor = .white
         view.text = (section == 0) ? "  Ibanez Prestige Series" : "  Specs"
         return view
     }

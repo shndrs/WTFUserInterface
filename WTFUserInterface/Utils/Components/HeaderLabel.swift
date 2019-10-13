@@ -12,7 +12,7 @@ final class HeaderLabel: UILabel {
     
     override func awakeFromNib() {
         self.backgroundColor = .white
-        self.font = UIFont(name: "AvenirNext-Bold", size: 14)
+        self.font = UIFont(name: "AvenirNext-Bold", size: 13)
     }
 }
 
