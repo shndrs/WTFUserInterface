@@ -26,6 +26,7 @@ final class MenuController: UIViewController {
             tableView.cleanFooterView()
             tableView.registerCell(with: Ids.menuTVC.rawValue)
             tableView.registerCell(with: Ids.bannerTVC.rawValue)
+            tableView.register(CustomHeader.self)
         }
     }
 }
@@ -68,14 +69,17 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 292.0
+        return 40
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 293
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let headerView = tableView
-            .dequeueReusableHeaderFooterView(withIdentifier: Ids.customHeader.rawValue) as? CustomHeader
-        headerView?.fill(header: items[section])
-        return headerView
+        let view = tableView.dequeueReusableCell(withIdentifier: CustomHeader.reuseIdentifier) as! CustomHeader
+        view.fill(header: items[section])
+        return view
     }
 }

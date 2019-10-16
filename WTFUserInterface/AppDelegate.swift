@@ -16,14 +16,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        
-        for f in UIFont.familyNames {
-            print("====>",f)
-            
-            for sub in UIFont.fontNames(forFamilyName: f) {
-                print("*****",sub)
-            }
-        }
         return true
     }
 }

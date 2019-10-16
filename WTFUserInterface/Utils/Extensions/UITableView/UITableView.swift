@@ -39,4 +39,15 @@ extension UITableView {
         let nib = UINib(nibName: id, bundle: nil)
         self.register(nib, forCellReuseIdentifier: id)
     }
+    
+    func registerHeader(with id: String) {
+        let nib = UINib(nibName: id, bundle: .main)
+        self.register(nib, forHeaderFooterViewReuseIdentifier: id)
+    }
+    
+    func register<T: UITableViewCell>(_ type: T.Type) where T: NibLoadable, T: ReusableView {
+        let nib = UINib(nibName: T.nibName, bundle: nil)
+
+        self.register(nib, forCellReuseIdentifier: T.reuseIdentifier)
+    }
 }
