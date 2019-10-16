@@ -23,11 +23,22 @@ final class MenuPresenter: NSObject {
     internal func getData() {
         
         let dwi = DispatchWorkItem {
+            let arrayDet = [ OrderDetails(price: "32.4 US$", title: "Burger"),
+                OrderDetails(price: "32.4 US$", title: "Burger"),
+                OrderDetails(price: "32.4 US$", title: "Burger"),
+                OrderDetails(price: "32.4 US$", title: "Burger"),
+                OrderDetails(price: "32.4 US$", title: "Burger")
+            ]
+            
             var array = Array<MenuModel>()
-            let item0 = MenuModel(image: UIImage(named: "80259")!, action: {
-                print("item0")
-            }, description: "item0", title: "item0")
+            let item0 = MenuModel(action: {
+                
+            }, description: "123", title: "Burger", details: arrayDet)
             array.append(item0)
+            
+            DispatchQueue.main.async { [weak self] in
+                self?.view?.setTableView(with: array)
+            }
         }
           
         DispatchQueue.global(qos: .background).async(execute: dwi)

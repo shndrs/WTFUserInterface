@@ -10,18 +10,17 @@ import UIKit
 
 final class MenuModel {
     
-    private(set) var image: UIImage!
     private(set) var action: (() -> Void)!
     private(set) var description: String!
     private(set) var title: String!
     private(set) var details: Array<OrderDetails>!
     
-    init(image: UIImage, action: @escaping () -> Void,
-         description: String, title: String) {
-        self.image = image
+    init(action: @escaping () -> Void,
+        description: String, title: String, details: Array<OrderDetails>) {
         self.action = action
         self.description = description
         self.title = title
+        self.details = details
     }
 }
 
