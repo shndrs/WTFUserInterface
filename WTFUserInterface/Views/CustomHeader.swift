@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class CustomHeader: UITableViewHeaderFooterView {
+final class CustomHeader: UITableViewCell, NibLoadable, ReusableView {
 
     @IBOutlet private weak var detailsView: UIView! {
         didSet {
