@@ -21,6 +21,7 @@
 		F49F3809233F3FC000E1703B /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F3808233F3FC000E1703B /* MenuController.swift */; };
 		F4D3CC782356F796007BEF20 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3CC772356F796007BEF20 /* CustomHeader.swift */; };
 		F4D3CC7A2356F829007BEF20 /* CustomHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4D3CC792356F829007BEF20 /* CustomHeader.xib */; };
+		F4D3CC7D2356FAAC007BEF20 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3CC7C2356FAAC007BEF20 /* UIView.swift */; };
 		F4DDB318234C639B0098D0D0 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDB317234C639B0098D0D0 /* MenuPresenter.swift */; };
 		F4DDB31A234C63FD0098D0D0 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDB319234C63FD0098D0D0 /* MenuModel.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		F49F3808233F3FC000E1703B /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		F4D3CC772356F796007BEF20 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
 		F4D3CC792356F829007BEF20 /* CustomHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeader.xib; sourceTree = "<group>"; };
+		F4D3CC7C2356FAAC007BEF20 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F4DDB317234C639B0098D0D0 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		F4DDB319234C63FD0098D0D0 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 		F4961CA12351B47E005C356E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F4D3CC7B2356FA9A007BEF20 /* UIView */,
 				F4961CA22351B486005C356E /* UITableView */,
 			);
 			path = Extensions;
@@ -151,6 +154,14 @@
 				F4961CA52351C36E005C356E /* Strings.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		F4D3CC7B2356FA9A007BEF20 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				F4D3CC7C2356FAAC007BEF20 /* UIView.swift */,
+			);
+			path = UIView;
 			sourceTree = "<group>";
 		};
 		F4DDB316234C636B0098D0D0 /* Presenters */ = {
@@ -238,6 +249,7 @@
 			files = (
 				F4DDB31A234C63FD0098D0D0 /* MenuModel.swift in Sources */,
 				F4961C9F2351B40F005C356E /* MenuTVC.swift in Sources */,
+				F4D3CC7D2356FAAC007BEF20 /* UIView.swift in Sources */,
 				F49F3809233F3FC000E1703B /* MenuController.swift in Sources */,
 				2F413152233DD8E900DA0C11 /* AppDelegate.swift in Sources */,
 				F4DDB318234C639B0098D0D0 /* MenuPresenter.swift in Sources */,

@@ -8,14 +8,27 @@
 
 import UIKit
 
-class CustomHeader: UITableViewHeaderFooterView {
+final class CustomHeader: UITableViewHeaderFooterView {
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    @IBOutlet private weak var detailsView: UIView! {
+        didSet {
+            detailsView.addCornerRadius(radius: 5)
+            detailsView.addBorder(color: .darkGray, thickness: 0.5)
+        }
     }
-    */
-
+    
+    @IBOutlet private weak var addressView: UIView! {
+        didSet {
+            addressView.addCornerRadius(radius: 5)
+            addressView.addBorder(color: .darkGray, thickness: 0.5)
+        }
+    }
+    
+    @IBOutlet private weak var amountView: UIView! {
+        didSet {
+            amountView.addCornerRadius(radius: 5)
+            amountView.addBorder(color: .white, thickness: 0.5)
+        }
+    }
+    
 }
