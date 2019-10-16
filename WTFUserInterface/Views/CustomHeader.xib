@@ -203,6 +203,7 @@
             <connections>
                 <outlet property="addressView" destination="Z9t-Th-s8y" id="eFo-SL-2zN"/>
                 <outlet property="amountView" destination="Sw2-pp-1uH" id="Beq-f6-lEH"/>
+                <outlet property="backView" destination="utc-PB-ykm" id="WSr-sg-ilt"/>
                 <outlet property="detailsView" destination="EI2-XB-Wm1" id="NTI-X5-7hg"/>
             </connections>
             <point key="canvasLocation" x="-616" y="-48.575712143928037"/>

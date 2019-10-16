@@ -14,6 +14,7 @@ final class MenuModel {
     private(set) var price: String!
     private(set) var title: String!
     private(set) var details: Array<OrderDetails>!
+    public var isExpanded = false
     
     init(action: @escaping () -> Void,
         price: String, title: String, details: Array<OrderDetails>) {
