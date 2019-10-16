@@ -10,26 +10,11 @@ import UIKit
 
 final class MenuTVC: UITableViewCell {
     
-    @IBOutlet private weak var collectionView: UICollectionView! {
-        didSet {
-            collectionView.delegate = self
-            collectionView.dataSource = self
-        }
-    }
+    @IBOutlet private weak var orderTitleLabel: UILabel!
+    @IBOutlet private weak var priceLabel: UILabel!
+    
     
     internal func fill(cell by: String) {
         
-    }
-}
-
-extension MenuTVC: UICollectionViewDataSource, UICollectionViewDelegate {
-    func collectionView(_ collectionView: UICollectionView,
-                        numberOfItemsInSection section: Int) -> Int {
-        return 0
-    }
-    
-    func collectionView(_ collectionView: UICollectionView,
-                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
     }
 }

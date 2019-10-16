@@ -12,4 +12,5 @@ enum Ids: String {
     
     case menuTVC = "MenuTVC"
     case bannerTVC = "BannerTVC"
+    case customHeader = "CustomHeader"
 }

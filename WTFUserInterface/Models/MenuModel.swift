@@ -14,12 +14,24 @@ final class MenuModel {
     private(set) var action: (() -> Void)!
     private(set) var description: String!
     private(set) var title: String!
+    private(set) var details: Array<OrderDetails>!
     
     init(image: UIImage, action: @escaping () -> Void,
          description: String, title: String) {
         self.image = image
         self.action = action
         self.description = description
+        self.title = title
+    }
+}
+
+final class OrderDetails {
+    
+    public var price: String!
+    public var title: String!
+    
+    public init(price: String, title:String) {
+        self.price = price
         self.title = title
     }
 }

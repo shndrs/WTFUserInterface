@@ -63,9 +63,9 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell0 = tableView.dequeueReusableCell(withIdentifier: Ids.bannerTVC.rawValue) as! BannerTVC
-        let cell1 = tableView.dequeueReusableCell(withIdentifier: Ids.menuTVC.rawValue) as! MenuTVC
-        return (indexPath.section == 0) ? cell0 : cell1
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: Ids.menuTVC.rawValue) as! MenuTVC
+        return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -73,6 +73,12 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        
+        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: Ids.customHeader.rawValue) as! CustomHeader
+        
+        
+        
+        
         let view = HeaderLabel()
         view.backgroundColor = .white
         view.text = (section == 0) ? "  Ibanez Prestige Series" : "  Specs"
