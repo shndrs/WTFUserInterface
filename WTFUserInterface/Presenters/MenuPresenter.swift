@@ -33,7 +33,7 @@ final class MenuPresenter: NSObject {
             var array = Array<MenuModel>()
             let item0 = MenuModel(action: {
                 
-            }, description: "123", title: "Burger", details: arrayDet)
+            }, price: "162 US $", title: "Burger", details: arrayDet)
             array.append(item0)
             
             DispatchQueue.main.async { [weak self] in

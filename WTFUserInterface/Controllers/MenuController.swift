@@ -54,34 +54,28 @@ extension MenuController: MenuView {
 extension MenuController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+        return items.count
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (section == 0) ? 1 : items.count
+        return items[section].details.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
         
         let cell = tableView.dequeueReusableCell(withIdentifier: Ids.menuTVC.rawValue) as! MenuTVC
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return (indexPath.section == 0) ? 230 : 130
+        return 292.0
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: Ids.customHeader.rawValue) as! CustomHeader
-        
-        
-        
-        
-        let view = HeaderLabel()
-        view.backgroundColor = .white
-        view.text = (section == 0) ? "  Ibanez Prestige Series" : "  Specs"
-        return view
+        let headerView = tableView
+            .dequeueReusableHeaderFooterView(withIdentifier: Ids.customHeader.rawValue) as? CustomHeader
+        headerView?.fill(header: items[section])
+        return headerView
     }
 }

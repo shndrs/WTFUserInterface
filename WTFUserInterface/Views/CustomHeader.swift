@@ -31,4 +31,10 @@ final class CustomHeader: UITableViewHeaderFooterView {
         }
     }
     
+    public func fill(header by: MenuModel) {
+        
+    }
+    
+    
+    
 }

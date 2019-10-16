@@ -11,14 +11,14 @@ import UIKit
 final class MenuModel {
     
     private(set) var action: (() -> Void)!
-    private(set) var description: String!
+    private(set) var price: String!
     private(set) var title: String!
     private(set) var details: Array<OrderDetails>!
     
     init(action: @escaping () -> Void,
-        description: String, title: String, details: Array<OrderDetails>) {
+        price: String, title: String, details: Array<OrderDetails>) {
         self.action = action
-        self.description = description
+        self.price = price
         self.title = title
         self.details = details
     }

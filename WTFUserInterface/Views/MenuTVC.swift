@@ -14,7 +14,9 @@ final class MenuTVC: UITableViewCell {
     @IBOutlet private weak var priceLabel: UILabel!
     
     
-    internal func fill(cell by: String) {
+    internal func fill(cell by: MenuModel) {
         
+        orderTitleLabel.text = by.title
+        priceLabel.text = by.price
     }
 }
