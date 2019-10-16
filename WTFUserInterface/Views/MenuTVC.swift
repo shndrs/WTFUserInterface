@@ -16,6 +16,10 @@ final class MenuTVC: UITableViewCell {
             collectionView.dataSource = self
         }
     }
+    
+    internal func fill(cell by: String) {
+        
+    }
 }
 
 extension MenuTVC: UICollectionViewDataSource, UICollectionViewDelegate {

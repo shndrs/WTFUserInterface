@@ -23,6 +23,7 @@ final class MenuController: UIViewController {
             tableView.delegate = self
             tableView.dataSource = self
             tableView.sectionFooterHeight = 39.0
+            tableView.cleanFooterView()
             tableView.registerCell(with: Ids.menuTVC.rawValue)
             tableView.registerCell(with: Ids.bannerTVC.rawValue)
         }
