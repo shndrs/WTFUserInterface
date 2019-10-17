@@ -185,6 +185,9 @@
                                 <state key="normal" title="Expand">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="expanedButtonPressed:" destination="tgF-jP-h0b" eventType="touchUpInside" id="yC6-ag-kdq"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
