@@ -10,6 +10,11 @@ import UIKit
 
 final class CustomHeader: UITableViewCell, NibLoadable, ReusableView {
 
+    @IBOutlet private weak var expandButton: UIButton! {
+        didSet {
+            expandButton.addCornerRadius(radius: 5)
+        }
+    }
     
     @IBOutlet private weak var backView: UIView! {
         didSet {
