@@ -34,7 +34,14 @@ final class MenuPresenter: NSObject {
             let item0 = MenuModel(action: {
                 
             }, price: "162 US $", title: "Burger", details: arrayDet)
+            
+            let item1 = MenuModel(action: {
+                
+            }, price: "162 US $", title: "Burger", details: arrayDet)
+            
             array.append(item0)
+            array.append(item1)
+            
             
             DispatchQueue.main.async { [weak self] in
                 self?.view?.setTableView(with: array)

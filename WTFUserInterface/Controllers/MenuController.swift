@@ -59,6 +59,11 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        if !items[section].isExpanded {
+            return 0
+        }
+        
         return items[section].details.count
     }
     
@@ -79,7 +84,31 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let view = tableView.dequeueReusableCell(withIdentifier: CustomHeader.reuseIdentifier) as! CustomHeader
+        view.delegate = self
+        view.section = section
         view.fill(header: items[section])
         return view
+    }
+}
+
+// MARK: - Expaned Button Delegate
+
+extension MenuController: ExpanedCellDelegate {
+    func expanedButtonPressed(section: Int) {
+        
+        var indexPaths = Array<IndexPath>()
+        let details = items[section].details.count
+        for row in 0..<details {
+            let indexPath = IndexPath(row: row, section: section)
+            indexPaths.append(indexPath)
+        }
+        let isExpanded = items[section].isExpanded
+        items[section].isExpanded = !isExpanded
+        
+        if isExpanded {
+            tableView.deleteRows(at: indexPaths, with: .automatic)
+        } else {
+            tableView.insertRows(at: indexPaths, with: .automatic)
+        }
     }
 }

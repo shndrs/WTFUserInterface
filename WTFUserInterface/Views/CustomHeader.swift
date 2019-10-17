@@ -9,12 +9,13 @@
 import UIKit
 
 public protocol ExpanedCellDelegate: AnyObject {
-    func expanedButtonPressed() -> Void
+    func expanedButtonPressed(section: Int) -> Void
 }
 
 final class CustomHeader: UITableViewCell, NibLoadable, ReusableView {
 
     internal weak var delegate: ExpanedCellDelegate?
+    internal var section: Int!
     
     @IBOutlet private weak var expandButton: UIButton! {
         didSet {
@@ -52,7 +53,7 @@ final class CustomHeader: UITableViewCell, NibLoadable, ReusableView {
     }
     
     @IBAction private func expanedButtonPressed(_ sender: UIButton) {
-        delegate?.expanedButtonPressed()
+        delegate?.expanedButtonPressed(section: self.section)
     }
     
     public func fill(header by: MenuModel) {
