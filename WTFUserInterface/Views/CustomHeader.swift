@@ -10,7 +10,6 @@ import UIKit
 
 final class CustomHeader: UITableViewCell, NibLoadable, ReusableView {
 
-    
     @IBOutlet private weak var backView: UIView! {
         didSet {
             backView.addCornerRadius(radius: 5)
@@ -42,7 +41,4 @@ final class CustomHeader: UITableViewCell, NibLoadable, ReusableView {
     public func fill(header by: MenuModel) {
         
     }
-    
-    
-    
 }

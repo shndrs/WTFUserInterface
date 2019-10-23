@@ -28,7 +28,6 @@ extension UIView {
         return name
     }
     
-    
     public class var nib: UINib? {
         if let _ = Bundle.main.path(forResource: nibName, ofType: "nib") {
             return UINib(nibName: nibName, bundle: nil)
@@ -39,7 +38,6 @@ extension UIView {
     
     public class func fromNib(nibNameOrNil: String? = nil) -> Self {
         return fromNib(nibNameOrNil: nibNameOrNil, type: self)
-        //return fromNib(nibNameOrNil, type: self)
     }
 
     public class func fromNib<T : UIView>(nibNameOrNil: String? = nil, type: T.Type) -> T {
@@ -53,7 +51,6 @@ extension UIView {
         if let nibName = nibNameOrNil {
             name = nibName
         } else {
-            // Most nibs are demangled by practice, if not, just declare string explicitly
             name = nibName
         }
         let nibViews = Bundle.main.loadNibNamed(name, owner: nil, options: nil)

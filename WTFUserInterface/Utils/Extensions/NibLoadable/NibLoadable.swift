@@ -18,7 +18,8 @@ public protocol NibLoadable: class {
 public extension NibLoadable {
     
     static var nibFile: UINib {
-        return UINib(nibName: String(describing: self), bundle: Bundle(for: self))
+        return UINib(nibName: String(describing: self),
+                     bundle: Bundle(for: self))
     }
 }
 
@@ -27,7 +28,8 @@ public extension NibLoadable {
 public extension NibLoadable where Self: UIView {
   
     static func loadFromNib() -> Self {
-        guard let view = nibFile.instantiate(withOwner: nil, options: nil).first as? Self else {
+        guard let view = nibFile.instantiate(withOwner: nil,
+                                             options: nil).first as? Self else {
             fatalError("The nib \(nibFile) expected its root view to be of type \(self)")
         }
     return view
