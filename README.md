@@ -1,2 +1,3 @@
 # WTFUserInterface
-It's WTFUserInterface nothing less nothing more... :D :D
+
+An expandable `UITableViewCell` written in swift 5.

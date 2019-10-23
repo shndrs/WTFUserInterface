@@ -8,8 +8,22 @@
 
 import UIKit
 
+public protocol ExpanedCellDelegate: AnyObject {
+    func expanedButtonPressed(section: Int) -> Void
+}
+
 final class CustomHeader: UITableViewCell, NibLoadable, ReusableView {
 
+    internal weak var delegate: ExpanedCellDelegate?
+    internal var section: Int!
+    
+    @IBOutlet private weak var expandButton: UIButton! {
+        didSet {
+            expandButton.addCornerRadius(radius: 5)
+            expandButton.addBorder(color: .white, thickness: 0.6)
+        }
+    }
+    
     @IBOutlet private weak var backView: UIView! {
         didSet {
             backView.addCornerRadius(radius: 5)
@@ -36,6 +50,10 @@ final class CustomHeader: UITableViewCell, NibLoadable, ReusableView {
             amountView.addCornerRadius(radius: 5)
             amountView.addBorder(color: .white, thickness: 0.5)
         }
+    }
+    
+    @IBAction private func expanedButtonPressed(_ sender: UIButton) {
+        delegate?.expanedButtonPressed(section: self.section)
     }
     
     public func fill(header by: MenuModel) {
