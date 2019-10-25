@@ -112,5 +112,9 @@ extension MenuController: ExpanedCellDelegate {
         } else {
             tableView.insertRows(at: indexPaths, with: .automatic)
         }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.18) {
+            self.tableView.reloadData()
+        }
     }
 }
