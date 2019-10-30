@@ -43,6 +43,22 @@ extension MenuController {
     }
 }
 
+// MARK: - Methods
+
+extension MenuController {
+    
+    fileprivate func getIndexPaths(section: Int) -> Array<IndexPath> {
+        
+        var indexPaths = Array<IndexPath>()
+        let details = items[section].details.count
+        for row in 0..<details {
+            let indexPath = IndexPath(row: row, section: section)
+            indexPaths.append(indexPath)
+        }
+        return indexPaths
+    }
+}
+
 // MARK: - View Implementation
 
 extension MenuController: MenuView {
@@ -92,12 +108,7 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
 extension MenuController: ExpanedCellDelegate {
     func expanedButtonPressed(section: Int) {
         
-        var indexPaths = Array<IndexPath>()
-        let details = items[section].details.count
-        for row in 0..<details {
-            let indexPath = IndexPath(row: row, section: section)
-            indexPaths.append(indexPath)
-        }
+        let indexPaths = getIndexPaths(section: section)
         
         let isExpanded = items[section].isExpanded
         items[section].isExpanded = !isExpanded
