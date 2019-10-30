@@ -23,6 +23,8 @@ final class MenuController: UIViewController {
             tableView.delegate = self
             tableView.dataSource = self
             tableView.sectionFooterHeight = 39.0
+            tableView.sectionHeaderHeight = 302
+            tableView.rowHeight = 40
             tableView.cleanFooterView()
             tableView.registerCell(with: Ids.menuTVC.rawValue)
             tableView.registerCell(with: Ids.bannerTVC.rawValue)
@@ -60,7 +62,9 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return items[section].details.count
+        let rowsCount = (items[section].isExpanded == false)
+            ? 0 : items[section].details.count
+        return rowsCount
     }
     
     func tableView(_ tableView: UITableView,
@@ -69,16 +73,6 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
         let cell = tableView
             .dequeueReusableCell(withIdentifier: Ids.menuTVC.rawValue) as! MenuTVC
         return cell
-    }
-    
-    func tableView(_ tableView: UITableView,
-                   heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40
-    }
-    
-    func tableView(_ tableView: UITableView,
-                   heightForHeaderInSection section: Int) -> CGFloat {
-        return 284
     }
     
     func tableView(_ tableView: UITableView,
@@ -104,6 +98,7 @@ extension MenuController: ExpanedCellDelegate {
             let indexPath = IndexPath(row: row, section: section)
             indexPaths.append(indexPath)
         }
+        
         let isExpanded = items[section].isExpanded
         items[section].isExpanded = !isExpanded
         
@@ -111,6 +106,10 @@ extension MenuController: ExpanedCellDelegate {
             tableView.deleteRows(at: indexPaths, with: .automatic)
         } else {
             tableView.insertRows(at: indexPaths, with: .automatic)
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.18) {
+            self.tableView.reloadData()
         }
     }
 }
