@@ -14,3 +14,8 @@ enum Ids: String {
     case bannerTVC = "BannerTVC"
     case customHeader = "CustomHeader"
 }
+
+enum Strings: String {
+    case expand = "Expand"
+    case collapse = "Collapse"
+}
