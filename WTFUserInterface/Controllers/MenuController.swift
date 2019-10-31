@@ -20,15 +20,7 @@ final class MenuController: UIViewController {
     
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
-            tableView.delegate = self
-            tableView.dataSource = self
-            tableView.sectionFooterHeight = 39.0
-            tableView.sectionHeaderHeight = 302
-            tableView.rowHeight = 40
-            tableView.cleanFooterView()
-            tableView.registerCell(with: Ids.menuTVC.rawValue)
-            tableView.registerCell(with: Ids.bannerTVC.rawValue)
-            tableView.register(CustomHeader.self)
+            tableSetup()
         }
     }
 }
@@ -56,6 +48,18 @@ extension MenuController {
             indexPaths.append(indexPath)
         }
         return indexPaths
+    }
+    
+    fileprivate func tableSetup() {
+        tableView.delegate = self
+        tableView.dataSource = self
+        tableView.sectionFooterHeight = 39.0
+        tableView.sectionHeaderHeight = 302
+        tableView.rowHeight = 40
+        tableView.cleanFooterView()
+        tableView.registerCell(with: Ids.menuTVC.rawValue)
+        tableView.registerCell(with: Ids.bannerTVC.rawValue)
+        tableView.register(CustomHeader.self)
     }
 }
 
