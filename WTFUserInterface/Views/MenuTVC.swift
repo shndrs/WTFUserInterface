@@ -19,9 +19,10 @@ final class MenuTVC: UITableViewCell {
 // MARK: - Methods
 
 extension MenuTVC {
-    internal func fill(cell by: MenuModel) {
+    internal func fill(cell by: OrderDetails) {
         
         orderTitleLabel.text = by.title
         priceLabel.text = by.price
+        orderCountLabel.text = String(2)
     }
 }

@@ -15,6 +15,7 @@ protocol MenuView: AnyObject {
 final class MenuPresenter: NSObject {
     
     private let price = "32.4 US$"
+    private let totalAmount = "162.0 US$"
     private let title = "Cheese Burger"
     
     private weak var view: MenuView?
@@ -37,11 +38,11 @@ final class MenuPresenter: NSObject {
             var array = Array<MenuModel>()
             let item0 = MenuModel(action: {
                 print(self.title)
-            }, price: "162 US $", title: self.title, details: arrayDet)
+            }, price: self.totalAmount, title: self.title, details: arrayDet)
             
             let item1 = MenuModel(action: {
                 print(self.title)
-            }, price: "162 US $", title: self.title, details: arrayDet)
+            }, price: self.totalAmount, title: self.title, details: arrayDet)
             
             array.append(item0)
             array.append(item1)

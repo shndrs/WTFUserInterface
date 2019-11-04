@@ -92,6 +92,7 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
         
         let cell = tableView
             .dequeueReusableCell(withIdentifier: Ids.menuTVC.rawValue) as! MenuTVC
+        cell.fill(cell: items[indexPath.section].details[indexPath.row])
         return cell
     }
     

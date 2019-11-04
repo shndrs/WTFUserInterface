@@ -223,6 +223,7 @@
                 <outlet property="detailsView" destination="EI2-XB-Wm1" id="NTI-X5-7hg"/>
                 <outlet property="expandButton" destination="NEl-L7-Tkh" id="e9t-Hw-IgB"/>
                 <outlet property="expanedButton" destination="NEl-L7-Tkh" id="aez-8m-bkT"/>
+                <outlet property="totalAmountLabel" destination="62h-kO-uY5" id="Lhs-Mg-Kd6"/>
             </connections>
             <point key="canvasLocation" x="-616" y="-40.479760119940032"/>
         </tableViewCell>

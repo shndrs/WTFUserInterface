@@ -14,7 +14,10 @@ public protocol ExpanedCellDelegate: AnyObject {
 }
 
 final class CustomHeader: UITableViewCell, NibLoadable, ReusableView {
-
+    
+    
+    @IBOutlet weak var totalAmountLabel: UILabel!
+    
     internal weak var delegate: ExpanedCellDelegate?
     internal var section: Int!
     
@@ -61,6 +64,6 @@ extension CustomHeader {
     }
     
     internal func fill(header by: MenuModel) {
-        
+        totalAmountLabel.text = by.price
     }
 }
