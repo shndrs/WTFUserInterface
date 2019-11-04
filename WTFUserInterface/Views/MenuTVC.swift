@@ -11,9 +11,14 @@ import UIKit
 final class MenuTVC: UITableViewCell {
     
     @IBOutlet private weak var orderTitleLabel: UILabel!
+    @IBOutlet private weak var orderCountLabel: UILabel!
     @IBOutlet private weak var priceLabel: UILabel!
-    
-    
+     
+}
+
+// MARK: - Methods
+
+extension MenuTVC {
     internal func fill(cell by: MenuModel) {
         
         orderTitleLabel.text = by.title
