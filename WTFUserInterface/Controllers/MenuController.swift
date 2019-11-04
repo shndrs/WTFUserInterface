@@ -58,7 +58,6 @@ extension MenuController {
         tableView.rowHeight = 40
         tableView.cleanFooterView()
         tableView.registerCell(with: Ids.menuTVC.rawValue)
-        tableView.registerCell(with: Ids.bannerTVC.rawValue)
         tableView.register(CustomHeader.self)
     }
 }
