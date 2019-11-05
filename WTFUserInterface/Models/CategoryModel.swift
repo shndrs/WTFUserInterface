@@ -12,10 +12,10 @@ struct CategoryModel {
     
     public private(set) var sectionTitle: String!
     public private(set) var sectionImage: UIImage!
-    public private(set) var items: Array<Category>!
+    public private(set) var items: Array<CategoryItems>!
     
     init(sectionTitle: String, sectionImage: UIImage,
-         items: Array<Category>) {
+         items: Array<CategoryItems>) {
         
         self.sectionTitle = sectionTitle
         self.sectionImage = sectionImage
@@ -23,7 +23,7 @@ struct CategoryModel {
     }
 }
 
-struct Category {
+struct CategoryItems {
     
     public private(set) var title: String!
     public private(set) var image: UIImage!

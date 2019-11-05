@@ -56,9 +56,13 @@ extension CategoryVC: CategoryView {
 // MARK: - Table View Implementation
 
 extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return items.count
+    }
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return items.count
+        return items[section].items.count
     }
     
     func tableView(_ tableView: UITableView,
