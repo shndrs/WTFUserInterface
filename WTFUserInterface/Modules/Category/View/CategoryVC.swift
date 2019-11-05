@@ -9,6 +9,14 @@
 import UIKit
 
 final class CategoryVC: UIViewController {
+    
+    private lazy var presenter: CategoryPresenter = {
+        return CategoryPresenter(view: self)
+    }()
+    
+    private lazy var items: Array<CategoryModel> = {
+        return Array<CategoryModel>()
+    }()
 
     @IBOutlet private weak var tableView: UITableView! {
         didSet {
@@ -36,14 +44,25 @@ extension CategoryVC {
     }
 }
 
+// MARK: - View Implementation
+
+extension CategoryVC: CategoryView {
+    func setTableView(with array: Array<CategoryModel>) {
+        self.items = array
+        tableView.asyncReload()
+    }
+}
+
 // MARK: - Table View Implementation
 
 extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
+        return items.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
 }
