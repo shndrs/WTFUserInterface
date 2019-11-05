@@ -28,6 +28,7 @@
 		F4E146FB23719C810086D51A /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E146FA23719C810086D51A /* CategoryPresenter.swift */; };
 		F4E1470023719F9F0086D51A /* CategoryTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E146FE23719F9F0086D51A /* CategoryTVC.swift */; };
 		F4E1470123719F9F0086D51A /* CategoryTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E146FF23719F9F0086D51A /* CategoryTVC.xib */; };
+		F4E147042371A3260086D51A /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E147032371A3260086D51A /* UICollectionView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		F4E146FA23719C810086D51A /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
 		F4E146FE23719F9F0086D51A /* CategoryTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTVC.swift; sourceTree = "<group>"; };
 		F4E146FF23719F9F0086D51A /* CategoryTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTVC.xib; sourceTree = "<group>"; };
+		F4E147032371A3260086D51A /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,9 +88,9 @@
 		2F413150233DD8E900DA0C11 /* WTFUserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				F4E146F323719C030086D51A /* Modules */,
 				F49F3807233F3E3B00E1703B /* Utils */,
 				F49F3806233F3E3800E1703B /* Models */,
+				F4E146F323719C030086D51A /* Modules */,
 				2F413151233DD8E900DA0C11 /* AppDelegate.swift */,
 				2F413155233DD8E900DA0C11 /* Main.storyboard */,
 				2F413158233DD8EB00DA0C11 /* Assets.xcassets */,
@@ -117,6 +119,7 @@
 		F4961CA12351B47E005C356E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F4E147022371A3130086D51A /* UICollectionView */,
 				F44835BE235750E300B5ADCA /* NibLoadable */,
 				F4D3CC7B2356FA9A007BEF20 /* UIView */,
 				F4961CA22351B486005C356E /* UITableView */,
@@ -240,6 +243,14 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		F4E147022371A3130086D51A /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				F4E147032371A3260086D51A /* UICollectionView.swift */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,6 +332,7 @@
 				F4DDB31A234C63FD0098D0D0 /* MenuModel.swift in Sources */,
 				F4961C9F2351B40F005C356E /* MenuTVC.swift in Sources */,
 				F4D3CC7D2356FAAC007BEF20 /* UIView.swift in Sources */,
+				F4E147042371A3260086D51A /* UICollectionView.swift in Sources */,
 				F49F3809233F3FC000E1703B /* MenuController.swift in Sources */,
 				2F413152233DD8E900DA0C11 /* AppDelegate.swift in Sources */,
 				F4DDB318234C639B0098D0D0 /* MenuPresenter.swift in Sources */,

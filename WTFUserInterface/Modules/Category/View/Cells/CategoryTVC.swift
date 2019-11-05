@@ -32,6 +32,7 @@ extension CategoryTVC {
     
     internal func fill(cell by: Array<CategoryItems>) {
         self.items = by
+        collectionView.asyncReload()
     }
 }
 
