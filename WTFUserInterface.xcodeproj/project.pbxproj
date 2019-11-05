@@ -23,6 +23,7 @@
 		F4D3CC7D2356FAAC007BEF20 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3CC7C2356FAAC007BEF20 /* UIView.swift */; };
 		F4DDB318234C639B0098D0D0 /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDB317234C639B0098D0D0 /* MenuPresenter.swift */; };
 		F4DDB31A234C63FD0098D0D0 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDB319234C63FD0098D0D0 /* MenuModel.swift */; };
+		F4E146F023718D390086D51A /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E146EF23718D390086D51A /* CategoryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		F4D3CC7C2356FAAC007BEF20 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F4DDB317234C639B0098D0D0 /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
 		F4DDB319234C63FD0098D0D0 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
+		F4E146EF23718D390086D51A /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				F49F3808233F3FC000E1703B /* MenuController.swift */,
+				F4E146EF23718D390086D51A /* CategoryVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				F49F3809233F3FC000E1703B /* MenuController.swift in Sources */,
 				2F413152233DD8E900DA0C11 /* AppDelegate.swift in Sources */,
 				F4DDB318234C639B0098D0D0 /* MenuPresenter.swift in Sources */,
+				F4E146F023718D390086D51A /* CategoryVC.swift in Sources */,
 				F4961CA42351B4AF005C356E /* UITableView.swift in Sources */,
 				F40BFA0F2353521700E97E37 /* HeaderLabel.swift in Sources */,
 				F44835C0235750EF00B5ADCA /* NibLoadable.swift in Sources */,
