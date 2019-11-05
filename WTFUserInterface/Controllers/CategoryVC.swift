@@ -19,11 +19,12 @@ final class CategoryVC: UIViewController {
 
 // MARK: - Methods
 
-extension CategoryVC {
-    fileprivate func tableViewSetup() {
-        tableView.cleanFooterView()
+fileprivate extension CategoryVC {
+    func tableViewSetup() {
+        
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.cleanFooterView()
     }
 }
 
