@@ -25,6 +25,7 @@
 		F4DDB31A234C63FD0098D0D0 /* MenuModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4DDB319234C63FD0098D0D0 /* MenuModel.swift */; };
 		F4E146F023718D390086D51A /* CategoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E146EF23718D390086D51A /* CategoryVC.swift */; };
 		F4E146F2237192E00086D51A /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E146F1237192E00086D51A /* CategoryModel.swift */; };
+		F4E146FB23719C810086D51A /* CategoryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E146FA23719C810086D51A /* CategoryPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		F4DDB319234C63FD0098D0D0 /* MenuModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuModel.swift; sourceTree = "<group>"; };
 		F4E146EF23718D390086D51A /* CategoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryVC.swift; sourceTree = "<group>"; };
 		F4E146F1237192E00086D51A /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		F4E146FA23719C810086D51A /* CategoryPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,11 +82,10 @@
 		2F413150233DD8E900DA0C11 /* WTFUserInterface */ = {
 			isa = PBXGroup;
 			children = (
-				F4DDB316234C636B0098D0D0 /* Presenters */,
+				F4E146F323719C030086D51A /* Modules */,
 				F49F3807233F3E3B00E1703B /* Utils */,
 				F49F3806233F3E3800E1703B /* Models */,
 				F49F3805233F3E3600E1703B /* Views */,
-				F49F3804233F3E3400E1703B /* Controllers */,
 				2F413151233DD8E900DA0C11 /* AppDelegate.swift */,
 				2F413155233DD8E900DA0C11 /* Main.storyboard */,
 				2F413158233DD8EB00DA0C11 /* Assets.xcassets */,
@@ -128,15 +129,6 @@
 			path = UITableView;
 			sourceTree = "<group>";
 		};
-		F49F3804233F3E3400E1703B /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				F49F3808233F3FC000E1703B /* MenuController.swift */,
-				F4E146EF23718D390086D51A /* CategoryVC.swift */,
-			);
-			path = Controllers;
-			sourceTree = "<group>";
-		};
 		F49F3805233F3E3600E1703B /* Views */ = {
 			isa = PBXGroup;
 			children = (
@@ -175,12 +167,63 @@
 			path = UIView;
 			sourceTree = "<group>";
 		};
-		F4DDB316234C636B0098D0D0 /* Presenters */ = {
+		F4E146F323719C030086D51A /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				F4E146F723719C440086D51A /* Category */,
+				F4E146F423719C170086D51A /* Menu */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		F4E146F423719C170086D51A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				F4E146F623719C2F0086D51A /* Presenter */,
+				F4E146F523719C270086D51A /* View */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		F4E146F523719C270086D51A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F49F3808233F3FC000E1703B /* MenuController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4E146F623719C2F0086D51A /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
 				F4DDB317234C639B0098D0D0 /* MenuPresenter.swift */,
 			);
-			path = Presenters;
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F4E146F723719C440086D51A /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F4E146F923719C680086D51A /* Presenter */,
+				F4E146F823719C510086D51A /* View */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		F4E146F823719C510086D51A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4E146EF23718D390086D51A /* CategoryVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4E146F923719C680086D51A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F4E146FA23719C810086D51A /* CategoryPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +300,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4E146FB23719C810086D51A /* CategoryPresenter.swift in Sources */,
 				F4E146F2237192E00086D51A /* CategoryModel.swift in Sources */,
 				F4DDB31A234C63FD0098D0D0 /* MenuModel.swift in Sources */,
 				F4961C9F2351B40F005C356E /* MenuTVC.swift in Sources */,
