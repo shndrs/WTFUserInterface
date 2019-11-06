@@ -17,4 +17,16 @@ extension UICollectionView {
             strongSelf.reloadData()
         }
     }
+    
+    func register(with id: String) {
+        
+        let nib = UINib(nibName: id, bundle: nil)
+        self.register(nib, forCellWithReuseIdentifier: id)
+    }
+    
+    func register<T: UICollectionViewCell>(_ type: T.Type) where T: NibLoadable, T: ReusableView {
+        let nib = UINib(nibName: T.nibName, bundle: nil)
+
+        self.register(nib, forCellWithReuseIdentifier: T.reuseIdentifier)
+    }
 }
