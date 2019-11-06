@@ -28,6 +28,7 @@ extension CategoryTVC {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.register(CategoryCVC.self)
     }
     
     internal func fill(cell by: Array<CategoryItems>) {
