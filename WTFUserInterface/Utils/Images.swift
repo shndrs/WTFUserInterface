@@ -6,4 +6,8 @@
 //  Copyright © 2019 shndrs. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+struct Images {
+    public static let cheeseBurger = UIImage(named: "cheese-burger")!
+}
