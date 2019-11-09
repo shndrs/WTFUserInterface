@@ -40,10 +40,10 @@ extension CategoryPresenter {
     private func getDetails() -> Array<CategoryItems> {
         let details = [
             CategoryItems(title: "Cheese Burger", image: Images.cheeseBurger, description: "18.99 US$"),
-            CategoryItems(title: "Special Pizza", image: Images.cheeseBurger, description: "27.99 US$"),
+            CategoryItems(title: "Special Pizza", image: Images.shrimpPizza, description: "27.99 US$"),
             CategoryItems(title: "Special Beef", image: Images.cheeseBurger, description: "23.99 US$"),
-            CategoryItems(title: "Onion Rings", image: Images.cheeseBurger, description: "11.99 US$"),
-            CategoryItems(title: "Margarita Pizza", image: Images.cheeseBurger, description: "17.49 US$"),
+            CategoryItems(title: "Onion Rings", image: Images.shrimpPizza, description: "11.99 US$"),
+            CategoryItems(title: "Margarita Pizza", image: Images.shrimpPizza, description: "17.49 US$"),
         ]
         
         return details
@@ -53,11 +53,11 @@ extension CategoryPresenter {
         
         let sections = [
             CategoryModel(sectionTitle: "Burgers", sectionImage: Images.cheeseBurger, items: rows),
-            CategoryModel(sectionTitle: "Pizza", sectionImage: Images.cheeseBurger, items: rows),
-            CategoryModel(sectionTitle: "Sandwich", sectionImage: Images.cheeseBurger, items: rows),
+            CategoryModel(sectionTitle: "Pizza", sectionImage: Images.shrimpPizza, items: rows),
+            CategoryModel(sectionTitle: "Sandwich", sectionImage: Images.sandwich, items: rows),
             CategoryModel(sectionTitle: "Chicken", sectionImage: Images.cheeseBurger, items: rows),
-            CategoryModel(sectionTitle: "Potato", sectionImage: Images.cheeseBurger, items: rows),
-            CategoryModel(sectionTitle: "Bevarage", sectionImage: Images.cheeseBurger, items: rows)
+            CategoryModel(sectionTitle: "Potato", sectionImage: Images.sandwich, items: rows),
+            CategoryModel(sectionTitle: "Beverage", sectionImage: Images.beverage, items: rows)
         ]
         
         return sections
