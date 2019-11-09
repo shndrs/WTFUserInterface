@@ -14,7 +14,8 @@ struct CategoryModel {
     public private(set) var sectionImage: UIImage!
     public private(set) var items: Array<CategoryItems>!
     
-    init(sectionTitle: String, sectionImage: UIImage,
+    init(sectionTitle: String,
+         sectionImage: UIImage,
          items: Array<CategoryItems>) {
         
         self.sectionTitle = sectionTitle
