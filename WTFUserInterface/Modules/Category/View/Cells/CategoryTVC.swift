@@ -28,6 +28,7 @@ extension CategoryTVC {
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.categoryViewLayout()
         collectionView.register(CategoryCVC.self)
     }
     
@@ -47,6 +48,12 @@ extension CategoryTVC: UICollectionViewDelegate, UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView,
                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        guard let cell = collectionView
+            .dequeueReusableCell(withReuseIdentifier: CategoryCVC.reuseIdentifier,
+                                 for: indexPath) as? CategoryCVC else {
+                                    return UICollectionViewCell()
+        }
+        cell.fill(cell: items[indexPath.row])
+        return cell
     }
 }

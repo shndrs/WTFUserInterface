@@ -32,6 +32,7 @@ fileprivate extension CategoryVC {
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.rowHeight = 200
         tableView.cleanFooterView()
     }
 }
@@ -41,6 +42,7 @@ fileprivate extension CategoryVC {
 extension CategoryVC {
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter.getItems()
     }
 }
 
@@ -67,6 +69,14 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        
+        guard let cell = tableView
+            .dequeueReusableCell(withIdentifier: CategoryTVC.reuseIdentifier) as? CategoryTVC
+            else {
+                return UITableViewCell()
+        }
+        
+        cell.fill(cell: items[indexPath.row].items)
+        return cell
     }
 }
