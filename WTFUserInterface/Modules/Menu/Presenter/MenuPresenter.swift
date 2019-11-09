@@ -45,13 +45,14 @@ final class MenuPresenter: NSObject {
 extension MenuPresenter {
     
     private func getRows() -> Array<OrderDetails> {
-        let rows = [
-            OrderDetails(price: self.price, title: self.title),
-            OrderDetails(price: self.price, title: self.title),
-            OrderDetails(price: self.price, title: self.title),
-            OrderDetails(price: self.price, title: self.title),
-            OrderDetails(price: self.price, title: self.title)
-        ]
+
+        var rows = Array<OrderDetails>()
+
+        for _ in 0...4 {
+            
+            let detail = OrderDetails(price: self.price, title: self.title)
+            rows.append(detail)
+        }
         return rows
     }
     
@@ -62,11 +63,10 @@ extension MenuPresenter {
         }, price: self.totalAmount, title: self.title, details: rows)
         
         let item1 = MenuModel(action: {
-            print(self.title)
-        }, price: self.totalAmount, title: self.title, details: rows)
+            print(self.totalAmount)
+        }, price: "12.39 US$", title: self.title, details: rows)
         
         let array = [item0, item1]
-        
         return array
     }
 }
