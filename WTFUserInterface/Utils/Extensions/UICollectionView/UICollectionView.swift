@@ -29,4 +29,19 @@ extension UICollectionView {
 
         self.register(nib, forCellWithReuseIdentifier: T.reuseIdentifier)
     }
+    
+    func categoryViewLayout() {
+        
+        DispatchQueue.main.async {
+            let cellSize = CGSize(width:113, height:160)
+            
+            let layout = UICollectionViewFlowLayout()
+            layout.scrollDirection = .horizontal
+            layout.itemSize = cellSize
+            layout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
+            layout.minimumLineSpacing = 1.0
+            layout.minimumInteritemSpacing = 1.0
+            self.setCollectionViewLayout(layout, animated: true)
+        }
+    }
 }
