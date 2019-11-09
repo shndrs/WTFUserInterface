@@ -26,32 +26,47 @@ final class MenuPresenter: NSObject {
     
     internal func getData() {
         
-        let dwi = DispatchWorkItem {
-            let arrayDet = [
-                OrderDetails(price: self.price, title: self.title),
-                OrderDetails(price: self.price, title: self.title),
-                OrderDetails(price: self.price, title: self.title),
-                OrderDetails(price: self.price, title: self.title),
-                OrderDetails(price: self.price, title: self.title)
-            ]
+        let dwi = DispatchWorkItem { [weak self] in
             
-            var array = Array<MenuModel>()
-            let item0 = MenuModel(action: {
-                print(self.title)
-            }, price: self.totalAmount, title: self.title, details: arrayDet)
-            
-            let item1 = MenuModel(action: {
-                print(self.title)
-            }, price: self.totalAmount, title: self.title, details: arrayDet)
-            
-            array.append(item0)
-            array.append(item1)
+            guard let self = self else { return }
+            let rows = self.getRows()
+            let sections = self.getSections(rows: rows)
             
             DispatchQueue.main.async { [weak self] in
-                self?.view?.setTableView(with: array)
+                self?.view?.setTableView(with: sections)
             }
         }
-          
         DispatchQueue.global(qos: .background).async(execute: dwi)
+    }
+}
+
+// MARK: - Methods
+
+extension MenuPresenter {
+    
+    private func getRows() -> Array<OrderDetails> {
+        let rows = [
+            OrderDetails(price: self.price, title: self.title),
+            OrderDetails(price: self.price, title: self.title),
+            OrderDetails(price: self.price, title: self.title),
+            OrderDetails(price: self.price, title: self.title),
+            OrderDetails(price: self.price, title: self.title)
+        ]
+        return rows
+    }
+    
+    private func getSections(rows: Array<OrderDetails>) -> Array<MenuModel> {
+        
+        let item0 = MenuModel(action: {
+            print(self.title)
+        }, price: self.totalAmount, title: self.title, details: rows)
+        
+        let item1 = MenuModel(action: {
+            print(self.title)
+        }, price: self.totalAmount, title: self.title, details: rows)
+        
+        let array = [item0, item1]
+        
+        return array
     }
 }
