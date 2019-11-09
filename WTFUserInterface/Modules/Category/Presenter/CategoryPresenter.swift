@@ -26,7 +26,8 @@ final class CategoryPresenter: NSObject {
 extension CategoryPresenter {
     internal func getItems() {
         
-        DispatchQueue.global(qos: .background).async { [weak self] in
+        let dwi = DispatchWorkItem { [weak self] in
+            
             guard let self = self else { return }
             let rows = self.getDetails()
             let sections = self.getSections(rows: rows)
@@ -35,9 +36,11 @@ extension CategoryPresenter {
                 self.view?.setTableView(with: sections)
             }
         }
+        DispatchQueue.global(qos: .background).async(execute: dwi)
     }
     
     private func getDetails() -> Array<CategoryItems> {
+        
         let details = [
             CategoryItems(title: "Cheese Burger", image: Images.cheeseBurger, description: "18.99 US$"),
             CategoryItems(title: "Special Pizza", image: Images.shrimpPizza, description: "27.99 US$"),
@@ -45,7 +48,6 @@ extension CategoryPresenter {
             CategoryItems(title: "Onion Rings", image: Images.shrimpPizza, description: "11.99 US$"),
             CategoryItems(title: "Margarita Pizza", image: Images.shrimpPizza, description: "17.49 US$"),
         ]
-        
         return details
     }
     
