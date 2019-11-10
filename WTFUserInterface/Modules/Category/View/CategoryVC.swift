@@ -33,6 +33,7 @@ fileprivate extension CategoryVC {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 200
+        tableView.register(CategoryTVC.self)
         tableView.cleanFooterView()
     }
 }

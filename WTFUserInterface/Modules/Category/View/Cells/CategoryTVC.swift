@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class CategoryTVC: UITableViewCell, ReusableView {
+final class CategoryTVC: UITableViewCell, ReusableView, NibLoadable {
     
     private lazy var items: Array<CategoryItems> = {
         return Array<CategoryItems>()
