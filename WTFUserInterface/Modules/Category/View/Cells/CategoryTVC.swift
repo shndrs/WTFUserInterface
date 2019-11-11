@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class CategoryTVC: UITableViewCell, ReusableView, NibLoadable {
+final class CategoryTVC: UITableViewCell, ReusableView {
     
     private lazy var items: Array<CategoryItems> = {
         return Array<CategoryItems>()
@@ -29,7 +29,8 @@ extension CategoryTVC {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.categoryViewLayout()
-        collectionView.register(CategoryCVC.self)
+        Register.in(component: collectionView,
+                    id: CategoryCVC.reuseIdentifier)
     }
     
     internal func fill(cell by: Array<CategoryItems>) {

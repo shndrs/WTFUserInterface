@@ -33,7 +33,9 @@ fileprivate extension CategoryVC {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 200
-        tableView.register(CategoryTVC.self)
+        Register.in(component: tableView,
+                    id: CategoryTVC.reuseIdentifier)
+//        tableView.register(CategoryTVC.self)
         tableView.cleanFooterView()
     }
 }

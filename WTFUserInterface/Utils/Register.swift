@@ -10,21 +10,21 @@ import UIKit
 
 class Register: NSObject {
     
-    static func with<T>(cell: T, reuseIdentifier: String) {
+    static func `in`<T>(component: T, id: String) {
         
-        let nib = UINib(nibName: reuseIdentifier, bundle: nil)
+        let nib = UINib(nibName: id, bundle: nil)
         
-        switch cell {
+        switch component {
             
             case is UITableView:
                 
-                guard let cell = cell as? UITableView else { return }
-                cell.register(nib, forCellReuseIdentifier: reuseIdentifier)
+                guard let cell = component as? UITableView else { return }
+                cell.register(nib, forCellReuseIdentifier: id)
             
             case is UICollectionView:
                 
-                guard let cell = cell as? UICollectionView else { return }
-                cell.register(nib, forCellWithReuseIdentifier: reuseIdentifier)
+                guard let cell = component as? UICollectionView else { return }
+                cell.register(nib, forCellWithReuseIdentifier: id)
             
             default:
                 break;

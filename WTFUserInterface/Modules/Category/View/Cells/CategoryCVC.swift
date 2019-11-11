@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class CategoryCVC: UICollectionViewCell, ReusableView, NibLoadable {
+final class CategoryCVC: UICollectionViewCell, ReusableView {
     
     @IBOutlet private weak var backView: UIView! {
         didSet {
