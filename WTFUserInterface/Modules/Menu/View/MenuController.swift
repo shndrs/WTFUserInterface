@@ -57,8 +57,8 @@ extension MenuController {
         tableView.sectionHeaderHeight = 302
         tableView.rowHeight = 40
         tableView.cleanFooterView()
-        tableView.register(MenuTVC.self)
-        tableView.register(CustomHeader.self)
+        Register.in(component: tableView, id: MenuTVC.reuseIdentifier)
+        Register.in(component: tableView, id: CustomHeader.reuseIdentifier)
     }
 }
 

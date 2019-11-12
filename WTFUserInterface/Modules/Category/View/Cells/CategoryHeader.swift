@@ -10,11 +10,7 @@ import UIKit
 
 class CategoryHeader: UITableViewCell {
     
-    @IBOutlet weak var backView: UIView! {
-        didSet {
-            backView.customCatHeaderLeft()
-        }
-    }
+    @IBOutlet weak var backView: UIView!
     
     @IBOutlet private weak var headerImage: UIImageView! {
         didSet {

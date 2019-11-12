@@ -24,12 +24,6 @@ extension UICollectionView {
         self.register(nib, forCellWithReuseIdentifier: id)
     }
     
-    func register<T: UICollectionViewCell>(_ type: T.Type) where T: NibLoadable, T: ReusableView {
-        let nib = UINib(nibName: T.nibName, bundle: nil)
-
-        self.register(nib, forCellWithReuseIdentifier: T.reuseIdentifier)
-    }
-    
     func categoryViewLayout() {
         
         DispatchQueue.main.async {

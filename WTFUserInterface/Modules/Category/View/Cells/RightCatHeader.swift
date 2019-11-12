@@ -9,6 +9,7 @@
 import UIKit
 
 final class RightCatHeader: CategoryHeader, ReusableView {
+    
     override var backView: UIView! {
         didSet {
             backView.customCatHeaderRight()

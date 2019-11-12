@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class MenuTVC: UITableViewCell, ReusableView, NibLoadable {
+final class MenuTVC: UITableViewCell, ReusableView {
     
     @IBOutlet private weak var orderTitleLabel: UILabel!
     @IBOutlet private weak var orderCountLabel: UILabel!

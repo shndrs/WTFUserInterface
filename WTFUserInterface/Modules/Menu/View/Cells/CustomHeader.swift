@@ -13,7 +13,7 @@ public protocol ExpanedCellDelegate: AnyObject {
     func expanedButtonPressed(section: Int) -> Void
 }
 
-final class CustomHeader: UITableViewCell, NibLoadable, ReusableView {
+final class CustomHeader: UITableViewCell, ReusableView {
     
     
     @IBOutlet weak var totalAmountLabel: UILabel!

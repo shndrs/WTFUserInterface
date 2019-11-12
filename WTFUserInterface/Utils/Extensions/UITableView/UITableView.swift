@@ -34,9 +34,4 @@ extension UITableView {
         }
     }
     
-    func register<T: UITableViewCell>(_ type: T.Type) where T: NibLoadable, T: ReusableView {
-        let nib = UINib(nibName: T.nibName, bundle: nil)
-
-        self.register(nib, forCellReuseIdentifier: T.reuseIdentifier)
-    }
 }
