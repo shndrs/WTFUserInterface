@@ -32,9 +32,10 @@ fileprivate extension CategoryVC {
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 165
-        Register.in(component: tableView,
-                    id: CategoryTVC.reuseIdentifier)
+        tableView.rowHeight = 165.0
+        tableView.sectionHeaderHeight = 52.0
+        Register.in(component: tableView, id: CategoryHeader.reuseIdentifier)
+        Register.in(component: tableView, id: CategoryTVC.reuseIdentifier)
         tableView.cleanFooterView()
     }
 }
@@ -67,7 +68,7 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
     }
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        return items[section].items.count
+        return 1
     }
     
     func tableView(_ tableView: UITableView,
@@ -81,5 +82,15 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
         
         cell.fill(cell: items[indexPath.row].items)
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        guard let header = tableView
+            .dequeueReusableCell(withIdentifier: CategoryHeader.reuseIdentifier) as? CategoryHeader
+            else {
+                return UITableViewCell()
+        }
+        header.fill(cell: items[section])
+        return header
     }
 }
