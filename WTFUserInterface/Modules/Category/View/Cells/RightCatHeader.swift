@@ -8,17 +8,11 @@
 
 import UIKit
 
-class RightCatHeader: UITableViewCell {
-
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+final class RightCatHeader: CategoryHeader, ReusableView {
+    override var backView: UIView! {
+        didSet {
+            backView.customCatHeaderRight()
+        }
     }
     
 }
