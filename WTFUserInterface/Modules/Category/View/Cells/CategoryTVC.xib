@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jJG-H6-2b6">
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="jJG-H6-2b6">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="108"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lbk-kr-6CJ">
@@ -37,7 +37,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="collectionView" destination="jJG-H6-2b6" id="eQi-Ew-ZoX"/>
+                <outlet property="collectionView" destination="jJG-H6-2b6" id="axr-YH-ZJZ"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="174.77678571428569"/>
         </tableViewCell>

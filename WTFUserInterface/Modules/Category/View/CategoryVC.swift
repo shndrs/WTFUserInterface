@@ -32,10 +32,9 @@ fileprivate extension CategoryVC {
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 200
+        tableView.rowHeight = 175
         Register.in(component: tableView,
                     id: CategoryTVC.reuseIdentifier)
-//        tableView.register(CategoryTVC.self)
         tableView.cleanFooterView()
     }
 }
@@ -45,6 +44,7 @@ fileprivate extension CategoryVC {
 extension CategoryVC {
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationController?.navigationBar.prefersLargeTitles = true
         presenter.getItems()
     }
 }
