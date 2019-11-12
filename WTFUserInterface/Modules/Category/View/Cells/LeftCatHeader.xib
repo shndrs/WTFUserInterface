@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,7 +18,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lW2-CB-GTq">
-                        <rect key="frame" x="0.0" y="0.0" width="288" height="65"/>
+                        <rect key="frame" x="0.0" y="0.0" width="284" height="65"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Yf-cQ-fYB">
                                 <rect key="frame" x="8" y="18.5" width="28" height="28"/>
@@ -51,13 +51,14 @@
                         <state key="normal" image="chevron.right.2" catalog="system"/>
                     </button>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="lW2-CB-GTq" secondAttribute="bottom" id="3RC-4L-OWz"/>
                     <constraint firstItem="lW2-CB-GTq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8Ln-y5-Ht9"/>
                     <constraint firstItem="lW2-CB-GTq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HNx-V4-Beb"/>
                     <constraint firstAttribute="trailing" secondItem="ug4-ga-dqf" secondAttribute="trailing" constant="5" id="MPo-Gd-Dwl"/>
                     <constraint firstItem="ug4-ga-dqf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lqt-8o-UAT"/>
-                    <constraint firstAttribute="trailing" secondItem="lW2-CB-GTq" secondAttribute="trailing" constant="32" id="yjo-Vu-6xH"/>
+                    <constraint firstAttribute="trailing" secondItem="lW2-CB-GTq" secondAttribute="trailing" constant="36" id="yjo-Vu-6xH"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
@@ -70,6 +71,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="chevron.right.2" catalog="system" width="64" height="54"/>
+        <image name="chevron.right.2" catalog="system" width="64" height="52"/>
     </resources>
 </document>
