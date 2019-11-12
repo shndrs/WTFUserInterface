@@ -33,8 +33,9 @@ fileprivate extension CategoryVC {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.rowHeight = 165.0
-        tableView.sectionHeaderHeight = 52.0
-        Register.in(component: tableView, id: CategoryHeader.reuseIdentifier)
+        tableView.sectionHeaderHeight = 45
+        Register.in(component: tableView, id: LeftCatHeader.reuseIdentifier)
+        Register.in(component: tableView, id: RightCatHeader.reuseIdentifier)
         Register.in(component: tableView, id: CategoryTVC.reuseIdentifier)
         tableView.cleanFooterView()
     }
@@ -66,6 +67,7 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return items.count
     }
+    
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         return 1
@@ -85,12 +87,15 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        guard let header = tableView
-            .dequeueReusableCell(withIdentifier: CategoryHeader.reuseIdentifier) as? CategoryHeader
-            else {
-                return UITableViewCell()
+        
+        if section % 2 == 1 {
+            let headerLeft = tableView.dequeueReusableCell(withIdentifier: LeftCatHeader.reuseIdentifier) as? LeftCatHeader
+            headerLeft?.fill(cell: items[section])
+            return headerLeft
+        } else {
+            let headerRight = tableView.dequeueReusableCell(withIdentifier: RightCatHeader.reuseIdentifier) as? RightCatHeader
+            headerRight?.fill(cell: items[section])
+            return headerRight
         }
-        header.fill(cell: items[section])
-        return header
     }
 }

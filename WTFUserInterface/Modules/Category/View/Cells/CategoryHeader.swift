@@ -8,7 +8,13 @@
 
 import UIKit
 
-final class CategoryHeader: UITableViewCell, ReusableView {
+class CategoryHeader: UITableViewCell {
+    
+    @IBOutlet weak var backView: UIView! {
+        didSet {
+            backView.customCatHeaderLeft()
+        }
+    }
     
     @IBOutlet private weak var headerImage: UIImageView! {
         didSet {
@@ -17,6 +23,7 @@ final class CategoryHeader: UITableViewCell, ReusableView {
     }
     
     @IBOutlet private weak var headerTitle: UILabel!
+        
 }
 
 // MARK: - Methods
@@ -26,5 +33,13 @@ extension CategoryHeader {
     internal func fill(cell by: CategoryModel) {
         headerImage.image = by.sectionImage
         headerTitle.text = by.sectionTitle
+    }
+}
+
+// MARK: - Life Cycle
+
+extension CategoryHeader {
+    override func awakeFromNib() {
+        super.awakeFromNib()      
     }
 }

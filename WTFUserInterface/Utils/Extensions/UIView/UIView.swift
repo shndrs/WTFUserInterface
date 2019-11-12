@@ -86,4 +86,16 @@ extension UIView {
         self.layer.shadowRadius = radius
         self.layer.masksToBounds = false
     }
+    
+    func customCatHeaderLeft() {
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 12
+        self.layer.maskedCorners = [.layerMaxXMaxYCorner , .layerMaxXMinYCorner]
+    }
+    
+    func customCatHeaderRight() {
+        self.clipsToBounds = true
+        self.layer.cornerRadius = 12
+        self.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMinXMinYCorner]
+    }
 }
