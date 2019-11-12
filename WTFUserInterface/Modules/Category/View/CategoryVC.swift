@@ -32,7 +32,7 @@ fileprivate extension CategoryVC {
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 175
+        tableView.rowHeight = 165
         Register.in(component: tableView,
                     id: CategoryTVC.reuseIdentifier)
         tableView.cleanFooterView()
