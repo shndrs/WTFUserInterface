@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sandwich" translatesAutoresizingMaskIntoConstraints="NO" id="F3S-Ig-N1n">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="americano" translatesAutoresizingMaskIntoConstraints="NO" id="F3S-Ig-N1n">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
                     </imageView>
                 </subviews>
@@ -33,6 +33,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="sandwich" width="500" height="500"/>
+        <image name="americano" width="1200" height="746"/>
     </resources>
 </document>
