@@ -32,11 +32,10 @@ fileprivate extension CategoryVC {
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.rowHeight = 165.0
-        tableView.sectionHeaderHeight = 45
         Register.in(component: tableView, id: LeftCatHeader.reuseIdentifier)
         Register.in(component: tableView, id: RightCatHeader.reuseIdentifier)
         Register.in(component: tableView, id: CategoryTVC.reuseIdentifier)
+        Register.in(component: tableView, id: CatSliderTVC.reuseIdentifier)
         tableView.cleanFooterView()
     }
 }
@@ -76,19 +75,21 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        guard let cell = tableView
-            .dequeueReusableCell(withIdentifier: CategoryTVC.reuseIdentifier) as? CategoryTVC
-            else {
-                return UITableViewCell()
+        if indexPath.section != 0 {
+            let cell = tableView
+                .dequeueReusableCell(withIdentifier: CategoryTVC.reuseIdentifier) as? CategoryTVC
+            cell?.fill(cell: items[indexPath.row].items)
+            return cell ?? UITableViewCell()
         }
-        
-        cell.fill(cell: items[indexPath.row].items)
-        return cell
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
-        if section % 2 == 1 {
+        if section == 0 {
+            let topHeader = tableView.dequeueReusableCell(withIdentifier: CatSliderTVC.reuseIdentifier) as? CatSliderTVC
+            return topHeader
+        } else if section % 2 == 1 {
             let headerLeft = tableView.dequeueReusableCell(withIdentifier: LeftCatHeader.reuseIdentifier) as? LeftCatHeader
             headerLeft?.fill(cell: items[section])
             return headerLeft
@@ -97,5 +98,13 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
             headerRight?.fill(cell: items[section])
             return headerRight
         }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        
+        return (section == 0) ? 240:45
+    }
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return (indexPath.section == 0) ? 0:165.0
     }
 }

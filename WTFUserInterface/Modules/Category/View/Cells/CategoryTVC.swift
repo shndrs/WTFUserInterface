@@ -29,7 +29,7 @@ extension CategoryTVC {
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.categoryViewLayout()
-        collectionView.semanticContentAttribute = .forceLeftToRight
+        collectionView.semanticContentAttribute = .forceRightToLeft
         Register.in(component: collectionView,
                     id: CategoryCVC.reuseIdentifier)
     }

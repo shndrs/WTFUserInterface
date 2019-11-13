@@ -20,6 +20,8 @@
 		F4961CA42351B4AF005C356E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA32351B4AF005C356E /* UITableView.swift */; };
 		F4961CA62351C36E005C356E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA52351C36E005C356E /* Strings.swift */; };
 		F49F3809233F3FC000E1703B /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F3808233F3FC000E1703B /* MenuController.swift */; };
+		F4CEFA06237BC81400135AB7 /* CatSliderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CEFA04237BC81400135AB7 /* CatSliderTVC.swift */; };
+		F4CEFA07237BC81400135AB7 /* CatSliderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CEFA05237BC81400135AB7 /* CatSliderTVC.xib */; };
 		F4D3CC782356F796007BEF20 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3CC772356F796007BEF20 /* CustomHeader.swift */; };
 		F4D3CC7A2356F829007BEF20 /* CustomHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4D3CC792356F829007BEF20 /* CustomHeader.xib */; };
 		F4D3CC7D2356FAAC007BEF20 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3CC7C2356FAAC007BEF20 /* UIView.swift */; };
@@ -56,6 +58,8 @@
 		F4961CA32351B4AF005C356E /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		F4961CA52351C36E005C356E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		F49F3808233F3FC000E1703B /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		F4CEFA04237BC81400135AB7 /* CatSliderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSliderTVC.swift; sourceTree = "<group>"; };
+		F4CEFA05237BC81400135AB7 /* CatSliderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatSliderTVC.xib; sourceTree = "<group>"; };
 		F4D3CC772356F796007BEF20 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
 		F4D3CC792356F829007BEF20 /* CustomHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomHeader.xib; sourceTree = "<group>"; };
 		F4D3CC7C2356FAAC007BEF20 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
@@ -266,6 +270,8 @@
 				F4DC6F2A237ADBF1006447F8 /* LeftCatHeader.xib */,
 				F4DC6F2D237ADD33006447F8 /* RightCatHeader.swift */,
 				F4DC6F2E237ADD33006447F8 /* RightCatHeader.xib */,
+				F4CEFA04237BC81400135AB7 /* CatSliderTVC.swift */,
+				F4CEFA05237BC81400135AB7 /* CatSliderTVC.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -344,6 +350,7 @@
 				F4961CA02351B40F005C356E /* MenuTVC.xib in Resources */,
 				F4DC6F30237ADD33006447F8 /* RightCatHeader.xib in Resources */,
 				F4E1470123719F9F0086D51A /* CategoryTVC.xib in Resources */,
+				F4CEFA07237BC81400135AB7 /* CatSliderTVC.xib in Resources */,
 				2F413157233DD8E900DA0C11 /* Main.storyboard in Resources */,
 				F4D3CC7A2356F829007BEF20 /* CustomHeader.xib in Resources */,
 			);
@@ -373,6 +380,7 @@
 				F4E146F023718D390086D51A /* CategoryVC.swift in Sources */,
 				F4961CA42351B4AF005C356E /* UITableView.swift in Sources */,
 				F4DC6F25237A9602006447F8 /* CategoryHeader.swift in Sources */,
+				F4CEFA06237BC81400135AB7 /* CatSliderTVC.swift in Sources */,
 				F40B6D9B23768B9600C5DA74 /* Images.swift in Sources */,
 				F40BFA0F2353521700E97E37 /* HeaderLabel.swift in Sources */,
 				F44835C0235750EF00B5ADCA /* NibLoadable.swift in Sources */,
