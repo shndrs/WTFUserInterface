@@ -42,11 +42,11 @@ extension CategoryPresenter {
     private func getDetails() -> Array<CategoryItems> {
         
         let details = [
-            CategoryItems(title: "Cheese Burger", image: Images.cheeseBurger, description: "18.99 US$"),
-            CategoryItems(title: "Special Pizza", image: Images.shrimpPizza, description: "27.99 US$"),
-            CategoryItems(title: "Special Beef", image: Images.cheeseBurger, description: "23.99 US$"),
-            CategoryItems(title: "Onion Rings", image: Images.shrimpPizza, description: "11.99 US$"),
-            CategoryItems(title: "Margarita Pizza", image: Images.shrimpPizza, description: "17.49 US$"),
+            CategoryItems(title: "Colombia", image: Images.robusta, description: "18.99 US$"),
+            CategoryItems(title: "Brazilian", image: Images.excelsa, description: "27.99 US$"),
+            CategoryItems(title: "Italian", image: Images.arabica, description: "23.99 US$"),
+            CategoryItems(title: "American", image: Images.liberica, description: "11.99 US$"),
+            CategoryItems(title: "French", image: Images.excelsa, description: "17.49 US$"),
         ]
         return details
     }
@@ -54,12 +54,12 @@ extension CategoryPresenter {
     private func getSections(rows: Array<CategoryItems>) -> Array<CategoryModel> {
         
         let sections = [
-            CategoryModel(sectionTitle: "Burgers", sectionImage: Images.cheeseBurger, items: rows),
-            CategoryModel(sectionTitle: "Pizza", sectionImage: Images.shrimpPizza, items: rows),
-            CategoryModel(sectionTitle: "Sandwich", sectionImage: Images.sandwich, items: rows),
-            CategoryModel(sectionTitle: "Chicken", sectionImage: Images.cheeseBurger, items: rows),
-            CategoryModel(sectionTitle: "Potato", sectionImage: Images.sandwich, items: rows),
-            CategoryModel(sectionTitle: "Beverage", sectionImage: Images.beverage, items: rows)
+            CategoryModel(sectionTitle: "Arabica", sectionImage: Images.arabica, items: rows),
+            CategoryModel(sectionTitle: "Robusta", sectionImage: Images.robusta, items: rows),
+            CategoryModel(sectionTitle: "Liberica", sectionImage: Images.excelsa, items: rows),
+            CategoryModel(sectionTitle: "Excelsa", sectionImage: Images.arabica, items: rows),
+            CategoryModel(sectionTitle: "Excelsa-Liberica", sectionImage: Images.excelsa, items: rows),
+            CategoryModel(sectionTitle: "Robusta-Liberica", sectionImage: Images.liberica, items: rows)
         ]
         
         return sections
