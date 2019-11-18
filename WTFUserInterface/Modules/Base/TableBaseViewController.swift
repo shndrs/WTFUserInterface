@@ -10,6 +10,12 @@ import UIKit
 
 class TableBaseViewController: UIViewController {
     
+    var largeTitle: Bool = false {
+        willSet(newVal) {
+            navigationController?.navigationBar.prefersLargeTitles = newVal
+        }
+    }
+    
     @IBOutlet internal weak var tableView: UITableView! {
         didSet {
             tableSetup()
@@ -31,6 +37,7 @@ extension TableBaseViewController {
             Register.in(component: tableView, id: id)
         }
     }
+    
 }
 
 // MARK: - Life Cycle
