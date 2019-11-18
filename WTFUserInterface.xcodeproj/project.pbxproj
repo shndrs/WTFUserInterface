@@ -20,6 +20,8 @@
 		F4961CA42351B4AF005C356E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA32351B4AF005C356E /* UITableView.swift */; };
 		F4961CA62351C36E005C356E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA52351C36E005C356E /* Strings.swift */; };
 		F49F3809233F3FC000E1703B /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F49F3808233F3FC000E1703B /* MenuController.swift */; };
+		F4BC60B323825F64004A7EBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC60B223825F64004A7EBE /* BaseViewController.swift */; };
+		F4BC60B523825FEE004A7EBE /* TableBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC60B423825FEE004A7EBE /* TableBaseViewController.swift */; };
 		F4CEFA06237BC81400135AB7 /* CatSliderTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4CEFA04237BC81400135AB7 /* CatSliderTVC.swift */; };
 		F4CEFA07237BC81400135AB7 /* CatSliderTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4CEFA05237BC81400135AB7 /* CatSliderTVC.xib */; };
 		F4D3CC782356F796007BEF20 /* CustomHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D3CC772356F796007BEF20 /* CustomHeader.swift */; };
@@ -58,6 +60,8 @@
 		F4961CA32351B4AF005C356E /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		F4961CA52351C36E005C356E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		F49F3808233F3FC000E1703B /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
+		F4BC60B223825F64004A7EBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		F4BC60B423825FEE004A7EBE /* TableBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableBaseViewController.swift; sourceTree = "<group>"; };
 		F4CEFA04237BC81400135AB7 /* CatSliderTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatSliderTVC.swift; sourceTree = "<group>"; };
 		F4CEFA05237BC81400135AB7 /* CatSliderTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CatSliderTVC.xib; sourceTree = "<group>"; };
 		F4D3CC772356F796007BEF20 /* CustomHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHeader.swift; sourceTree = "<group>"; };
@@ -138,6 +142,13 @@
 			path = NibLoadable;
 			sourceTree = "<group>";
 		};
+		F45B5B8D23816762007C1001 /* ProductDetails */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ProductDetails;
+			sourceTree = "<group>";
+		};
 		F4961CA12351B47E005C356E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +189,15 @@
 			path = Utils;
 			sourceTree = "<group>";
 		};
+		F4BC60B123825F4D004A7EBE /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				F4BC60B223825F64004A7EBE /* BaseViewController.swift */,
+				F4BC60B423825FEE004A7EBE /* TableBaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		F4D3CC7B2356FA9A007BEF20 /* UIView */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,6 +209,8 @@
 		F4E146F323719C030086D51A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4BC60B123825F4D004A7EBE /* Base */,
+				F45B5B8D23816762007C1001 /* ProductDetails */,
 				F4E146F723719C440086D51A /* Category */,
 				F4E146F423719C170086D51A /* Menu */,
 			);
@@ -368,6 +390,8 @@
 				F4DC6F2F237ADD33006447F8 /* RightCatHeader.swift in Sources */,
 				F4E146F2237192E00086D51A /* CategoryModel.swift in Sources */,
 				F4E1470023719F9F0086D51A /* CategoryTVC.swift in Sources */,
+				F4BC60B523825FEE004A7EBE /* TableBaseViewController.swift in Sources */,
+				F4BC60B323825F64004A7EBE /* BaseViewController.swift in Sources */,
 				F4DDB31A234C63FD0098D0D0 /* MenuModel.swift in Sources */,
 				F4961C9F2351B40F005C356E /* MenuTVC.swift in Sources */,
 				F4D3CC7D2356FAAC007BEF20 /* UIView.swift in Sources */,

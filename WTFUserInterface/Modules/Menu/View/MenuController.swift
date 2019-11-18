@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class MenuController: UIViewController {
+final class MenuController: TableBaseViewController {
     
     private lazy var items: Array<MenuModel> = {
         return Array<MenuModel>()
@@ -18,11 +18,6 @@ final class MenuController: UIViewController {
         return MenuPresenter(view: self)
     }()
     
-    @IBOutlet private weak var tableView: UITableView! {
-        didSet {
-            tableSetup()
-        }
-    }
 }
 
 // MARK: - Life Cycle
@@ -50,15 +45,13 @@ extension MenuController {
         return indexPaths
     }
     
-    fileprivate func tableSetup() {
+    override func tableSetup() {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.sectionFooterHeight = 39.0
         tableView.sectionHeaderHeight = 302
         tableView.rowHeight = 40
-        tableView.cleanFooterView()
-        Register.in(component: tableView, id: MenuTVC.reuseIdentifier)
-        Register.in(component: tableView, id: CustomHeader.reuseIdentifier)
+        register(reuseIds: [MenuTVC.reuseIdentifier, CustomHeader.reuseIdentifier])
     }
 }
 
@@ -90,7 +83,7 @@ extension MenuController: UITableViewDelegate, UITableViewDataSource {
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView
-            .dequeueReusableCell(withIdentifier: Ids.menuTVC.rawValue) as! MenuTVC
+            .dequeueReusableCell(withIdentifier: MenuTVC.reuseIdentifier) as! MenuTVC
         cell.fill(cell: items[indexPath.section].details[indexPath.row])
         return cell
     }
