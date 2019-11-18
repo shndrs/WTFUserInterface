@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Register: NSObject {
+final class Register: NSObject {
     
     static func `in`<T>(component: T, id: String) {
         

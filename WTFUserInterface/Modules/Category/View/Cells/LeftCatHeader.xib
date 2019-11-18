@@ -18,25 +18,25 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lW2-CB-GTq">
-                        <rect key="frame" x="0.0" y="0.0" width="284" height="65"/>
+                        <rect key="frame" x="-1" y="0.0" width="285" height="65"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Yf-cQ-fYB">
-                                <rect key="frame" x="8" y="18.5" width="28" height="28"/>
+                                <rect key="frame" x="9" y="18.5" width="28" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7Yf-cQ-fYB" secondAttribute="height" multiplier="1:1" id="3ch-5K-g3s"/>
                                     <constraint firstAttribute="width" constant="28" id="MqI-SL-Oxp"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cat" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vTv-Rj-Tuo">
-                                <rect key="frame" x="52" y="22" width="25" height="21"/>
+                                <rect key="frame" x="53" y="22" width="25" height="21"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="7Yf-cQ-fYB" firstAttribute="leading" secondItem="lW2-CB-GTq" secondAttribute="leading" constant="8" id="Ban-ve-oAt"/>
+                            <constraint firstItem="7Yf-cQ-fYB" firstAttribute="leading" secondItem="lW2-CB-GTq" secondAttribute="leading" constant="9" id="Ban-ve-oAt"/>
                             <constraint firstItem="vTv-Rj-Tuo" firstAttribute="leading" secondItem="7Yf-cQ-fYB" secondAttribute="trailing" constant="16" id="afl-HK-0Z9"/>
                             <constraint firstItem="vTv-Rj-Tuo" firstAttribute="centerY" secondItem="lW2-CB-GTq" secondAttribute="centerY" id="b0q-dZ-suc"/>
                             <constraint firstItem="7Yf-cQ-fYB" firstAttribute="centerY" secondItem="lW2-CB-GTq" secondAttribute="centerY" id="sMQ-Kf-7O2"/>
@@ -56,7 +56,7 @@
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="lW2-CB-GTq" secondAttribute="bottom" id="3RC-4L-OWz"/>
                     <constraint firstItem="lW2-CB-GTq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8Ln-y5-Ht9"/>
-                    <constraint firstItem="lW2-CB-GTq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HNx-V4-Beb"/>
+                    <constraint firstItem="lW2-CB-GTq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="-1" id="HNx-V4-Beb"/>
                     <constraint firstAttribute="trailing" secondItem="ug4-ga-dqf" secondAttribute="trailing" constant="5" id="MPo-Gd-Dwl"/>
                     <constraint firstItem="ug4-ga-dqf" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lqt-8o-UAT"/>
                     <constraint firstAttribute="trailing" secondItem="lW2-CB-GTq" secondAttribute="trailing" constant="36" id="yjo-Vu-6xH"/>

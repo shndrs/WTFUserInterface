@@ -27,7 +27,7 @@ extension UICollectionView {
     func categoryViewLayout() {
         
         DispatchQueue.main.async {
-            let cellSize = CGSize(width:113, height:160)
+            let cellSize = CGSize(width:128, height:160)
             
             let layout = UICollectionViewFlowLayout()
             layout.scrollDirection = .horizontal
