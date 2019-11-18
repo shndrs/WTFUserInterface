@@ -25,8 +25,8 @@ final class MenuController: TableBaseViewController {
 extension MenuController {
     override func viewDidLoad() {
         super.viewDidLoad()
+        largeTitle = true
         presenter.getData()
-        navigationController?.navigationBar.prefersLargeTitles = true
     }
 }
 
@@ -51,7 +51,7 @@ extension MenuController {
         tableView.sectionFooterHeight = 39.0
         tableView.sectionHeaderHeight = 302
         tableView.rowHeight = 40
-        register(reuseIds: [MenuTVC.reuseIdentifier, CustomHeader.reuseIdentifier])
+        register(reuseIds: RIDs.menuVC)
     }
 }
 

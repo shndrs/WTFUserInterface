@@ -11,8 +11,8 @@ import UIKit
 extension UITableView {
     
     func asyncReload() {
-        DispatchQueue.main.async {
-            self.reloadData()
+        DispatchQueue.main.async { [weak self] in
+            self?.reloadData()
         }
     }
     

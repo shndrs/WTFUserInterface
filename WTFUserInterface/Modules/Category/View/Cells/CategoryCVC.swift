@@ -13,7 +13,7 @@ final class CategoryCVC: UICollectionViewCell, ReusableView {
     @IBOutlet private weak var backView: UIView! {
         didSet {
             backView.addCornerRadius(radius: 5)
-            backView.addBorder(color: .darkGray, thickness: 0.3)
+            backView.addBorder(color: .darkGray, thickness: 0.5)
         }
     }
 

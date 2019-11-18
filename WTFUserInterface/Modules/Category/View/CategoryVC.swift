@@ -27,9 +27,7 @@ extension CategoryVC {
     override func tableSetup() {
         tableView.delegate = self
         tableView.dataSource = self
-        let ids = [LeftCatHeader.reuseIdentifier, RightCatHeader.reuseIdentifier,
-                   CategoryTVC.reuseIdentifier, CatSliderTVC.reuseIdentifier]
-        register(reuseIds: ids)
+        register(reuseIds: RIDs.categoryVC)
     }
 }
 

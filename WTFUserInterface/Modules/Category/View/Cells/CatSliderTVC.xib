@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,15 +20,23 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="americano" translatesAutoresizingMaskIntoConstraints="NO" id="F3S-Ig-N1n">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
                     </imageView>
+                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="KLh-VW-CqZ">
+                        <rect key="frame" x="140.5" y="146" width="39" height="37"/>
+                    </pageControl>
                 </subviews>
                 <constraints>
                     <constraint firstItem="F3S-Ig-N1n" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="CBl-B6-AoR"/>
                     <constraint firstItem="F3S-Ig-N1n" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="JpN-Or-k1x"/>
                     <constraint firstAttribute="trailing" secondItem="F3S-Ig-N1n" secondAttribute="trailing" id="cUK-yM-jCR"/>
+                    <constraint firstAttribute="bottom" secondItem="KLh-VW-CqZ" secondAttribute="bottom" constant="8" id="vLg-m2-Py2"/>
                     <constraint firstAttribute="bottom" secondItem="F3S-Ig-N1n" secondAttribute="bottom" constant="8" id="vig-6j-Ait"/>
+                    <constraint firstItem="KLh-VW-CqZ" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="wVc-Hw-xox"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="pageControl" destination="KLh-VW-CqZ" id="gEi-9r-GId"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="202.56696428571428"/>
         </tableViewCell>
     </objects>

@@ -37,7 +37,6 @@ extension TableBaseViewController {
             Register.in(component: tableView, id: id)
         }
     }
-    
 }
 
 // MARK: - Life Cycle
