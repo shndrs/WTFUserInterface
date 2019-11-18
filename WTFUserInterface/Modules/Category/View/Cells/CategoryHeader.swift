@@ -10,7 +10,11 @@ import UIKit
 
 class CategoryHeader: UITableViewCell {
     
-    @IBOutlet weak var backView: UIView!
+    @IBOutlet weak var backView: UIView! {
+        didSet {
+            backView.addBorder(color: .darkGray, thickness: 0.5)
+        }
+    }
     
     @IBOutlet private weak var headerImage: UIImageView! {
         didSet {

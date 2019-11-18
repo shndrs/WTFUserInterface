@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class CategoryVC: UIViewController {
+final class CategoryVC: TableBaseViewController {
     
     private lazy var presenter: CategoryPresenter = {
         return CategoryPresenter(view: self)
@@ -18,25 +18,18 @@ final class CategoryVC: UIViewController {
         return Array<CategoryModel>()
     }()
 
-    @IBOutlet private weak var tableView: UITableView! {
-        didSet {
-            tableViewSetup()
-        }
-    }
 }
 
 // MARK: - Methods
 
-fileprivate extension CategoryVC {
-    func tableViewSetup() {
-        
+extension CategoryVC {
+    
+    override func tableSetup() {
         tableView.delegate = self
         tableView.dataSource = self
-        Register.in(component: tableView, id: LeftCatHeader.reuseIdentifier)
-        Register.in(component: tableView, id: RightCatHeader.reuseIdentifier)
-        Register.in(component: tableView, id: CategoryTVC.reuseIdentifier)
-        Register.in(component: tableView, id: CatSliderTVC.reuseIdentifier)
-        tableView.cleanFooterView()
+        let ids = [LeftCatHeader.reuseIdentifier, RightCatHeader.reuseIdentifier,
+                   CategoryTVC.reuseIdentifier, CatSliderTVC.reuseIdentifier]
+        register(reuseIds: ids)
     }
 }
 
@@ -104,6 +97,7 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
         
         return (section == 0) ? 240:45
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return (indexPath.section == 0) ? 0:165.0
     }
