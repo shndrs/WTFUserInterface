@@ -14,6 +14,12 @@ final class CategoryVC: TableBaseViewController {
         return CategoryPresenter(view: self)
     }()
     
+    private lazy var menuButton: UIBarButtonItem = {
+        return UIBarButtonItem(barButtonSystemItem: .action,
+                               target: self,
+                               action: #selector(barButtonPressed))
+    }()
+    
     private lazy var items: Array<CategoryModel> = {
         return Array<CategoryModel>()
     }()
@@ -23,6 +29,10 @@ final class CategoryVC: TableBaseViewController {
 // MARK: - Methods
 
 extension CategoryVC {
+    
+    @objc fileprivate func barButtonPressed() {
+        
+    }
     
     override func tableSetup() {
         tableView.delegate = self
@@ -37,6 +47,8 @@ extension CategoryVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         largeTitle = true
+        self.title = Strings.category.rawValue
+        navigationItem.setRightBarButton(menuButton, animated: true)
         presenter.getItems()
     }
 }

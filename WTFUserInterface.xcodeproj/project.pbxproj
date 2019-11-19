@@ -11,8 +11,17 @@
 		2F413157233DD8E900DA0C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F413155233DD8E900DA0C11 /* Main.storyboard */; };
 		2F413159233DD8EB00DA0C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F413158233DD8EB00DA0C11 /* Assets.xcassets */; };
 		2F41315C233DD8EB00DA0C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F41315A233DD8EB00DA0C11 /* LaunchScreen.storyboard */; };
+		F408F7BF2383DAE600BC8CA7 /* SettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7BD2383DAE600BC8CA7 /* SettingsTVC.swift */; };
+		F408F7C02383DAE600BC8CA7 /* SettingsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F408F7BE2383DAE600BC8CA7 /* SettingsTVC.xib */; };
+		F408F7C22383E36B00BC8CA7 /* CurvedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */; };
 		F40B6D9B23768B9600C5DA74 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40B6D9A23768B9600C5DA74 /* Images.swift */; };
 		F40BFA0F2353521700E97E37 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40BFA0E2353521700E97E37 /* HeaderLabel.swift */; };
+		F4240E9C2383A98A00E05520 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240E9B2383A98A00E05520 /* Labels.swift */; };
+		F4240EA12383CE8C00E05520 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA02383CE8C00E05520 /* SettingsVC.swift */; };
+		F4240EA32383D00E00E05520 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA22383D00E00E05520 /* SettingsPresenter.swift */; };
+		F4240EA52383D07A00E05520 /* BaseViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA42383D07A00E05520 /* BaseViews.swift */; };
+		F4240EA72383D1DC00E05520 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA62383D1DC00E05520 /* SettingsModel.swift */; };
+		F4240EA92383D23C00E05520 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA82383D23C00E05520 /* Typealias.swift */; };
 		F427D4442378035A009B308D /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F427D4432378035A009B308D /* Register.swift */; };
 		F44835C0235750EF00B5ADCA /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44835BF235750EF00B5ADCA /* NibLoadable.swift */; };
 		F4961C9F2351B40F005C356E /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961C9D2351B40F005C356E /* MenuTVC.swift */; };
@@ -52,8 +61,17 @@
 		2F413158233DD8EB00DA0C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F41315B233DD8EB00DA0C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F41315D233DD8EB00DA0C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F408F7BD2383DAE600BC8CA7 /* SettingsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVC.swift; sourceTree = "<group>"; };
+		F408F7BE2383DAE600BC8CA7 /* SettingsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTVC.xib; sourceTree = "<group>"; };
+		F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedImages.swift; sourceTree = "<group>"; };
 		F40B6D9A23768B9600C5DA74 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		F40BFA0E2353521700E97E37 /* HeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
+		F4240E9B2383A98A00E05520 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
+		F4240EA02383CE8C00E05520 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		F4240EA22383D00E00E05520 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
+		F4240EA42383D07A00E05520 /* BaseViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViews.swift; sourceTree = "<group>"; };
+		F4240EA62383D1DC00E05520 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
+		F4240EA82383D23C00E05520 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		F427D4432378035A009B308D /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		F44835BF235750EF00B5ADCA /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		F4961C9D2351B40F005C356E /* MenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTVC.swift; sourceTree = "<group>"; };
@@ -128,12 +146,49 @@
 			path = WTFUserInterface;
 			sourceTree = "<group>";
 		};
+		F408F7BC2383DACD00BC8CA7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F408F7BD2383DAE600BC8CA7 /* SettingsTVC.swift */,
+				F408F7BE2383DAE600BC8CA7 /* SettingsTVC.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		F40BFA0B2353513900E97E37 /* Components */ = {
 			isa = PBXGroup;
 			children = (
 				F40BFA0E2353521700E97E37 /* HeaderLabel.swift */,
+				F4240E9B2383A98A00E05520 /* Labels.swift */,
+				F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		F4240E9D2383CE5000E05520 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F4240E9F2383CE6300E05520 /* View */,
+				F4240E9E2383CE5A00E05520 /* Presenter */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F4240E9E2383CE5A00E05520 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F4240EA22383D00E00E05520 /* SettingsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F4240E9F2383CE6300E05520 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F408F7BC2383DACD00BC8CA7 /* Cell */,
+				F4240EA02383CE8C00E05520 /* SettingsVC.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		F44835BE235750E300B5ADCA /* NibLoadable */ = {
@@ -175,6 +230,7 @@
 			children = (
 				F4DDB319234C63FD0098D0D0 /* MenuModel.swift */,
 				F4E146F1237192E00086D51A /* CategoryModel.swift */,
+				F4240EA62383D1DC00E05520 /* SettingsModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -185,6 +241,7 @@
 				F40BFA0B2353513900E97E37 /* Components */,
 				F4961CA12351B47E005C356E /* Extensions */,
 				F4961CA52351C36E005C356E /* Strings.swift */,
+				F4240EA82383D23C00E05520 /* Typealias.swift */,
 				F40B6D9A23768B9600C5DA74 /* Images.swift */,
 				F427D4432378035A009B308D /* Register.swift */,
 				F4CFD12523829FBE00BCEA6B /* ReuseId.swift */,
@@ -197,6 +254,7 @@
 			children = (
 				F4BC60B223825F64004A7EBE /* BaseViewController.swift */,
 				F4BC60B423825FEE004A7EBE /* TableBaseViewController.swift */,
+				F4240EA42383D07A00E05520 /* BaseViews.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -212,6 +270,7 @@
 		F4E146F323719C030086D51A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4240E9D2383CE5000E05520 /* Settings */,
 				F4BC60B123825F4D004A7EBE /* Base */,
 				F45B5B8D23816762007C1001 /* ProductDetails */,
 				F4E146F723719C440086D51A /* Category */,
@@ -376,6 +435,7 @@
 				F4DC6F30237ADD33006447F8 /* RightCatHeader.xib in Resources */,
 				F4E1470123719F9F0086D51A /* CategoryTVC.xib in Resources */,
 				F4CEFA07237BC81400135AB7 /* CatSliderTVC.xib in Resources */,
+				F408F7C02383DAE600BC8CA7 /* SettingsTVC.xib in Resources */,
 				2F413157233DD8E900DA0C11 /* Main.storyboard in Resources */,
 				F4D3CC7A2356F829007BEF20 /* CustomHeader.xib in Resources */,
 			);
@@ -401,17 +461,25 @@
 				F4D3CC7D2356FAAC007BEF20 /* UIView.swift in Sources */,
 				F4E147042371A3260086D51A /* UICollectionView.swift in Sources */,
 				F49F3809233F3FC000E1703B /* MenuController.swift in Sources */,
+				F4240EA32383D00E00E05520 /* SettingsPresenter.swift in Sources */,
+				F4240EA72383D1DC00E05520 /* SettingsModel.swift in Sources */,
+				F4240EA12383CE8C00E05520 /* SettingsVC.swift in Sources */,
+				F408F7BF2383DAE600BC8CA7 /* SettingsTVC.swift in Sources */,
 				F4E147072371A7CF0086D51A /* CategoryCVC.swift in Sources */,
+				F4240E9C2383A98A00E05520 /* Labels.swift in Sources */,
 				2F413152233DD8E900DA0C11 /* AppDelegate.swift in Sources */,
 				F4DC6F2B237ADBF1006447F8 /* LeftCatHeader.swift in Sources */,
 				F4DDB318234C639B0098D0D0 /* MenuPresenter.swift in Sources */,
 				F4E146F023718D390086D51A /* CategoryVC.swift in Sources */,
+				F4240EA92383D23C00E05520 /* Typealias.swift in Sources */,
 				F4961CA42351B4AF005C356E /* UITableView.swift in Sources */,
 				F4DC6F25237A9602006447F8 /* CategoryHeader.swift in Sources */,
 				F4CEFA06237BC81400135AB7 /* CatSliderTVC.swift in Sources */,
 				F40B6D9B23768B9600C5DA74 /* Images.swift in Sources */,
+				F408F7C22383E36B00BC8CA7 /* CurvedImages.swift in Sources */,
 				F40BFA0F2353521700E97E37 /* HeaderLabel.swift in Sources */,
 				F44835C0235750EF00B5ADCA /* NibLoadable.swift in Sources */,
+				F4240EA52383D07A00E05520 /* BaseViews.swift in Sources */,
 				F4961CA62351C36E005C356E /* Strings.swift in Sources */,
 				F4D3CC782356F796007BEF20 /* CustomHeader.swift in Sources */,
 			);
