@@ -10,9 +10,11 @@ import UIKit
 
 struct SettingsModel {
     
-    private var icon: UIImage!
-    private var title: String!
-    private var action: Action!
+    private(set) var icon: UIImage!
+    private(set) var title: String!
+    private(set) var action: Action!
+    
+    init() {}
     
     internal init(icon: UIImage, title: String, action: @escaping Action) {
         self.icon = icon

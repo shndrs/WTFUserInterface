@@ -22,5 +22,9 @@ struct RIDs {
         CustomHeader.reuseIdentifier
     ]
     
+    static let settingsVC = [
+        SettingsTVC.reuseIdentifier
+    ]
+    
     
 }

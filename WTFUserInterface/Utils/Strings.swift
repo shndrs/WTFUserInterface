@@ -19,7 +19,16 @@ enum Strings: String {
     
     case expand = "Expand"
     case collapse = "Collapse"
+    
+    // MARK: - Category
+    
+    case category = "Category"
+    
+    // MARK: - Settings Items
+    
+    case settings = "Settings"
     case favorites = "Favorites"
     case cart = "Your Cart"
     case logout = "Logout"
+    case archive = "Transactions Archive"
 }
