@@ -13,4 +13,5 @@ struct Images {
     public static let robusta = UIImage(named: "espresso")!
     public static let liberica = UIImage(named: "coff")!
     public static let excelsa = UIImage(named: "florentine")!
+    public static let like = UIImage(named: "like")!
 }

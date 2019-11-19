@@ -16,6 +16,10 @@ enum Ids: String {
 }
 
 enum Strings: String {
+    
     case expand = "Expand"
     case collapse = "Collapse"
+    case favorites = "Favorites"
+    case cart = "Your Cart"
+    case logout = "Logout"
 }
