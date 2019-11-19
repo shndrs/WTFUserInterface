@@ -14,6 +14,10 @@
 		F408F7BF2383DAE600BC8CA7 /* SettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7BD2383DAE600BC8CA7 /* SettingsTVC.swift */; };
 		F408F7C02383DAE600BC8CA7 /* SettingsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F408F7BE2383DAE600BC8CA7 /* SettingsTVC.xib */; };
 		F408F7C22383E36B00BC8CA7 /* CurvedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */; };
+		F408F7C723841BE200BC8CA7 /* FavoritesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7C623841BE200BC8CA7 /* FavoritesVC.swift */; };
+		F408F7C923841CE200BC8CA7 /* FavoritesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7C823841CE200BC8CA7 /* FavoritesPresenter.swift */; };
+		F408F7CD23841E3600BC8CA7 /* FavoritesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7CB23841E3600BC8CA7 /* FavoritesTVC.swift */; };
+		F408F7CE23841E3600BC8CA7 /* FavoritesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F408F7CC23841E3600BC8CA7 /* FavoritesTVC.xib */; };
 		F40B6D9B23768B9600C5DA74 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40B6D9A23768B9600C5DA74 /* Images.swift */; };
 		F40BFA0F2353521700E97E37 /* HeaderLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40BFA0E2353521700E97E37 /* HeaderLabel.swift */; };
 		F4240E9C2383A98A00E05520 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240E9B2383A98A00E05520 /* Labels.swift */; };
@@ -64,6 +68,10 @@
 		F408F7BD2383DAE600BC8CA7 /* SettingsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVC.swift; sourceTree = "<group>"; };
 		F408F7BE2383DAE600BC8CA7 /* SettingsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTVC.xib; sourceTree = "<group>"; };
 		F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedImages.swift; sourceTree = "<group>"; };
+		F408F7C623841BE200BC8CA7 /* FavoritesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesVC.swift; sourceTree = "<group>"; };
+		F408F7C823841CE200BC8CA7 /* FavoritesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPresenter.swift; sourceTree = "<group>"; };
+		F408F7CB23841E3600BC8CA7 /* FavoritesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTVC.swift; sourceTree = "<group>"; };
+		F408F7CC23841E3600BC8CA7 /* FavoritesTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTVC.xib; sourceTree = "<group>"; };
 		F40B6D9A23768B9600C5DA74 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		F40BFA0E2353521700E97E37 /* HeaderLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderLabel.swift; sourceTree = "<group>"; };
 		F4240E9B2383A98A00E05520 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
@@ -167,6 +175,8 @@
 		F408F7C42383F7CC00BC8CA7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F408F7CA23841E1F00BC8CA7 /* Cell */,
+				F408F7C623841BE200BC8CA7 /* FavoritesVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,8 +184,18 @@
 		F408F7C52383F7D700BC8CA7 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F408F7C823841CE200BC8CA7 /* FavoritesPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F408F7CA23841E1F00BC8CA7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F408F7CB23841E3600BC8CA7 /* FavoritesTVC.swift */,
+				F408F7CC23841E3600BC8CA7 /* FavoritesTVC.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		F40BFA0B2353513900E97E37 /* Components */ = {
@@ -452,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4E147082371A7CF0086D51A /* CategoryCVC.xib in Resources */,
+				F408F7CE23841E3600BC8CA7 /* FavoritesTVC.xib in Resources */,
 				2F41315C233DD8EB00DA0C11 /* LaunchScreen.storyboard in Resources */,
 				2F413159233DD8EB00DA0C11 /* Assets.xcassets in Resources */,
 				F4DC6F2C237ADBF1006447F8 /* LeftCatHeader.xib in Resources */,
@@ -486,6 +507,7 @@
 				F4E147042371A3260086D51A /* UICollectionView.swift in Sources */,
 				F49F3809233F3FC000E1703B /* MenuController.swift in Sources */,
 				F4240EA32383D00E00E05520 /* SettingsPresenter.swift in Sources */,
+				F408F7C923841CE200BC8CA7 /* FavoritesPresenter.swift in Sources */,
 				F4240EA72383D1DC00E05520 /* SettingsModel.swift in Sources */,
 				F4240EA12383CE8C00E05520 /* SettingsVC.swift in Sources */,
 				F408F7BF2383DAE600BC8CA7 /* SettingsTVC.swift in Sources */,
@@ -497,6 +519,7 @@
 				F4E146F023718D390086D51A /* CategoryVC.swift in Sources */,
 				F4240EA92383D23C00E05520 /* Typealias.swift in Sources */,
 				F4961CA42351B4AF005C356E /* UITableView.swift in Sources */,
+				F408F7C723841BE200BC8CA7 /* FavoritesVC.swift in Sources */,
 				F4DC6F25237A9602006447F8 /* CategoryHeader.swift in Sources */,
 				F4CEFA06237BC81400135AB7 /* CatSliderTVC.swift in Sources */,
 				F40B6D9B23768B9600C5DA74 /* Images.swift in Sources */,
@@ -505,6 +528,7 @@
 				F44835C0235750EF00B5ADCA /* NibLoadable.swift in Sources */,
 				F4240EA52383D07A00E05520 /* BaseViews.swift in Sources */,
 				F4961CA62351C36E005C356E /* Strings.swift in Sources */,
+				F408F7CD23841E3600BC8CA7 /* FavoritesTVC.swift in Sources */,
 				F4D3CC782356F796007BEF20 /* CustomHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
