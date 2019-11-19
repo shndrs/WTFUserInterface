@@ -22,7 +22,11 @@ class CategoryHeader: UITableViewCell {
         }
     }
     
-    @IBOutlet private weak var headerTitle: UILabel!
+    @IBOutlet private weak var headerTitle: LabelBold! {
+        didSet {
+            headerTitle.font.withSize(15)
+        }
+    }
         
 }
 

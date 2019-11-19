@@ -23,8 +23,8 @@ final class CategoryCVC: UICollectionViewCell, ReusableView {
             bannerImage.clipsToBounds = true
         }
     }
-    @IBOutlet private weak var titleLabel: UILabel!
-    @IBOutlet private weak var descriptionLabel: UILabel!
+    @IBOutlet private weak var titleLabel: LabelMedium!
+    @IBOutlet private weak var descriptionLabel: LabelRegular!
     
 }
 
