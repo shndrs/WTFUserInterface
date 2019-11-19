@@ -155,6 +155,29 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		F408F7C32383F7BE00BC8CA7 /* Favorites */ = {
+			isa = PBXGroup;
+			children = (
+				F408F7C52383F7D700BC8CA7 /* Presenter */,
+				F408F7C42383F7CC00BC8CA7 /* View */,
+			);
+			path = Favorites;
+			sourceTree = "<group>";
+		};
+		F408F7C42383F7CC00BC8CA7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F408F7C52383F7D700BC8CA7 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		F40BFA0B2353513900E97E37 /* Components */ = {
 			isa = PBXGroup;
 			children = (
@@ -270,6 +293,7 @@
 		F4E146F323719C030086D51A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F408F7C32383F7BE00BC8CA7 /* Favorites */,
 				F4240E9D2383CE5000E05520 /* Settings */,
 				F4BC60B123825F4D004A7EBE /* Base */,
 				F45B5B8D23816762007C1001 /* ProductDetails */,

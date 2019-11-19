@@ -26,5 +26,4 @@ struct RIDs {
         SettingsTVC.reuseIdentifier
     ]
     
-    
 }

@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="191"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="americano" translatesAutoresizingMaskIntoConstraints="NO" id="F3S-Ig-N1n">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="espresso" translatesAutoresizingMaskIntoConstraints="NO" id="F3S-Ig-N1n">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="183"/>
                     </imageView>
                     <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="KLh-VW-CqZ">
@@ -41,6 +41,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="americano" width="1200" height="746"/>
+        <image name="espresso" width="1296" height="728"/>
     </resources>
 </document>

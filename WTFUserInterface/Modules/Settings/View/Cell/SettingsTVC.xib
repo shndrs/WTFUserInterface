@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="dark"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
@@ -33,10 +33,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="chevron.right" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="EcJ-MI-YkI">
+                                <rect key="frame" x="294" y="17.5" width="18" height="14.5"/>
+                                <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="EcJ-MI-YkI" secondAttribute="height" multiplier="1:1" id="TKK-yh-1Gz"/>
+                                    <constraint firstAttribute="width" constant="18" id="gHy-AU-mgG"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="CtL-8d-CBV" firstAttribute="leading" secondItem="QpK-Tz-G2a" secondAttribute="trailing" constant="16" id="ANl-ia-X7p"/>
+                            <constraint firstAttribute="trailing" secondItem="EcJ-MI-YkI" secondAttribute="trailing" constant="8" id="JoL-0S-ogE"/>
+                            <constraint firstItem="EcJ-MI-YkI" firstAttribute="centerY" secondItem="wvg-cI-UDJ" secondAttribute="centerY" id="Ktu-tI-JA9"/>
                             <constraint firstItem="QpK-Tz-G2a" firstAttribute="leading" secondItem="wvg-cI-UDJ" secondAttribute="leading" constant="16" id="Moq-km-8an"/>
                             <constraint firstItem="QpK-Tz-G2a" firstAttribute="centerY" secondItem="wvg-cI-UDJ" secondAttribute="centerY" id="R9r-EG-bdZ"/>
                             <constraint firstItem="CtL-8d-CBV" firstAttribute="centerY" secondItem="wvg-cI-UDJ" secondAttribute="centerY" id="fcL-hK-RFZ"/>
@@ -59,6 +69,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="chevron.right" catalog="system" width="48" height="64"/>
         <image name="like" width="32" height="32"/>
     </resources>
 </document>
