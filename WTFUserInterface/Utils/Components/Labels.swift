@@ -12,7 +12,7 @@ import UIKit
 
 class BaseLabel: UILabel {
     
-    var fontName: String = "AvenirNext-Regular"
+    var fontName: String! //= "AvenirNext-Regular"
     
     override func awakeFromNib() {
         self.backgroundColor = .white
