@@ -12,8 +12,12 @@ import UIKit
 
 class BaseLabel: UILabel {
     
+    var fontName: String = "AvenirNext-Regular"
+    
     override func awakeFromNib() {
         self.backgroundColor = .white
+        self.font = UIFont(name: fontName,
+                           size: self.font.pointSize)
     }
 }
 
@@ -22,8 +26,7 @@ class BaseLabel: UILabel {
 final class LabelBold: BaseLabel {
     
     override func awakeFromNib() {
-        self.font = UIFont(name: "AvenirNext-Bold",
-                           size: self.font.pointSize)
+        fontName = "AvenirNext-Bold"
     }
 }
 
@@ -32,8 +35,7 @@ final class LabelBold: BaseLabel {
 final class LabelMedium: BaseLabel {
     
     override func awakeFromNib() {
-        self.font = UIFont(name: "AvenirNext-Medium",
-                           size: self.font.pointSize)
+        fontName = "AvenirNext-Medium"
     }
 }
 
@@ -42,8 +44,7 @@ final class LabelMedium: BaseLabel {
 final class LabelRegular: BaseLabel {
     
     override func awakeFromNib() {
-        self.font = UIFont(name: "AvenirNext-Regular",
-                           size: self.font.pointSize)
+        fontName = "AvenirNext-Regular"
     }
 }
 
@@ -52,7 +53,6 @@ final class LabelRegular: BaseLabel {
 final class LabelLight: BaseLabel {
     
     override func awakeFromNib() {
-        self.font = UIFont(name: "AvenirNext-UltraLight",
-                           size: self.font.pointSize)
+        fontName = "AvenirNext-UltraLight"
     }
 }
