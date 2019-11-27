@@ -8,8 +8,8 @@
 
 import UIKit
 
-protocol SettingsView: ListView {
-    
+protocol SettingsView: AnyObject {
+    func setTableView(by array: Array<SettingsModel>) -> Void
 }
 
 final class SettingsPresenter: NSObject {
@@ -33,7 +33,7 @@ extension SettingsPresenter {
             guard let items = self?.setItems() else { return }
             
             DispatchQueue.main.async {
-                self?.view?.display(items)
+                self?.view?.setTableView(by: items)
             }
         }
         DispatchQueue.global(qos: .background).async(execute: dwi)

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol CategoryView: AnyObject {
+protocol CategoryView: BaseView {
     func setTableView(with array: Array<CategoryModel>) -> Void
 }
 

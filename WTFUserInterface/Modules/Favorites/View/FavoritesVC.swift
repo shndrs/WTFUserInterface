@@ -18,14 +18,6 @@ final class FavoritesVC: TableBaseViewController {
         return FavoritesPresenter(view: self)
     }()
     
-    override func display<T>(_ items: [T]) {
-        
-        if let items = items as? Array<CategoryItems> {
-            self.items = items
-            self.tableView.asyncReload()
-        }
-    }
-    
 }
 
 // MARK: - Methods
@@ -47,7 +39,13 @@ extension FavoritesVC {
 
 // MARK: - View Implementation
 
-extension FavoritesVC: FavoritesView {}
+extension FavoritesVC: FavoritesView {
+    
+    func setTableView(by array: Array<CategoryItems>) {
+        self.items = array
+        self.tableView.asyncReload()
+    }
+}
 
 // MARK: - TableView Implementation
 

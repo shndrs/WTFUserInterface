@@ -17,14 +17,6 @@ final class SettingsVC: TableBaseViewController {
     private lazy var presenter: SettingsPresenter = {
         return SettingsPresenter(view: self)
     }()
-    
-    override func display<T>(_ items: [T]) {
-        
-        if let items = items as? Array<SettingsModel> {
-            self.items = items
-            self.tableView.asyncReload()
-        }
-    }
 
 }
 
@@ -52,7 +44,12 @@ extension SettingsVC {
 
 // MARK: - View Implementation
 
-extension SettingsVC: SettingsView {}
+extension SettingsVC: SettingsView {
+    func setTableView(by array: Array<SettingsModel>) {
+        items = array
+        tableView.asyncReload()
+    }
+}
 
 // MARK: - TableView Implementation
 

@@ -8,6 +8,4 @@
 
 import Foundation
 
-protocol ListView: AnyObject {
-    func display<T>(_ items : [T]) -> Void
-}
+protocol BaseView: AnyObject {}

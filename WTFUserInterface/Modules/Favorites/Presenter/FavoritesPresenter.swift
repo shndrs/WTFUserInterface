@@ -8,8 +8,9 @@
 
 import UIKit
 
-protocol FavoritesView: ListView {
+protocol FavoritesView: BaseView {
     
+    func setTableView(by array: Array<CategoryItems>) -> Void
 }
 
 final class FavoritesPresenter: NSObject {
