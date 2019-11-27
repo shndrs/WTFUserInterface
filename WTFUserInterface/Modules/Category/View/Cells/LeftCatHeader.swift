@@ -12,7 +12,7 @@ final class LeftCatHeader: CategoryHeader, ReusableView {
 
     override var backView: UIView! {
         didSet {
-            backView.customCatHeaderLeft()
+            backView.customCatHeader(leftView: true)
         }
     }
     

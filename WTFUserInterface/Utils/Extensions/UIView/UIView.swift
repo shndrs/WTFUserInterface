@@ -84,15 +84,17 @@ extension UIView {
         self.layer.borderWidth = thickness
     }
     
-    func customCatHeaderLeft() {
+    func customCatHeader(leftView: Bool) {
+        
         self.clipsToBounds = true
         self.layer.cornerRadius = 12
-        self.layer.maskedCorners = [.layerMaxXMaxYCorner , .layerMaxXMinYCorner]
+        
+        if leftView {
+            self.layer.maskedCorners = [.layerMaxXMaxYCorner , .layerMaxXMinYCorner]
+        } else {
+            self.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMinXMinYCorner]
+        }
+        
     }
     
-    func customCatHeaderRight() {
-        self.clipsToBounds = true
-        self.layer.cornerRadius = 12
-        self.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMinXMinYCorner]
-    }
 }
