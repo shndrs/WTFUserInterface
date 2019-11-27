@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ListView: AnyObject {
-    func display<T:Any>(_ items : [T]) -> Void
+    func display<T>(_ items : [T]) -> Void
 }

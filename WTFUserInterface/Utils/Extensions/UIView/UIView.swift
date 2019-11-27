@@ -84,15 +84,6 @@ extension UIView {
         self.layer.borderWidth = thickness
     }
     
-    func addShadow(offset:CGSize,opacity:Float,shadowColor:UIColor,radius:CGFloat) {
-        self.layer.masksToBounds = false
-        self.layer.shadowColor = shadowColor.cgColor
-        self.layer.shadowOffset = offset
-        self.layer.shadowOpacity = opacity
-        self.layer.shadowRadius = radius
-        self.layer.masksToBounds = false
-    }
-    
     func customCatHeaderLeft() {
         self.clipsToBounds = true
         self.layer.cornerRadius = 12
