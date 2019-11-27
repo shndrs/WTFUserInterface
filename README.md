@@ -3,4 +3,4 @@
 
 <p>It's getting more interesting....</p>
 
-![Simulator Screen Shot - iPhone 11 Pro Max - 2019-11-13 at 16 27 32](https://user-images.githubusercontent.com/34839080/68765854-011d0800-0633-11ea-82bd-8373fdaade53.png)
+![Simulator Screen Shot - iPhone 11 - 2019-11-27 at 16 32 38](https://user-images.githubusercontent.com/34839080/69725543-ad7ee400-1133-11ea-8a3d-91b6c858dbf5.png)
