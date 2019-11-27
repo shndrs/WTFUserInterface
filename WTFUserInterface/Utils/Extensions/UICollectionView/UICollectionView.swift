@@ -35,7 +35,7 @@ extension UICollectionView {
             layout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
             layout.minimumLineSpacing = 1.0
             layout.minimumInteritemSpacing = 1.0
-            self.setCollectionViewLayout(layout, animated: true)
+            self.setCollectionViewLayout(layout, animated: false)
         }
     }
 }

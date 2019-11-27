@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableBaseViewController: UIViewController {
+class TableBaseViewController: UIViewController, ListView {
     
     var largeTitle: Bool = false {
         willSet(newVal) {
@@ -20,6 +20,10 @@ class TableBaseViewController: UIViewController {
         didSet {
             tableSetup()
         }
+    }
+    
+    func display<T>(_ items: [T]) {
+        
     }
     
 }
