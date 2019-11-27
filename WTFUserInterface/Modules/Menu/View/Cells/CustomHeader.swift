@@ -27,12 +27,7 @@ final class CustomHeader: UITableViewCell, ReusableView {
             expandButton.addBorder(color: .white, thickness: 0.6)
         }
     }
-    @IBOutlet private weak var backView: UIView! {
-        didSet {
-            backView.addCornerRadius(radius: 5)
-            backView.addBorder(color: .darkGray, thickness: 0.5)
-        }
-    }
+    
     @IBOutlet private weak var detailsView: UIView! {
         didSet {
             detailsView.addCornerRadius(radius: 5)

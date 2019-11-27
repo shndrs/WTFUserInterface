@@ -10,13 +10,6 @@ import UIKit
 
 final class CategoryCVC: UICollectionViewCell, ReusableView {
     
-    @IBOutlet private weak var backView: UIView! {
-        didSet {
-            backView.addCornerRadius(radius: 5)
-            backView.addBorder(color: .darkGray, thickness: 0.5)
-        }
-    }
-
     @IBOutlet private weak var bannerImage: UIImageView! {
         didSet {
             bannerImage.addCornerRadius(radius: 5)

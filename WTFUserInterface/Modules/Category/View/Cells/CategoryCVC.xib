@@ -17,7 +17,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="113" height="160"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6v-VI-8jt">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u6v-VI-8jt" customClass="BackgroundView" customModule="WTFUserInterface" customModuleProvider="target">
                         <rect key="frame" x="8" y="8" width="97" height="144"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cheese-burger" translatesAutoresizingMaskIntoConstraints="NO" id="xEJ-Ua-lzz">
@@ -65,7 +65,6 @@
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="113" height="160"/>
             <connections>
-                <outlet property="backView" destination="u6v-VI-8jt" id="qHz-Kd-Ugw"/>
                 <outlet property="bannerImage" destination="xEJ-Ua-lzz" id="4RT-4I-vH8"/>
                 <outlet property="descriptionLabel" destination="tgk-yq-9fF" id="qJK-Tn-drs"/>
                 <outlet property="titleLabel" destination="D7o-R3-Q1G" id="ZIm-JC-psh"/>

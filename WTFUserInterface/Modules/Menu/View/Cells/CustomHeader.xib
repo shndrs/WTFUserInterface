@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,7 +16,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="414" height="302"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utc-PB-ykm">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="utc-PB-ykm" customClass="BackgroundView" customModule="WTFUserInterface" customModuleProvider="target">
                         <rect key="frame" x="8" y="8" width="398" height="270"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="TDM-F5-J3A">
@@ -219,7 +219,6 @@
             <connections>
                 <outlet property="addressView" destination="Z9t-Th-s8y" id="eFo-SL-2zN"/>
                 <outlet property="amountView" destination="Sw2-pp-1uH" id="Beq-f6-lEH"/>
-                <outlet property="backView" destination="utc-PB-ykm" id="WSr-sg-ilt"/>
                 <outlet property="detailsView" destination="EI2-XB-Wm1" id="NTI-X5-7hg"/>
                 <outlet property="expandButton" destination="NEl-L7-Tkh" id="e9t-Hw-IgB"/>
                 <outlet property="expanedButton" destination="NEl-L7-Tkh" id="aez-8m-bkT"/>

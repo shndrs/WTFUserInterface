@@ -27,6 +27,7 @@
 		F4240EA92383D23C00E05520 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA82383D23C00E05520 /* Typealias.swift */; };
 		F427D4442378035A009B308D /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F427D4432378035A009B308D /* Register.swift */; };
 		F44835C0235750EF00B5ADCA /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44835BF235750EF00B5ADCA /* NibLoadable.swift */; };
+		F4619E81238EACDB00F2FC7D /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4619E80238EACDB00F2FC7D /* BackView.swift */; };
 		F4961C9F2351B40F005C356E /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961C9D2351B40F005C356E /* MenuTVC.swift */; };
 		F4961CA02351B40F005C356E /* MenuTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4961C9E2351B40F005C356E /* MenuTVC.xib */; };
 		F4961CA42351B4AF005C356E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA32351B4AF005C356E /* UITableView.swift */; };
@@ -80,6 +81,7 @@
 		F4240EA82383D23C00E05520 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		F427D4432378035A009B308D /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
 		F44835BF235750EF00B5ADCA /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		F4619E80238EACDB00F2FC7D /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
 		F4961C9D2351B40F005C356E /* MenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTVC.swift; sourceTree = "<group>"; };
 		F4961C9E2351B40F005C356E /* MenuTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTVC.xib; sourceTree = "<group>"; };
 		F4961CA32351B4AF005C356E /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 			children = (
 				F4240E9B2383A98A00E05520 /* Labels.swift */,
 				F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */,
+				F4619E80238EACDB00F2FC7D /* BackView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				F408F7C723841BE200BC8CA7 /* FavoritesVC.swift in Sources */,
 				F4DC6F25237A9602006447F8 /* CategoryHeader.swift in Sources */,
 				F4CEFA06237BC81400135AB7 /* CatSliderTVC.swift in Sources */,
+				F4619E81238EACDB00F2FC7D /* BackView.swift in Sources */,
 				F40B6D9B23768B9600C5DA74 /* Images.swift in Sources */,
 				F408F7C22383E36B00BC8CA7 /* CurvedImages.swift in Sources */,
 				F44835C0235750EF00B5ADCA /* NibLoadable.swift in Sources */,
