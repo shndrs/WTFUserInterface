@@ -26,6 +26,8 @@
 		F4240EA72383D1DC00E05520 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA62383D1DC00E05520 /* SettingsModel.swift */; };
 		F4240EA92383D23C00E05520 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA82383D23C00E05520 /* Typealias.swift */; };
 		F427D4442378035A009B308D /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F427D4432378035A009B308D /* Register.swift */; };
+		F4433C9323929D9400FA8125 /* ProductsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4433C9223929D9400FA8125 /* ProductsPresenter.swift */; };
+		F4433C9523929E1C00FA8125 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4433C9423929E1C00FA8125 /* ProductsVC.swift */; };
 		F44835C0235750EF00B5ADCA /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44835BF235750EF00B5ADCA /* NibLoadable.swift */; };
 		F4619E81238EACDB00F2FC7D /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4619E80238EACDB00F2FC7D /* BackView.swift */; };
 		F4961C9F2351B40F005C356E /* MenuTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961C9D2351B40F005C356E /* MenuTVC.swift */; };
@@ -80,6 +82,8 @@
 		F4240EA62383D1DC00E05520 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		F4240EA82383D23C00E05520 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		F427D4432378035A009B308D /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		F4433C9223929D9400FA8125 /* ProductsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPresenter.swift; sourceTree = "<group>"; };
+		F4433C9423929E1C00FA8125 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		F44835BF235750EF00B5ADCA /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		F4619E80238EACDB00F2FC7D /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
 		F4961C9D2351B40F005C356E /* MenuTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTVC.swift; sourceTree = "<group>"; };
@@ -234,6 +238,31 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F4433C8F23929D6600FA8125 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4433C9123929D7C00FA8125 /* Presenter */,
+				F4433C9023929D7600FA8125 /* View */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		F4433C9023929D7600FA8125 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4433C9423929E1C00FA8125 /* ProductsVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4433C9123929D7C00FA8125 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				F4433C9223929D9400FA8125 /* ProductsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		F44835BE235750E300B5ADCA /* NibLoadable */ = {
 			isa = PBXGroup;
 			children = (
@@ -313,6 +342,7 @@
 		F4E146F323719C030086D51A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4433C8F23929D6600FA8125 /* Products */,
 				F408F7C32383F7BE00BC8CA7 /* Favorites */,
 				F4240E9D2383CE5000E05520 /* Settings */,
 				F4BC60B123825F4D004A7EBE /* Base */,
@@ -498,6 +528,7 @@
 				F4DC6F2F237ADD33006447F8 /* RightCatHeader.swift in Sources */,
 				F4E146F2237192E00086D51A /* CategoryModel.swift in Sources */,
 				F4E1470023719F9F0086D51A /* CategoryTVC.swift in Sources */,
+				F4433C9523929E1C00FA8125 /* ProductsVC.swift in Sources */,
 				F4BC60B523825FEE004A7EBE /* TableBaseViewController.swift in Sources */,
 				F4BC60B323825F64004A7EBE /* BaseViewController.swift in Sources */,
 				F4DDB31A234C63FD0098D0D0 /* MenuModel.swift in Sources */,
@@ -527,6 +558,7 @@
 				F408F7C22383E36B00BC8CA7 /* CurvedImages.swift in Sources */,
 				F44835C0235750EF00B5ADCA /* NibLoadable.swift in Sources */,
 				F4240EA52383D07A00E05520 /* BaseViews.swift in Sources */,
+				F4433C9323929D9400FA8125 /* ProductsPresenter.swift in Sources */,
 				F4961CA62351C36E005C356E /* Strings.swift in Sources */,
 				F408F7CD23841E3600BC8CA7 /* FavoritesTVC.swift in Sources */,
 				F4D3CC782356F796007BEF20 /* CustomHeader.swift in Sources */,
