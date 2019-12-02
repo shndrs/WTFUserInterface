@@ -95,6 +95,7 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
         } else if section % 2 == 1 {
             let headerLeft = tableView.dequeueReusableCell(withIdentifier: LeftCatHeader.reuseIdentifier) as? LeftCatHeader
             headerLeft?.fill(cell: items[section])
+            headerLeft?.delegate = self
             return headerLeft
         } else {
             let headerRight = tableView.dequeueReusableCell(withIdentifier: RightCatHeader.reuseIdentifier) as? RightCatHeader
@@ -111,4 +112,13 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return (indexPath.section == 0) ? 0:165.0
     }
+}
+
+// MARK: - More Button Delegate
+
+extension CategoryVC: MoreButtonDelegate {
+    func moreButtonPressed() {
+        
+    }
+    
 }
