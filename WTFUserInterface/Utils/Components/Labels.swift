@@ -24,8 +24,7 @@ final class LabelBold: BaseLabel {
     
     override func awakeFromNib() {
         
-        self.font = UIFont(name: "AvenirNext-Bold",
-                           size: self.font.pointSize)
+        font = Font.bold.return(size: font.pointSize)
     }
 }
 
@@ -35,8 +34,7 @@ final class LabelMedium: BaseLabel {
     
     override func awakeFromNib() {
         
-        self.font = UIFont(name: "AvenirNext-Medium",
-                           size: self.font.pointSize)
+        font = Font.medium.return(size: font.pointSize)
     }
 }
 
@@ -46,8 +44,7 @@ final class LabelRegular: BaseLabel {
     
     override func awakeFromNib() {
         
-        self.font = UIFont(name: "AvenirNext-Regular",
-                           size: self.font.pointSize)
+        font = Font.regular.return(size: font.pointSize)
     }
 }
 
@@ -57,7 +54,6 @@ final class LabelLight: BaseLabel {
     
     override func awakeFromNib() {
         
-        self.font = UIFont(name: "AvenirNext-UltraLight",
-                           size: self.font.pointSize)
+        font = Font.regular.return(size: font.pointSize)
     }
 }
