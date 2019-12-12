@@ -8,40 +8,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--WTFTable-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="MenuController" customModule="WTFUserInterface" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Foq-AK-mJ1">
-                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <color key="separatorColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="Foq-AK-mJ1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PaG-vo-oqh"/>
-                            <constraint firstItem="Foq-AK-mJ1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="WTD-U7-jOg"/>
-                            <constraint firstItem="Foq-AK-mJ1" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="cCR-bU-z03"/>
-                            <constraint firstAttribute="bottom" secondItem="Foq-AK-mJ1" secondAttribute="bottom" id="nn7-Jp-k3Q"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                    <navigationItem key="navigationItem" title="WTFTable" id="h3q-Q6-rsg"/>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
-                    <connections>
-                        <outlet property="tableView" destination="Foq-AK-mJ1" id="eXO-Bx-bUT"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1990" y="751"/>
-        </scene>
         <!--Category-->
         <scene sceneID="zCe-gf-9hO">
             <objects>
@@ -125,24 +91,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rxv-fg-fyn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="174" y="1858"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="367-CE-wkJ">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="x3N-DB-ahE" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="eMT-i0-kUh">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="xZo-vz-x6V"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IrR-XC-zvo" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="174" y="751"/>
         </scene>
         <!--Category-->
         <scene sceneID="kgC-sw-7jV">

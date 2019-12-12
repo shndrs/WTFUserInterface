@@ -17,11 +17,6 @@ struct RIDs {
         CatSliderTVC.reuseIdentifier
     ]
     
-    static let menuVC = [
-        MenuTVC.reuseIdentifier,
-        CustomHeader.reuseIdentifier
-    ]
-    
     static let settingsVC = [
         SettingsTVC.reuseIdentifier
     ]
