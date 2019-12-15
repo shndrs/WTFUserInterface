@@ -19,16 +19,15 @@
 		F408F7CD23841E3600BC8CA7 /* FavoritesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7CB23841E3600BC8CA7 /* FavoritesTVC.swift */; };
 		F408F7CE23841E3600BC8CA7 /* FavoritesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F408F7CC23841E3600BC8CA7 /* FavoritesTVC.xib */; };
 		F40B6D9B23768B9600C5DA74 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40B6D9A23768B9600C5DA74 /* Images.swift */; };
-		F4240E9C2383A98A00E05520 /* Labels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240E9B2383A98A00E05520 /* Labels.swift */; };
 		F4240EA12383CE8C00E05520 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA02383CE8C00E05520 /* SettingsVC.swift */; };
 		F4240EA32383D00E00E05520 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA22383D00E00E05520 /* SettingsPresenter.swift */; };
 		F4240EA52383D07A00E05520 /* BaseViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA42383D07A00E05520 /* BaseViews.swift */; };
 		F4240EA72383D1DC00E05520 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA62383D1DC00E05520 /* SettingsModel.swift */; };
 		F4240EA92383D23C00E05520 /* Typealias.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA82383D23C00E05520 /* Typealias.swift */; };
 		F427D4442378035A009B308D /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F427D4432378035A009B308D /* Register.swift */; };
+		F42A327723A6736B0053C739 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42A327623A6736B0053C739 /* ReusableView.swift */; };
 		F4433C9323929D9400FA8125 /* ProductsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4433C9223929D9400FA8125 /* ProductsPresenter.swift */; };
 		F4433C9523929E1C00FA8125 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4433C9423929E1C00FA8125 /* ProductsVC.swift */; };
-		F44835C0235750EF00B5ADCA /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F44835BF235750EF00B5ADCA /* NibLoadable.swift */; };
 		F4601F382397E3DF00026362 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4601F372397E3DF00026362 /* Font.swift */; };
 		F4601F3B2397E5FB00026362 /* LabelLight.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4601F3A2397E5FB00026362 /* LabelLight.swift */; };
 		F4601F3D2397E60800026362 /* LabelRegular.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4601F3C2397E60800026362 /* LabelRegular.swift */; };
@@ -76,16 +75,15 @@
 		F408F7CB23841E3600BC8CA7 /* FavoritesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTVC.swift; sourceTree = "<group>"; };
 		F408F7CC23841E3600BC8CA7 /* FavoritesTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTVC.xib; sourceTree = "<group>"; };
 		F40B6D9A23768B9600C5DA74 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
-		F4240E9B2383A98A00E05520 /* Labels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Labels.swift; sourceTree = "<group>"; };
 		F4240EA02383CE8C00E05520 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		F4240EA22383D00E00E05520 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		F4240EA42383D07A00E05520 /* BaseViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViews.swift; sourceTree = "<group>"; };
 		F4240EA62383D1DC00E05520 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		F4240EA82383D23C00E05520 /* Typealias.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Typealias.swift; sourceTree = "<group>"; };
 		F427D4432378035A009B308D /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		F42A327623A6736B0053C739 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		F4433C9223929D9400FA8125 /* ProductsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPresenter.swift; sourceTree = "<group>"; };
 		F4433C9423929E1C00FA8125 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
-		F44835BF235750EF00B5ADCA /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		F4601F372397E3DF00026362 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
 		F4601F3A2397E5FB00026362 /* LabelLight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelLight.swift; sourceTree = "<group>"; };
 		F4601F3C2397E60800026362 /* LabelRegular.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelRegular.swift; sourceTree = "<group>"; };
@@ -208,7 +206,6 @@
 			isa = PBXGroup;
 			children = (
 				F4601F392397E5E100026362 /* Labels */,
-				F4240E9B2383A98A00E05520 /* Labels.swift */,
 				F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */,
 				F4619E80238EACDB00F2FC7D /* BackView.swift */,
 			);
@@ -241,6 +238,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		F42A327523A673600053C739 /* ReusableView */ = {
+			isa = PBXGroup;
+			children = (
+				F42A327623A6736B0053C739 /* ReusableView.swift */,
+			);
+			path = ReusableView;
+			sourceTree = "<group>";
+		};
 		F4433C8F23929D6600FA8125 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,14 +272,6 @@
 			path = Presenter;
 			sourceTree = "<group>";
 		};
-		F44835BE235750E300B5ADCA /* NibLoadable */ = {
-			isa = PBXGroup;
-			children = (
-				F44835BF235750EF00B5ADCA /* NibLoadable.swift */,
-			);
-			path = NibLoadable;
-			sourceTree = "<group>";
-		};
 		F45B5B8D23816762007C1001 /* ProductDetails */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,8 +294,8 @@
 		F4961CA12351B47E005C356E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F42A327523A673600053C739 /* ReusableView */,
 				F4E147022371A3130086D51A /* UICollectionView */,
-				F44835BE235750E300B5ADCA /* NibLoadable */,
 				F4D3CC7B2356FA9A007BEF20 /* UIView */,
 				F4961CA22351B486005C356E /* UITableView */,
 			);
@@ -530,7 +527,6 @@
 				F408F7BF2383DAE600BC8CA7 /* SettingsTVC.swift in Sources */,
 				F4E147072371A7CF0086D51A /* CategoryCVC.swift in Sources */,
 				F4601F432397E65E00026362 /* BaseLabel.swift in Sources */,
-				F4240E9C2383A98A00E05520 /* Labels.swift in Sources */,
 				2F413152233DD8E900DA0C11 /* AppDelegate.swift in Sources */,
 				F4601F3D2397E60800026362 /* LabelRegular.swift in Sources */,
 				F4DC6F2B237ADBF1006447F8 /* LeftCatHeader.swift in Sources */,
@@ -544,7 +540,7 @@
 				F4619E81238EACDB00F2FC7D /* BackView.swift in Sources */,
 				F40B6D9B23768B9600C5DA74 /* Images.swift in Sources */,
 				F408F7C22383E36B00BC8CA7 /* CurvedImages.swift in Sources */,
-				F44835C0235750EF00B5ADCA /* NibLoadable.swift in Sources */,
+				F42A327723A6736B0053C739 /* ReusableView.swift in Sources */,
 				F4240EA52383D07A00E05520 /* BaseViews.swift in Sources */,
 				F4433C9323929D9400FA8125 /* ProductsPresenter.swift in Sources */,
 				F4961CA62351C36E005C356E /* Strings.swift in Sources */,

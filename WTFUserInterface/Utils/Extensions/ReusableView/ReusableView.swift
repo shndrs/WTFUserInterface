@@ -1,8 +1,8 @@
 //
-//  NibLoadable.swift
+//  ReusableView.swift
 //  WTFUserInterface
 //
-//  Created by NP2 on 10/16/19.
+//  Created by NP2 on 12/15/19.
 //  Copyright © 2019 shndrs. All rights reserved.
 //
 
