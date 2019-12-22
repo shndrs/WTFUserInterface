@@ -13,8 +13,10 @@ extension UICollectionView {
     func asyncReload() {
         
         DispatchQueue.main.async { [weak self] in
-            guard let strongSelf = self else { return }
-            strongSelf.reloadData()
+            
+            guard self != nil else { return }
+            
+            self?.reloadData()
         }
     }
     
@@ -26,7 +28,10 @@ extension UICollectionView {
     
     func categoryViewLayout() {
         
-        DispatchQueue.main.async {
+        DispatchQueue.main.async { [weak self] in
+            
+            guard self != nil else { return }
+            
             let cellSize = CGSize(width:128, height:160)
             
             let layout = UICollectionViewFlowLayout()
@@ -35,7 +40,7 @@ extension UICollectionView {
             layout.sectionInset = UIEdgeInsets(top: 1, left: 1, bottom: 1, right: 1)
             layout.minimumLineSpacing = 1.0
             layout.minimumInteritemSpacing = 1.0
-            self.setCollectionViewLayout(layout, animated: false)
+            self?.setCollectionViewLayout(layout, animated: false)
         }
     }
 }
