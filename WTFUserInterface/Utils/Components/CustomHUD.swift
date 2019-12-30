@@ -15,17 +15,15 @@ class HUD: NSObject {
     private lazy var hud: EZProgress = {
         
         let options = EZProgressOptions { (option) in
-            option.radius = 115
-            option.firstLayerStrokeColor = UIColor(red: 10/255, green: 101/255, blue: 171/255, alpha: 1.0)
-            option.secondLayerStrokeColor = UIColor(red: 10/255, green: 101/255, blue: 171/255, alpha: 1.0)
-            option.thirdLayerStrokeColor = .gray
-            option.strokeWidth = 2
-            option.font = Font.light.return(size: 13)
+            option.radius = 120
+            option.secondLayerStrokeColor = Colors.darkGray
+            option.strokeWidth = 12
+            option.thirdLayerStrokeColor = .darkGray
+            option.firstLayerStrokeColor = .orange
             option.title = Strings.wait.rawValue
-            option.titleTextColor = .white
-            option.transViewBackgroundColor = .black
-            option.animationOption = EZAnimationOptions.hnk
+            option.animationOption = EZAnimationOptions.antColony
         }
+        
         let hud = EZProgressHUD.setProgress(with: options)
         return hud
     }()

@@ -46,3 +46,16 @@ extension TableBaseViewController {
         super.viewDidLoad()
     }
 }
+
+// MARK: - View Implementation
+
+extension TableBaseViewController: ListView {
+    
+    func startLoading() {
+        HUD.default.show()
+    }
+    
+    func stopLoading() {
+        HUD.default.dismiss()
+    }
+}

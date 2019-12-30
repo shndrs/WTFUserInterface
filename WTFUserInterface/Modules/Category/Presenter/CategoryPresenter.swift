@@ -8,7 +8,8 @@
 
 import UIKit
 
-protocol CategoryView: BaseView {
+protocol CategoryView: ListView {
+    
     func setTableView(with array: Array<CategoryModel>) -> Void
 }
 
@@ -26,6 +27,8 @@ final class CategoryPresenter: NSObject {
 extension CategoryPresenter {
     internal func getItems() {
         
+        view?.startLoading()
+        
         let dwi = DispatchWorkItem { [weak self] in
             
             guard let self = self else { return }
@@ -34,9 +37,10 @@ extension CategoryPresenter {
             
             DispatchQueue.main.async {
                 self.view?.setTableView(with: sections)
+                self.view?.stopLoading()
             }
         }
-        DispatchQueue.global(qos: .background).async(execute: dwi)
+        DispatchQueue.global(qos: .background).asyncAfter(deadline: .now() + 2, execute: dwi)
     }
     
     private func getDetails() -> Array<CategoryItems> {

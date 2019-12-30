@@ -9,3 +9,11 @@
 import Foundation
 
 protocol BaseView: AnyObject {}
+
+protocol ServiceView: BaseView {
+    
+    func startLoading() -> Void
+    func stopLoading() -> Void
+}
+
+protocol ListView: ServiceView {}
