@@ -23,6 +23,7 @@ enum Strings: String {
     // MARK: - Category
     
     case category = "Category"
+    case byMe = "by shndrs"
     
     // MARK: - Settings Items
     

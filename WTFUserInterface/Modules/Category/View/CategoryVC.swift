@@ -15,7 +15,7 @@ final class CategoryVC: TableBaseViewController {
     }()
     
     private lazy var menuButton: UIBarButtonItem = {
-        return UIBarButtonItem(barButtonSystemItem: .action,
+        return UIBarButtonItem(barButtonSystemItem: .refresh,
                                target: self,
                                action: #selector(barButtonPressed))
     }()
@@ -31,7 +31,13 @@ final class CategoryVC: TableBaseViewController {
 extension CategoryVC {
     
     @objc fileprivate func barButtonPressed() {
-        
+        presenter.getItems()
+    }
+    
+    fileprivate func searchSetup() {
+        let searchController = UISearchController(searchResultsController: nil)
+        navigationItem.searchController = searchController
+        navigationItem.prompt = Strings.byMe.rawValue
     }
     
     override func tableSetup() {
@@ -47,6 +53,7 @@ extension CategoryVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         largeTitle = true
+        searchSetup()
         self.title = Strings.category.rawValue
         navigationItem.setRightBarButton(menuButton, animated: true)
         presenter.getItems()
