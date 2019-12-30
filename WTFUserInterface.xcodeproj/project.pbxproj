@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,6 +11,7 @@
 		2F413157233DD8E900DA0C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F413155233DD8E900DA0C11 /* Main.storyboard */; };
 		2F413159233DD8EB00DA0C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F413158233DD8EB00DA0C11 /* Assets.xcassets */; };
 		2F41315C233DD8EB00DA0C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F41315A233DD8EB00DA0C11 /* LaunchScreen.storyboard */; };
+		3B7EAA40979C7910121CB3DE /* Pods_WTFUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE58FFEF9C28FA3AFA3C341C /* Pods_WTFUserInterface.framework */; };
 		F408F7BF2383DAE600BC8CA7 /* SettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7BD2383DAE600BC8CA7 /* SettingsTVC.swift */; };
 		F408F7C02383DAE600BC8CA7 /* SettingsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F408F7BE2383DAE600BC8CA7 /* SettingsTVC.xib */; };
 		F408F7C22383E36B00BC8CA7 /* CurvedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */; };
@@ -19,6 +20,7 @@
 		F408F7CD23841E3600BC8CA7 /* FavoritesTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7CB23841E3600BC8CA7 /* FavoritesTVC.swift */; };
 		F408F7CE23841E3600BC8CA7 /* FavoritesTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F408F7CC23841E3600BC8CA7 /* FavoritesTVC.xib */; };
 		F40B6D9B23768B9600C5DA74 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = F40B6D9A23768B9600C5DA74 /* Images.swift */; };
+		F417DE1F23B9D1DA0017E773 /* CustomHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F417DE1E23B9D1DA0017E773 /* CustomHUD.swift */; };
 		F4240EA12383CE8C00E05520 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA02383CE8C00E05520 /* SettingsVC.swift */; };
 		F4240EA32383D00E00E05520 /* SettingsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA22383D00E00E05520 /* SettingsPresenter.swift */; };
 		F4240EA52383D07A00E05520 /* BaseViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4240EA42383D07A00E05520 /* BaseViews.swift */; };
@@ -67,6 +69,9 @@
 		2F413158233DD8EB00DA0C11 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2F41315B233DD8EB00DA0C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F41315D233DD8EB00DA0C11 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30E413FD19F15B216CF504C7 /* Pods-WTFUserInterface.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTFUserInterface.release.xcconfig"; path = "Target Support Files/Pods-WTFUserInterface/Pods-WTFUserInterface.release.xcconfig"; sourceTree = "<group>"; };
+		B1B62DF6A8D166487A52FC0C /* Pods-WTFUserInterface.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTFUserInterface.debug.xcconfig"; path = "Target Support Files/Pods-WTFUserInterface/Pods-WTFUserInterface.debug.xcconfig"; sourceTree = "<group>"; };
+		DE58FFEF9C28FA3AFA3C341C /* Pods_WTFUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTFUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F408F7BD2383DAE600BC8CA7 /* SettingsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVC.swift; sourceTree = "<group>"; };
 		F408F7BE2383DAE600BC8CA7 /* SettingsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTVC.xib; sourceTree = "<group>"; };
 		F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedImages.swift; sourceTree = "<group>"; };
@@ -75,6 +80,7 @@
 		F408F7CB23841E3600BC8CA7 /* FavoritesTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTVC.swift; sourceTree = "<group>"; };
 		F408F7CC23841E3600BC8CA7 /* FavoritesTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoritesTVC.xib; sourceTree = "<group>"; };
 		F40B6D9A23768B9600C5DA74 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		F417DE1E23B9D1DA0017E773 /* CustomHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomHUD.swift; sourceTree = "<group>"; };
 		F4240EA02383CE8C00E05520 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		F4240EA22383D00E00E05520 /* SettingsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPresenter.swift; sourceTree = "<group>"; };
 		F4240EA42383D07A00E05520 /* BaseViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViews.swift; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B7EAA40979C7910121CB3DE /* Pods_WTFUserInterface.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,6 +139,8 @@
 			children = (
 				2F413150233DD8E900DA0C11 /* WTFUserInterface */,
 				2F41314F233DD8E900DA0C11 /* Products */,
+				DEC5669DA20F5ADFDB941667 /* Pods */,
+				7884F502C0B18A9F5055C7AF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -156,6 +165,23 @@
 				2F41315D233DD8EB00DA0C11 /* Info.plist */,
 			);
 			path = WTFUserInterface;
+			sourceTree = "<group>";
+		};
+		7884F502C0B18A9F5055C7AF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE58FFEF9C28FA3AFA3C341C /* Pods_WTFUserInterface.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DEC5669DA20F5ADFDB941667 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B1B62DF6A8D166487A52FC0C /* Pods-WTFUserInterface.debug.xcconfig */,
+				30E413FD19F15B216CF504C7 /* Pods-WTFUserInterface.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		F408F7BC2383DACD00BC8CA7 /* Cell */ = {
@@ -208,6 +234,7 @@
 				F4601F392397E5E100026362 /* Labels */,
 				F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */,
 				F4619E80238EACDB00F2FC7D /* BackView.swift */,
+				F417DE1E23B9D1DA0017E773 /* CustomHUD.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -433,9 +460,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F413160233DD8EB00DA0C11 /* Build configuration list for PBXNativeTarget "WTFUserInterface" */;
 			buildPhases = (
+				018FD3BA1518131818F26535 /* [CP] Check Pods Manifest.lock */,
 				2F41314A233DD8E900DA0C11 /* Sources */,
 				2F41314B233DD8E900DA0C11 /* Frameworks */,
 				2F41314C233DD8E900DA0C11 /* Resources */,
+				B25FBD4D1DAD4184C9051F50 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -501,6 +530,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		018FD3BA1518131818F26535 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WTFUserInterface-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B25FBD4D1DAD4184C9051F50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WTFUserInterface/Pods-WTFUserInterface-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WTFUserInterface/Pods-WTFUserInterface-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WTFUserInterface/Pods-WTFUserInterface-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2F41314A233DD8E900DA0C11 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -525,6 +596,7 @@
 				F4240EA72383D1DC00E05520 /* SettingsModel.swift in Sources */,
 				F4240EA12383CE8C00E05520 /* SettingsVC.swift in Sources */,
 				F408F7BF2383DAE600BC8CA7 /* SettingsTVC.swift in Sources */,
+				F417DE1F23B9D1DA0017E773 /* CustomHUD.swift in Sources */,
 				F4E147072371A7CF0086D51A /* CategoryCVC.swift in Sources */,
 				F4601F432397E65E00026362 /* BaseLabel.swift in Sources */,
 				2F413152233DD8E900DA0C11 /* AppDelegate.swift in Sources */,
@@ -689,6 +761,7 @@
 		};
 		2F413161233DD8EB00DA0C11 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1B62DF6A8D166487A52FC0C /* Pods-WTFUserInterface.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -707,6 +780,7 @@
 		};
 		2F413162233DD8EB00DA0C11 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30E413FD19F15B216CF504C7 /* Pods-WTFUserInterface.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,16 @@
+PODS:
+  - EZProgressHUD (1.5.3)
+
+DEPENDENCIES:
+  - EZProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - EZProgressHUD
+
+SPEC CHECKSUMS:
+  EZProgressHUD: ac65959b7a1f7eb3ccb9e4b176a77e27628e4174
+
+PODFILE CHECKSUM: 11201c5569bad02b842d5bc196db280af13df2ff
+
+COCOAPODS: 1.8.4
