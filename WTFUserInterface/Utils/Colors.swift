@@ -15,5 +15,7 @@ struct Colors {
                                          blue: 85.0/255.0,
                                          alpha: 1.0)
     
+    public static let defOrange = UIColor.orange
+    
     
 }

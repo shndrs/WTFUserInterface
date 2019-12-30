@@ -18,7 +18,7 @@ class HUD: NSObject {
             option.radius = 120
             option.secondLayerStrokeColor = Colors.darkGray
             option.strokeWidth = 12
-            option.thirdLayerStrokeColor = .darkGray
+            option.thirdLayerStrokeColor = Colors.darkGray
             option.firstLayerStrokeColor = .orange
             option.title = Strings.wait.rawValue
             option.animationOption = EZAnimationOptions.antColony
