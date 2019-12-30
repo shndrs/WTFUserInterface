@@ -19,6 +19,7 @@ enum Strings: String {
     
     case expand = "Expand"
     case collapse = "Collapse"
+    case wait = "Please Wait"
     
     // MARK: - Category
     
