@@ -61,6 +61,7 @@
 		F4E147042371A3260086D51A /* UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E147032371A3260086D51A /* UICollectionView.swift */; };
 		F4E147072371A7CF0086D51A /* CategoryCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E147052371A7CF0086D51A /* CategoryCVC.swift */; };
 		F4E147082371A7CF0086D51A /* CategoryCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4E147062371A7CF0086D51A /* CategoryCVC.xib */; };
+		F4F4D46C2418EC2F0033CD0F /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4F4D46B2418EC2F0033CD0F /* MainTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +123,7 @@
 		F4E147032371A3260086D51A /* UICollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionView.swift; sourceTree = "<group>"; };
 		F4E147052371A7CF0086D51A /* CategoryCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCVC.swift; sourceTree = "<group>"; };
 		F4E147062371A7CF0086D51A /* CategoryCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCVC.xib; sourceTree = "<group>"; };
+		F4F4D46B2418EC2F0033CD0F /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -370,6 +372,7 @@
 				F4BC60B223825F64004A7EBE /* BaseViewController.swift */,
 				F4BC60B423825FEE004A7EBE /* TableBaseViewController.swift */,
 				F4240EA42383D07A00E05520 /* BaseViews.swift */,
+				F4F4D46B2418EC2F0033CD0F /* MainTabBarController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -598,6 +601,7 @@
 				F4601F3F2397E61500026362 /* LabelMedium.swift in Sources */,
 				F4240EA72383D1DC00E05520 /* SettingsModel.swift in Sources */,
 				F4240EA12383CE8C00E05520 /* SettingsVC.swift in Sources */,
+				F4F4D46C2418EC2F0033CD0F /* MainTabBarController.swift in Sources */,
 				F408F7BF2383DAE600BC8CA7 /* SettingsTVC.swift in Sources */,
 				F417DE1F23B9D1DA0017E773 /* CustomHUD.swift in Sources */,
 				F4E147072371A7CF0086D51A /* CategoryCVC.swift in Sources */,
@@ -775,7 +779,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shndrs.WTFUserInterface--";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shndrs.WTFUserInterface-shnd";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -794,7 +798,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.shndrs.WTFUserInterface--";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.shndrs.WTFUserInterface-shnd";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

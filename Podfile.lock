@@ -1,16 +1,20 @@
 PODS:
   - EZProgressHUD (1.5.3)
+  - SwiftyTabBarTransition (1.5.3)
 
 DEPENDENCIES:
   - EZProgressHUD
+  - SwiftyTabBarTransition
 
 SPEC REPOS:
   trunk:
     - EZProgressHUD
+    - SwiftyTabBarTransition
 
 SPEC CHECKSUMS:
   EZProgressHUD: ac65959b7a1f7eb3ccb9e4b176a77e27628e4174
+  SwiftyTabBarTransition: 92a59df486be930c10d6c9303fcc35a2dd5fbf96
 
-PODFILE CHECKSUM: 11201c5569bad02b842d5bc196db280af13df2ff
+PODFILE CHECKSUM: 36d3067ae1d07442d097e4acea468eb5a8606cd5
 
 COCOAPODS: 1.8.4
