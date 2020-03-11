@@ -33,4 +33,8 @@ enum Strings: String {
     case cart = "Your Cart"
     case logout = "Logout"
     case archive = "Transactions Archive"
+    
+    // MARK: - CAKeyframeAnimation
+    case transformScale = "transform.scale"
+    case cubic
 }

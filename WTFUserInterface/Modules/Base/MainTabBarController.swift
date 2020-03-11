@@ -9,7 +9,16 @@
 import UIKit
 import SwiftyTabBarTransition
 
-final class MainTabBarController: UITabBarController {}
+final class MainTabBarController: UITabBarController {
+    
+    private var bounceAnimation: CAKeyframeAnimation = {
+        let bounceAnimation = CAKeyframeAnimation(keyPath: Strings.transformScale.rawValue)
+        bounceAnimation.values = [1.0, 1.1, 0.9, 1.02, 1.0]
+        bounceAnimation.duration = TimeInterval(0.3)
+        bounceAnimation.calculationMode = CAAnimationCalculationMode(rawValue: Strings.cubic.rawValue)
+        return bounceAnimation
+    }()
+}
 
 // MARK: - Life Cycle
 
@@ -17,14 +26,6 @@ extension MainTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         delegate = self
-    }
-}
-
-// MARK: - Methods
-
-extension MainTabBarController {
-    func setTransition() {
-        
     }
 }
 
@@ -39,9 +40,19 @@ extension MainTabBarController: UITabBarControllerDelegate {
         transitionOptions = tabBar.selectedItem == tabBar.items?[0] ?
             SwiftyTabBarTransitionOptions(duration: 0.3,
                                           animationOption: .leftToRight)
-            : SwiftyTabBarTransitionOptions(duration: 0.3,
+            :
+            SwiftyTabBarTransitionOptions(duration: 0.3,
                                             animationOption: .rightToLeft)
         
         return SwiftyTabBarTransition.set(transition: transitionOptions)
+    }
+    
+    override func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
+        
+        guard let idx = tabBar.items?.firstIndex(of: item), tabBar.subviews.count > idx + 1,
+            let imageView = tabBar.subviews[idx + 1].subviews.compactMap ({ $0 as? UIImageView }).first else {
+            return
+        }
+        imageView.layer.add(bounceAnimation, forKey: nil)
     }
 }
