@@ -12,6 +12,7 @@
 		2F413159233DD8EB00DA0C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F413158233DD8EB00DA0C11 /* Assets.xcassets */; };
 		2F41315C233DD8EB00DA0C11 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F41315A233DD8EB00DA0C11 /* LaunchScreen.storyboard */; };
 		3B7EAA40979C7910121CB3DE /* Pods_WTFUserInterface.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE58FFEF9C28FA3AFA3C341C /* Pods_WTFUserInterface.framework */; };
+		F403CCB7241CC731000738C5 /* EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F403CCB6241CC731000738C5 /* EmptyView.swift */; };
 		F408F7BF2383DAE600BC8CA7 /* SettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7BD2383DAE600BC8CA7 /* SettingsTVC.swift */; };
 		F408F7C02383DAE600BC8CA7 /* SettingsTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = F408F7BE2383DAE600BC8CA7 /* SettingsTVC.xib */; };
 		F408F7C22383E36B00BC8CA7 /* CurvedImages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */; };
@@ -74,6 +75,7 @@
 		30E413FD19F15B216CF504C7 /* Pods-WTFUserInterface.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTFUserInterface.release.xcconfig"; path = "Target Support Files/Pods-WTFUserInterface/Pods-WTFUserInterface.release.xcconfig"; sourceTree = "<group>"; };
 		B1B62DF6A8D166487A52FC0C /* Pods-WTFUserInterface.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WTFUserInterface.debug.xcconfig"; path = "Target Support Files/Pods-WTFUserInterface/Pods-WTFUserInterface.debug.xcconfig"; sourceTree = "<group>"; };
 		DE58FFEF9C28FA3AFA3C341C /* Pods_WTFUserInterface.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WTFUserInterface.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F403CCB6241CC731000738C5 /* EmptyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyView.swift; sourceTree = "<group>"; };
 		F408F7BD2383DAE600BC8CA7 /* SettingsTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTVC.swift; sourceTree = "<group>"; };
 		F408F7BE2383DAE600BC8CA7 /* SettingsTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingsTVC.xib; sourceTree = "<group>"; };
 		F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurvedImages.swift; sourceTree = "<group>"; };
@@ -239,6 +241,7 @@
 				F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */,
 				F4619E80238EACDB00F2FC7D /* BackView.swift */,
 				F417DE1E23B9D1DA0017E773 /* CustomHUD.swift */,
+				F403CCB6241CC731000738C5 /* EmptyView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -607,6 +610,7 @@
 				F4E147072371A7CF0086D51A /* CategoryCVC.swift in Sources */,
 				F4601F432397E65E00026362 /* BaseLabel.swift in Sources */,
 				2F413152233DD8E900DA0C11 /* AppDelegate.swift in Sources */,
+				F403CCB7241CC731000738C5 /* EmptyView.swift in Sources */,
 				F4601F3D2397E60800026362 /* LabelRegular.swift in Sources */,
 				F4DC6F2B237ADBF1006447F8 /* LeftCatHeader.swift in Sources */,
 				F4601F3B2397E5FB00026362 /* LabelLight.swift in Sources */,

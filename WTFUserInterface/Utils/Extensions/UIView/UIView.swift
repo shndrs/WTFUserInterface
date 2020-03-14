@@ -10,12 +10,6 @@ import UIKit
 
 extension UIView {
     
-    var emptyView: UIView {
-        let view = UIView()
-        view.backgroundColor = .clear
-        return view
-    }
-    
     static func loadFromXib<T>(withOwner: Any? = nil,
                                options: [AnyHashable : Any]? = nil) -> T where T: UIView {
         let bundle = Bundle(for: self)
