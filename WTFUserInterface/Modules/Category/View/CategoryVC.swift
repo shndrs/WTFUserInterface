@@ -37,7 +37,6 @@ extension CategoryVC {
     fileprivate func searchSetup() {
         let searchController = UISearchController(searchResultsController: nil)
         navigationItem.searchController = searchController
-        navigationItem.prompt = Strings.byMe.rawValue
     }
     
     override func tableSetup() {
