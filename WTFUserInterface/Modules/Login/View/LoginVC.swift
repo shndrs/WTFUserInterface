@@ -23,7 +23,9 @@ final class LoginVC: BaseViewController {
 
 extension LoginVC {
     @IBAction private func loginButtonPressed(_ sender: UIButton) {
-        
+        let object = Login(username: userNameTextField.text ?? "",
+                           password: userNameTextField.text ?? "")
+        presenter.validate(object: object)
     }
 }
 
@@ -32,7 +34,6 @@ extension LoginVC {
 extension LoginVC {
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
 }
 
