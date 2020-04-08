@@ -39,6 +39,8 @@
 		F4601F412397E62E00026362 /* LabelBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4601F402397E62E00026362 /* LabelBold.swift */; };
 		F4601F432397E65E00026362 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4601F422397E65E00026362 /* BaseLabel.swift */; };
 		F4619E81238EACDB00F2FC7D /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4619E80238EACDB00F2FC7D /* BackView.swift */; };
+		F4784B63243DA6C300821CDD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4784B62243DA6C300821CDD /* Login.storyboard */; };
+		F4784B65243DA70200821CDD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4784B64243DA70200821CDD /* Login.swift */; };
 		F4961CA42351B4AF005C356E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA32351B4AF005C356E /* UITableView.swift */; };
 		F4961CA62351C36E005C356E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA52351C36E005C356E /* Strings.swift */; };
 		F4BC60B323825F64004A7EBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC60B223825F64004A7EBE /* BaseViewController.swift */; };
@@ -102,6 +104,8 @@
 		F4601F402397E62E00026362 /* LabelBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelBold.swift; sourceTree = "<group>"; };
 		F4601F422397E65E00026362 /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
 		F4619E80238EACDB00F2FC7D /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		F4784B62243DA6C300821CDD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		F4784B64243DA70200821CDD /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F4961CA32351B4AF005C356E /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		F4961CA52351C36E005C356E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		F4BC60B223825F64004A7EBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -325,6 +329,39 @@
 			path = Labels;
 			sourceTree = "<group>";
 		};
+		F4784B5E243DA68B00821CDD /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				F4784B61243DA6B300821CDD /* Model */,
+				F4784B60243DA6AA00821CDD /* Presenter */,
+				F4784B5F243DA6A400821CDD /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		F4784B5F243DA6A400821CDD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4784B62243DA6C300821CDD /* Login.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4784B60243DA6AA00821CDD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F4784B61243DA6B300821CDD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F4784B64243DA70200821CDD /* Login.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		F4961CA12351B47E005C356E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -400,6 +437,7 @@
 		F4E146F323719C030086D51A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4784B5E243DA68B00821CDD /* Login */,
 				F4433C8F23929D6600FA8125 /* Products */,
 				F408F7C32383F7BE00BC8CA7 /* Favorites */,
 				F4240E9D2383CE5000E05520 /* Settings */,
@@ -531,6 +569,7 @@
 				F4DC6F2C237ADBF1006447F8 /* LeftCatHeader.xib in Resources */,
 				F4DC6F30237ADD33006447F8 /* RightCatHeader.xib in Resources */,
 				F4E1470123719F9F0086D51A /* CategoryTVC.xib in Resources */,
+				F4784B63243DA6C300821CDD /* Login.storyboard in Resources */,
 				F4CEFA07237BC81400135AB7 /* CatSliderTVC.xib in Resources */,
 				F408F7C02383DAE600BC8CA7 /* SettingsTVC.xib in Resources */,
 				2F413157233DD8E900DA0C11 /* Main.storyboard in Resources */,
@@ -592,6 +631,7 @@
 				F4DC6F2F237ADD33006447F8 /* RightCatHeader.swift in Sources */,
 				F4E146F2237192E00086D51A /* CategoryModel.swift in Sources */,
 				F4E1470023719F9F0086D51A /* CategoryTVC.swift in Sources */,
+				F4784B65243DA70200821CDD /* Login.swift in Sources */,
 				F4433C9523929E1C00FA8125 /* ProductsVC.swift in Sources */,
 				F4BC60B523825FEE004A7EBE /* TableBaseViewController.swift in Sources */,
 				F4BC60B323825F64004A7EBE /* BaseViewController.swift in Sources */,
