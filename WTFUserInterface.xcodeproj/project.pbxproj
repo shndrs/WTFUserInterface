@@ -41,6 +41,7 @@
 		F4619E81238EACDB00F2FC7D /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4619E80238EACDB00F2FC7D /* BackView.swift */; };
 		F4784B63243DA6C300821CDD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4784B62243DA6C300821CDD /* Login.storyboard */; };
 		F4784B65243DA70200821CDD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4784B64243DA70200821CDD /* Login.swift */; };
+		F4784B67243DA7B900821CDD /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4784B66243DA7B900821CDD /* LoginPresenter.swift */; };
 		F4961CA42351B4AF005C356E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA32351B4AF005C356E /* UITableView.swift */; };
 		F4961CA62351C36E005C356E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA52351C36E005C356E /* Strings.swift */; };
 		F4BC60B323825F64004A7EBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC60B223825F64004A7EBE /* BaseViewController.swift */; };
@@ -106,6 +107,7 @@
 		F4619E80238EACDB00F2FC7D /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
 		F4784B62243DA6C300821CDD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F4784B64243DA70200821CDD /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		F4784B66243DA7B900821CDD /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		F4961CA32351B4AF005C356E /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		F4961CA52351C36E005C356E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		F4BC60B223825F64004A7EBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -350,6 +352,7 @@
 		F4784B60243DA6AA00821CDD /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				F4784B66243DA7B900821CDD /* LoginPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -627,6 +630,7 @@
 			files = (
 				F4601F382397E3DF00026362 /* Font.swift in Sources */,
 				F4E146FB23719C810086D51A /* CategoryPresenter.swift in Sources */,
+				F4784B67243DA7B900821CDD /* LoginPresenter.swift in Sources */,
 				F427D4442378035A009B308D /* Register.swift in Sources */,
 				F4DC6F2F237ADD33006447F8 /* RightCatHeader.swift in Sources */,
 				F4E146F2237192E00086D51A /* CategoryModel.swift in Sources */,
