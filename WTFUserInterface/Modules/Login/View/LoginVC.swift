@@ -14,6 +14,12 @@ final class LoginVC: BaseViewController {
         return LoginPresenter(view: self)
     }()
     
+    @IBOutlet private var backgroundImage: UIImageView! {
+        didSet {
+            backgroundImage.image = Images.login
+        }
+    }
+    
     @IBOutlet private weak var userNameTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
     
@@ -32,8 +38,9 @@ extension LoginVC {
 // MARK: - Life Cycle
 
 extension LoginVC {
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 }
 
@@ -41,6 +48,6 @@ extension LoginVC {
 
 extension LoginVC: LoginView {
     func loggedInSuccessfully() {
-        
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
 }

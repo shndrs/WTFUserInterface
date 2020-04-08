@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="38c-Nz-CYe">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -8,17 +8,31 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--LoginVC-->
         <scene sceneID="cwB-5M-Uer">
             <objects>
-                <viewController id="t0G-Jg-Hco" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginVC" id="t0G-Jg-Hco" customClass="LoginVC" customModule="WTFUserInterface" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YOH-bG-iYF">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-1" translatesAutoresizingMaskIntoConstraints="NO" id="saz-2j-k8j">
+                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                            </imageView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="saz-2j-k8j" secondAttribute="bottom" id="Oqt-gu-p6r"/>
+                            <constraint firstItem="saz-2j-k8j" firstAttribute="trailing" secondItem="7DY-y9-Yfo" secondAttribute="trailing" id="VvQ-Cz-KbC"/>
+                            <constraint firstItem="saz-2j-k8j" firstAttribute="leading" secondItem="7DY-y9-Yfo" secondAttribute="leading" id="ZjO-c5-XQQ"/>
+                            <constraint firstItem="saz-2j-k8j" firstAttribute="top" secondItem="7DY-y9-Yfo" secondAttribute="top" id="pfE-c2-a0z"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="7DY-y9-Yfo"/>
                     </view>
                     <navigationItem key="navigationItem" id="Q8P-s6-Nbr"/>
+                    <connections>
+                        <outlet property="backgroundImage" destination="saz-2j-k8j" id="yaD-Fz-1iu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTe-IM-Nq3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -30,7 +44,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="38c-Nz-CYe" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FGk-1R-aSz">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -43,4 +57,7 @@
             <point key="canvasLocation" x="37.681159420289859" y="142.63392857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="login-1" width="900" height="1600"/>
+    </resources>
 </document>
