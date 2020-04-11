@@ -19,12 +19,43 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-1" translatesAutoresizingMaskIntoConstraints="NO" id="saz-2j-k8j">
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZV-vp-yF5" customClass="TransBackgroundView" customModule="WTFUserInterface" customModuleProvider="target">
+                                <rect key="frame" x="32" y="326" width="311" height="160"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-c4-tPS">
+                                        <rect key="frame" x="32" y="32" width="247" height="96"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l3a-UR-n07">
+                                                <rect key="frame" x="0.0" y="0.0" width="247" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AsP-Sa-pdb">
+                                                <rect key="frame" x="0.0" y="56" width="247" height="40"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="ZUQ-c4-tPS" firstAttribute="top" secondItem="uZV-vp-yF5" secondAttribute="top" constant="32" id="7db-DD-fLL"/>
+                                    <constraint firstItem="ZUQ-c4-tPS" firstAttribute="leading" secondItem="uZV-vp-yF5" secondAttribute="leading" constant="32" id="Egw-nS-Iqt"/>
+                                    <constraint firstAttribute="bottom" secondItem="ZUQ-c4-tPS" secondAttribute="bottom" constant="32" id="TXW-t3-pFs"/>
+                                    <constraint firstAttribute="trailing" secondItem="ZUQ-c4-tPS" secondAttribute="trailing" constant="32" id="Zlm-Xe-iBD"/>
+                                    <constraint firstAttribute="height" constant="160" id="h3I-pa-qtp"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="uZV-vp-yF5" firstAttribute="leading" secondItem="7DY-y9-Yfo" secondAttribute="leading" constant="32" id="JkO-iM-8Qc"/>
                             <constraint firstAttribute="bottom" secondItem="saz-2j-k8j" secondAttribute="bottom" id="Oqt-gu-p6r"/>
+                            <constraint firstItem="uZV-vp-yF5" firstAttribute="centerY" secondItem="YOH-bG-iYF" secondAttribute="centerY" id="RnU-7v-dOu"/>
                             <constraint firstItem="saz-2j-k8j" firstAttribute="trailing" secondItem="7DY-y9-Yfo" secondAttribute="trailing" id="VvQ-Cz-KbC"/>
                             <constraint firstItem="saz-2j-k8j" firstAttribute="leading" secondItem="7DY-y9-Yfo" secondAttribute="leading" id="ZjO-c5-XQQ"/>
+                            <constraint firstItem="7DY-y9-Yfo" firstAttribute="trailing" secondItem="uZV-vp-yF5" secondAttribute="trailing" constant="32" id="oyz-oT-WkH"/>
                             <constraint firstItem="saz-2j-k8j" firstAttribute="top" secondItem="7DY-y9-Yfo" secondAttribute="top" id="pfE-c2-a0z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7DY-y9-Yfo"/>
