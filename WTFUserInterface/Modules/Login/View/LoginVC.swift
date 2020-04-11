@@ -16,7 +16,7 @@ final class LoginVC: BaseViewController {
     
     @IBOutlet private var backgroundImage: UIImageView! {
         didSet {
-            backgroundImage.image = Images.login
+            backgroundImage.image = Images.excelsa
         }
     }
     
@@ -40,7 +40,7 @@ extension LoginVC {
 extension LoginVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+//        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 }
 

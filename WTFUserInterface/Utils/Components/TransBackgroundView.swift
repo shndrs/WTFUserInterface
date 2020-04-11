@@ -15,7 +15,7 @@ final class TransBackgroundView: BackgroundView {
     
     override func setup() {
         super.setup()
-        self.backgroundColor = Colors.darkGray.withAlphaComponent(0.7)
+        self.clipsToBounds = true
     }
     
 }

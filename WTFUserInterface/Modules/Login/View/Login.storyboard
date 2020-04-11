@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="38c-Nz-CYe">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--LoginVC-->
+        <!--WTFUserInterface-->
         <scene sceneID="cwB-5M-Uer">
             <objects>
                 <viewController storyboardIdentifier="LoginVC" id="t0G-Jg-Hco" customClass="LoginVC" customModule="WTFUserInterface" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,58 +16,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login-1" translatesAutoresizingMaskIntoConstraints="NO" id="saz-2j-k8j">
-                                <rect key="frame" x="0.0" y="88" width="375" height="724"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="florentine" translatesAutoresizingMaskIntoConstraints="NO" id="saz-2j-k8j">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZV-vp-yF5" customClass="TransBackgroundView" customModule="WTFUserInterface" customModuleProvider="target">
-                                <rect key="frame" x="32" y="326" width="311" height="160"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="WoL-0l-leI">
+                                <rect key="frame" x="32" y="280" width="311" height="252"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-c4-tPS">
-                                        <rect key="frame" x="32" y="32" width="247" height="96"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZV-vp-yF5" customClass="BackgroundView" customModule="WTFUserInterface" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="190"/>
                                         <subviews>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l3a-UR-n07">
-                                                <rect key="frame" x="0.0" y="0.0" width="247" height="40"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
-                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AsP-Sa-pdb">
-                                                <rect key="frame" x="0.0" y="56" width="247" height="40"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <textInputTraits key="textInputTraits"/>
-                                            </textField>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="ZUQ-c4-tPS">
+                                                <rect key="frame" x="32" y="54" width="247" height="104"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="l3a-UR-n07">
+                                                        <rect key="frame" x="0.0" y="0.0" width="247" height="44"/>
+                                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AsP-Sa-pdb">
+                                                        <rect key="frame" x="0.0" y="60" width="247" height="44"/>
+                                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9oS-fR-vGt" customClass="LabelBold" customModule="WTFUserInterface" customModuleProvider="target">
+                                                <rect key="frame" x="133.66666666666666" y="16" width="43.666666666666657" height="22"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="16"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
-                                    </stackView>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="9oS-fR-vGt" firstAttribute="centerX" secondItem="uZV-vp-yF5" secondAttribute="centerX" id="DAe-Io-bxg"/>
+                                            <constraint firstItem="ZUQ-c4-tPS" firstAttribute="leading" secondItem="uZV-vp-yF5" secondAttribute="leading" constant="32" id="Egw-nS-Iqt"/>
+                                            <constraint firstItem="ZUQ-c4-tPS" firstAttribute="top" secondItem="9oS-fR-vGt" secondAttribute="bottom" constant="16" id="Jy3-Yz-cqE"/>
+                                            <constraint firstAttribute="bottom" secondItem="ZUQ-c4-tPS" secondAttribute="bottom" constant="32" id="TXW-t3-pFs"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZUQ-c4-tPS" secondAttribute="trailing" constant="32" id="Zlm-Xe-iBD"/>
+                                            <constraint firstAttribute="height" constant="190" id="h3I-pa-qtp"/>
+                                            <constraint firstItem="9oS-fR-vGt" firstAttribute="top" secondItem="uZV-vp-yF5" secondAttribute="top" constant="16" id="npS-aJ-mky"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p9R-vB-7qJ" customClass="SubmitButton" customModule="WTFUserInterface" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="207" width="311" height="45"/>
+                                        <color key="backgroundColor" red="0.039215686270000001" green="0.58078071433558287" blue="0.32799887977055214" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="7xZ-wD-c7v"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                    </button>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
-                                    <constraint firstItem="ZUQ-c4-tPS" firstAttribute="top" secondItem="uZV-vp-yF5" secondAttribute="top" constant="32" id="7db-DD-fLL"/>
-                                    <constraint firstItem="ZUQ-c4-tPS" firstAttribute="leading" secondItem="uZV-vp-yF5" secondAttribute="leading" constant="32" id="Egw-nS-Iqt"/>
-                                    <constraint firstAttribute="bottom" secondItem="ZUQ-c4-tPS" secondAttribute="bottom" constant="32" id="TXW-t3-pFs"/>
-                                    <constraint firstAttribute="trailing" secondItem="ZUQ-c4-tPS" secondAttribute="trailing" constant="32" id="Zlm-Xe-iBD"/>
-                                    <constraint firstAttribute="height" constant="160" id="h3I-pa-qtp"/>
+                                    <constraint firstItem="uZV-vp-yF5" firstAttribute="leading" secondItem="WoL-0l-leI" secondAttribute="leading" id="4Jl-dX-Mhy"/>
+                                    <constraint firstItem="p9R-vB-7qJ" firstAttribute="leading" secondItem="WoL-0l-leI" secondAttribute="leading" id="vA9-X4-uTu"/>
                                 </constraints>
-                            </view>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="uZV-vp-yF5" firstAttribute="leading" secondItem="7DY-y9-Yfo" secondAttribute="leading" constant="32" id="JkO-iM-8Qc"/>
+                            <constraint firstItem="saz-2j-k8j" firstAttribute="top" secondItem="YOH-bG-iYF" secondAttribute="top" id="AQF-ns-wFm"/>
+                            <constraint firstItem="7DY-y9-Yfo" firstAttribute="trailing" secondItem="WoL-0l-leI" secondAttribute="trailing" constant="32" id="B01-M5-DSY"/>
+                            <constraint firstItem="WoL-0l-leI" firstAttribute="leading" secondItem="7DY-y9-Yfo" secondAttribute="leading" constant="32" id="DJw-5q-1lC"/>
                             <constraint firstAttribute="bottom" secondItem="saz-2j-k8j" secondAttribute="bottom" id="Oqt-gu-p6r"/>
-                            <constraint firstItem="uZV-vp-yF5" firstAttribute="centerY" secondItem="YOH-bG-iYF" secondAttribute="centerY" id="RnU-7v-dOu"/>
+                            <constraint firstItem="WoL-0l-leI" firstAttribute="centerY" secondItem="YOH-bG-iYF" secondAttribute="centerY" id="PST-13-f8l"/>
                             <constraint firstItem="saz-2j-k8j" firstAttribute="trailing" secondItem="7DY-y9-Yfo" secondAttribute="trailing" id="VvQ-Cz-KbC"/>
                             <constraint firstItem="saz-2j-k8j" firstAttribute="leading" secondItem="7DY-y9-Yfo" secondAttribute="leading" id="ZjO-c5-XQQ"/>
-                            <constraint firstItem="7DY-y9-Yfo" firstAttribute="trailing" secondItem="uZV-vp-yF5" secondAttribute="trailing" constant="32" id="oyz-oT-WkH"/>
-                            <constraint firstItem="saz-2j-k8j" firstAttribute="top" secondItem="7DY-y9-Yfo" secondAttribute="top" id="pfE-c2-a0z"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7DY-y9-Yfo"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Q8P-s6-Nbr"/>
+                    <navigationItem key="navigationItem" title="WTFUserInterface" id="Q8P-s6-Nbr"/>
                     <connections>
                         <outlet property="backgroundImage" destination="saz-2j-k8j" id="yaD-Fz-1iu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTe-IM-Nq3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="947.82608695652186" y="142.63392857142856"/>
+            <point key="canvasLocation" x="946.39999999999998" y="142.61083743842366"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7bC-sQ-CgV">
@@ -89,6 +118,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="login-1" width="900" height="1600"/>
+        <image name="florentine" width="848" height="1200"/>
     </resources>
 </document>
