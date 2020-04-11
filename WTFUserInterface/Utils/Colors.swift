@@ -16,6 +16,13 @@ struct Colors {
                                          alpha: 1.0)
     
     public static let defOrange = UIColor.orange
-    
-    
+    public static let lightGray = UIColor(red: 211/255,
+                                          green: 211/255,
+                                          blue: 211/255,
+                                          alpha: 1.0)
+    public static let submitGreen = UIColor(red: 10/255,
+                                            green: 148/255,
+                                            blue: 84/255,
+                                            alpha: 1.0)
+      
 }

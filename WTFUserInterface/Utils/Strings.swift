@@ -35,6 +35,11 @@ enum Strings: String {
     case archive = "Transactions Archive"
     
     // MARK: - CAKeyframeAnimation
+    
     case transformScale = "transform.scale"
     case cubic
+    
+    // MARK: - Buttons
+    
+    case submit = "Submit"
 }
