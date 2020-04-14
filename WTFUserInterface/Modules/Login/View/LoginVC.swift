@@ -16,7 +16,7 @@ final class LoginVC: BaseViewController {
     
     @IBOutlet private var backgroundImage: UIImageView! {
         didSet {
-            backgroundImage.image = Images.excelsa
+            backgroundImage.image = Images.login
         }
     }
     
