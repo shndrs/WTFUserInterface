@@ -76,7 +76,7 @@
         <!--Main Tab Bar Controller-->
         <scene sceneID="LJb-zs-aqJ">
             <objects>
-                <tabBarController id="jxN-Ix-xQG" customClass="MainTabBarController" customModule="WTFUserInterface" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="MainTabBarController" id="jxN-Ix-xQG" customClass="MainTabBarController" customModule="WTFUserInterface" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="yAt-KS-IXZ"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="GOv-gS-QIa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>

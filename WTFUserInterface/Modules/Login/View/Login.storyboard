@@ -69,6 +69,9 @@
                                         <state key="normal" title="Button">
                                             <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="t0G-Jg-Hco" eventType="touchUpInside" id="kA4-cM-Rv9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -92,6 +95,8 @@
                     <navigationItem key="navigationItem" title="WTFUserInterface" id="Q8P-s6-Nbr"/>
                     <connections>
                         <outlet property="backgroundImage" destination="saz-2j-k8j" id="yaD-Fz-1iu"/>
+                        <outlet property="passwordTextField" destination="AsP-Sa-pdb" id="s5d-ye-1Gb"/>
+                        <outlet property="userNameTextField" destination="l3a-UR-n07" id="D2h-Wl-SIZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTe-IM-Nq3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
