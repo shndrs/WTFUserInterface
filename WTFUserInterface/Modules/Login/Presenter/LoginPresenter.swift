@@ -32,8 +32,10 @@ extension LoginPresenter {
     }
     
     private func login() {
+        self.view?.startLoading()
         DispatchQueue.main.asyncAfter(deadline: .now() + 2.4) { [weak self] in
             guard self != nil else { return }
+            self?.view?.stopLoading()
             self?.view?.loggedInSuccessfully()
         }
     }
