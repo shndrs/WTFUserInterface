@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="38c-Nz-CYe">
-    <device id="retina5_9" orientation="portrait" appearance="dark"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="florentine" translatesAutoresizingMaskIntoConstraints="NO" id="saz-2j-k8j">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Drinks_Coffee_Grain" translatesAutoresizingMaskIntoConstraints="NO" id="saz-2j-k8j">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="WoL-0l-leI">
@@ -79,9 +79,16 @@
                                     <constraint firstItem="p9R-vB-7qJ" firstAttribute="leading" secondItem="WoL-0l-leI" secondAttribute="leading" id="vA9-X4-uTu"/>
                                 </constraints>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter whatever you want for login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BV6-k3-8oh" customClass="LabelLight" customModule="WTFUserInterface" customModuleProvider="target">
+                                <rect key="frame" x="32" y="749" width="311" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="7DY-y9-Yfo" firstAttribute="bottom" secondItem="BV6-k3-8oh" secondAttribute="bottom" constant="12" id="25S-rO-cPf"/>
                             <constraint firstItem="saz-2j-k8j" firstAttribute="top" secondItem="YOH-bG-iYF" secondAttribute="top" id="AQF-ns-wFm"/>
                             <constraint firstItem="7DY-y9-Yfo" firstAttribute="trailing" secondItem="WoL-0l-leI" secondAttribute="trailing" constant="32" id="B01-M5-DSY"/>
                             <constraint firstItem="WoL-0l-leI" firstAttribute="leading" secondItem="7DY-y9-Yfo" secondAttribute="leading" constant="32" id="DJw-5q-1lC"/>
@@ -89,6 +96,8 @@
                             <constraint firstItem="WoL-0l-leI" firstAttribute="centerY" secondItem="YOH-bG-iYF" secondAttribute="centerY" id="PST-13-f8l"/>
                             <constraint firstItem="saz-2j-k8j" firstAttribute="trailing" secondItem="7DY-y9-Yfo" secondAttribute="trailing" id="VvQ-Cz-KbC"/>
                             <constraint firstItem="saz-2j-k8j" firstAttribute="leading" secondItem="7DY-y9-Yfo" secondAttribute="leading" id="ZjO-c5-XQQ"/>
+                            <constraint firstItem="7DY-y9-Yfo" firstAttribute="trailing" secondItem="BV6-k3-8oh" secondAttribute="trailing" constant="32" id="i0b-Jd-B4e"/>
+                            <constraint firstItem="BV6-k3-8oh" firstAttribute="leading" secondItem="7DY-y9-Yfo" secondAttribute="leading" constant="32" id="jF0-7D-jWc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7DY-y9-Yfo"/>
                     </view>
@@ -123,6 +132,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="florentine" width="848" height="1200"/>
+        <image name="Drinks_Coffee_Grain" width="1080" height="1920"/>
     </resources>
 </document>
