@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--WTFUserInterface-->
+        <!--LoginVC-->
         <scene sceneID="cwB-5M-Uer">
             <objects>
                 <viewController storyboardIdentifier="LoginVC" id="t0G-Jg-Hco" customClass="LoginVC" customModule="WTFUserInterface" customModuleProvider="target" sceneMemberID="viewController">
@@ -92,7 +92,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="7DY-y9-Yfo"/>
                     </view>
-                    <navigationItem key="navigationItem" title="WTFUserInterface" id="Q8P-s6-Nbr"/>
+                    <navigationItem key="navigationItem" id="Q8P-s6-Nbr"/>
                     <connections>
                         <outlet property="backgroundImage" destination="saz-2j-k8j" id="yaD-Fz-1iu"/>
                         <outlet property="passwordTextField" destination="AsP-Sa-pdb" id="s5d-ye-1Gb"/>

@@ -27,6 +27,10 @@ extension MainTabBarController {
         super.viewDidLoad()
         delegate = self
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationItem.setHidesBackButton(true, animated: false)
+    }
 }
 
 // MARK: - UITabBarControllerDelegate

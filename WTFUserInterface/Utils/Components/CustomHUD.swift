@@ -30,11 +30,11 @@ class HUD: NSObject {
     
     private override init() {}
     
-    func show() {
+    public func show() {
         hud.show()
     }
     
-    func dismiss() {
+    public func dismiss() {
         hud.dismiss(completion: nil)
     }
     
