@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol LoginView: BaseView {
+protocol LoginView: ServiceView {
     func loggedInSuccessfully()
 }
 
@@ -32,6 +32,9 @@ extension LoginPresenter {
     }
     
     private func login() {
-        self.view?.loggedInSuccessfully()
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.4) { [weak self] in
+            guard self != nil else { return }
+            self?.view?.loggedInSuccessfully()
+        }
     }
 }

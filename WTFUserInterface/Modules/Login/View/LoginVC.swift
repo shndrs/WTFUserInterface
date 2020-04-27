@@ -40,14 +40,23 @@ extension LoginVC {
 extension LoginVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-//        self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
 }
 
 // MARK: - View Implementation
 
 extension LoginVC: LoginView {
+    func startLoading() {
+        HUD.default.show()
+    }
+    
+    func stopLoading() {
+        HUD.default.dismiss()
+    }
+    
     func loggedInSuccessfully() {
-        self.navigationController?.setNavigationBarHidden(false, animated: true)
+        let storyboard = UIStoryboard(name: "Main", bundle: .main)
+        let viewController = storyboard.instantiateViewController(withIdentifier: "MainTabBarController") as! MainTabBarController
+        self.show(viewController, sender: nil)
     }
 }
