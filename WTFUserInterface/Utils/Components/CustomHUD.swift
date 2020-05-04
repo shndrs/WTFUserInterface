@@ -8,7 +8,7 @@
 
 import EZProgressHUD
 
-class HUD: NSObject {
+final class HUD: NSObject {
     
     public static let `default` = HUD()
     
