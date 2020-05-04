@@ -60,11 +60,7 @@ extension LoginVC: LoginView {
     }
     
     func loggedInSuccessfully() {
-        let storyboard = UIStoryboard(name: "Main", bundle: .main)
-        guard let viewController = storyboard
-            .instantiateViewController(withIdentifier: "MainTabBarController") as? MainTabBarController else {
-            return
-        }
+        let viewController = MainTabBarController.instantiate(storyboard: .main)
         self.show(viewController, sender: nil)
     }
 }

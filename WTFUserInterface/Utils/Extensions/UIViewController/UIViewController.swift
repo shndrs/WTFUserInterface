@@ -10,15 +10,15 @@ import UIKit
 
 extension UIViewController {
     public class func instantiate(from storyboard: UIStoryboard? = nil) -> Self {
-        return get(storyboard:storyboard)
+        return get(storyboard: storyboard)
     }
     
-    public class func instantiate(withStoryboardName: String) -> Self {
-        return instantiate(from: UIStoryboard(name: withStoryboardName, bundle: nil))
+    public class func instantiate(storyboard: StoryboardId) -> Self {
+        return instantiate(from: UIStoryboard(name: storyboard.raw(), bundle: nil))
     }
        
     @discardableResult
-    private class func get<T : UIViewController>(storyboard: UIStoryboard? = nil) -> T {
+    private class func get<T: UIViewController>(storyboard: UIStoryboard? = nil) -> T {
         let className = String(describing: self)
         var story = storyboard
         if story == nil {
