@@ -49,6 +49,7 @@
 		F4784B69243DA92900821CDD /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4784B68243DA92900821CDD /* LoginVC.swift */; };
 		F4960CF5247237D4004B6212 /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960CF4247237D4004B6212 /* Defaults.swift */; };
 		F4960CF72472389F004B6212 /* DefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960CF62472389F004B6212 /* DefaultsKeys.swift */; };
+		F4960CFF2472397E004B6212 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960CFE2472397E004B6212 /* RegisterVC.swift */; };
 		F4961CA42351B4AF005C356E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA32351B4AF005C356E /* UITableView.swift */; };
 		F4961CA62351C36E005C356E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA52351C36E005C356E /* Strings.swift */; };
 		F4BC60B323825F64004A7EBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC60B223825F64004A7EBE /* BaseViewController.swift */; };
@@ -122,6 +123,7 @@
 		F4784B68243DA92900821CDD /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		F4960CF4247237D4004B6212 /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		F4960CF62472389F004B6212 /* DefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKeys.swift; sourceTree = "<group>"; };
+		F4960CFE2472397E004B6212 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		F4961CA32351B4AF005C356E /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		F4961CA52351C36E005C356E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		F4BC60B223825F64004A7EBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -399,6 +401,54 @@
 			path = Storage;
 			sourceTree = "<group>";
 		};
+		F4960CF824723905004B6212 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				F4960CFD2472395E004B6212 /* Router */,
+				F4960CFC2472394F004B6212 /* Entity */,
+				F4960CFB24723947004B6212 /* Presenter */,
+				F4960CFA2472393E004B6212 /* Interactor */,
+				F4960CF924723915004B6212 /* View */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		F4960CF924723915004B6212 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F4960CFE2472397E004B6212 /* RegisterVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F4960CFA2472393E004B6212 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		F4960CFB24723947004B6212 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		F4960CFC2472394F004B6212 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		F4960CFD2472395E004B6212 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		F4961CA12351B47E005C356E /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -477,6 +527,7 @@
 		F4E146F323719C030086D51A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				F4960CF824723905004B6212 /* Register */,
 				F4784B5E243DA68B00821CDD /* Login */,
 				F4433C8F23929D6600FA8125 /* Products */,
 				F408F7C32383F7BE00BC8CA7 /* Favorites */,
@@ -680,6 +731,7 @@
 				F4BC60B523825FEE004A7EBE /* TableBaseViewController.swift in Sources */,
 				F43A9C1724418CE700003E1C /* SubmitButton.swift in Sources */,
 				F4BC60B323825F64004A7EBE /* BaseViewController.swift in Sources */,
+				F4960CFF2472397E004B6212 /* RegisterVC.swift in Sources */,
 				F4CFD12623829FBE00BCEA6B /* ReuseId.swift in Sources */,
 				F4D3CC7D2356FAAC007BEF20 /* UIView.swift in Sources */,
 				F4E147042371A3260086D51A /* UICollectionView.swift in Sources */,
