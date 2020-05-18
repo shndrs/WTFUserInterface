@@ -19,6 +19,7 @@ protocol RegisterViewToPresenterProtocol: AnyObject {
 
 protocol RegisterPresenterToViewProtocol: AnyObject {
     func show(error: String)
+    func registerSuccessfully()
 }
 
 protocol RegisterRouterProtocol: AnyObject {
@@ -31,4 +32,5 @@ protocol RegisterPresenterToInteractorProtocol: AnyObject {
 }
 
 protocol RegisterInteractorToPresenterProtocol: AnyObject {
+    func registerSuccessfully()
 }

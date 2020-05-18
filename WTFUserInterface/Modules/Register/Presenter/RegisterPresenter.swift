@@ -33,6 +33,8 @@ final class RegisterPresenter: RegisterViewToPresenterProtocol {
             self.view?.show(error: "inputs.password.isEmpty")
         } else if inputs.repeatPassword.isEmpty {
             self.view?.show(error: "inputs.repeatPassword.isEmpty")
+        } else if inputs.password != inputs.repeatPassword {
+            self.view?.show(error: "repeatPassword not equal to password")
         } else if inputs.email.isEmpty {
             self.view?.show(error: "inputs.email.isEmpty")
         } else {
@@ -44,5 +46,7 @@ final class RegisterPresenter: RegisterViewToPresenterProtocol {
 // MARK: - Iteractor To Presenter
 
 extension RegisterPresenter: RegisterInteractorToPresenterProtocol {
-    
+    func registerSuccessfully() {
+        view?.registerSuccessfully()
+    }
 }

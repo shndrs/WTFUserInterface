@@ -18,6 +18,8 @@ final class RegisterVC: BaseViewController {
 
 extension RegisterVC {
     @IBAction private func registerButtonPressed(_ sender: Any) {
+        let object = RegisterEntity()
+        presenter?.validate(inputs: object)
     }
 }
 
@@ -32,6 +34,10 @@ extension RegisterVC {
 // MARK: - Presenter to View Implementation
 
 extension RegisterVC: RegisterPresenterToViewProtocol {
+    func registerSuccessfully() {
+        
+    }
+    
     func show(error: String) {
         
     }
