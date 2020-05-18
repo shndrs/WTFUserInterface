@@ -1,5 +1,5 @@
 //
-//  Register.swift
+//  RegisterEntity.swift
 //  WTFUserInterface
 //
 //  Created by NP2 on 5/18/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Register {
+struct RegisterEntity {
     
     public var username: String!
     public var password: String!

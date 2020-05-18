@@ -53,7 +53,8 @@
 		F4960D0124723A2E004B6212 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4960D0024723A2E004B6212 /* Register.storyboard */; };
 		F4960D0424723AD6004B6212 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0324723AD6004B6212 /* RegisterProtocols.swift */; };
 		F4960D0624723BED004B6212 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0524723BED004B6212 /* RegisterPresenter.swift */; };
-		F4960D0824723C95004B6212 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0724723C95004B6212 /* Register.swift */; };
+		F4960D0824723C95004B6212 /* RegisterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0724723C95004B6212 /* RegisterEntity.swift */; };
+		F4960D0A24723D7C004B6212 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0924723D7C004B6212 /* RegisterInteractor.swift */; };
 		F4961CA42351B4AF005C356E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA32351B4AF005C356E /* UITableView.swift */; };
 		F4961CA62351C36E005C356E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA52351C36E005C356E /* Strings.swift */; };
 		F4BC60B323825F64004A7EBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC60B223825F64004A7EBE /* BaseViewController.swift */; };
@@ -131,7 +132,8 @@
 		F4960D0024723A2E004B6212 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		F4960D0324723AD6004B6212 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
 		F4960D0524723BED004B6212 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
-		F4960D0724723C95004B6212 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		F4960D0724723C95004B6212 /* RegisterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEntity.swift; sourceTree = "<group>"; };
+		F4960D0924723D7C004B6212 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
 		F4961CA32351B4AF005C356E /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		F4961CA52351C36E005C356E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		F4BC60B223825F64004A7EBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -434,6 +436,7 @@
 		F4960CFA2472393E004B6212 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				F4960D0924723D7C004B6212 /* RegisterInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -449,7 +452,7 @@
 		F4960CFC2472394F004B6212 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
-				F4960D0724723C95004B6212 /* Register.swift */,
+				F4960D0724723C95004B6212 /* RegisterEntity.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -776,8 +779,9 @@
 				F4DC6F2B237ADBF1006447F8 /* LeftCatHeader.swift in Sources */,
 				F4601F3B2397E5FB00026362 /* LabelLight.swift in Sources */,
 				F4E146F023718D390086D51A /* CategoryVC.swift in Sources */,
-				F4960D0824723C95004B6212 /* Register.swift in Sources */,
+				F4960D0824723C95004B6212 /* RegisterEntity.swift in Sources */,
 				F4240EA92383D23C00E05520 /* Typealias.swift in Sources */,
+				F4960D0A24723D7C004B6212 /* RegisterInteractor.swift in Sources */,
 				F4961CA42351B4AF005C356E /* UITableView.swift in Sources */,
 				F408F7C723841BE200BC8CA7 /* FavoritesVC.swift in Sources */,
 				F4DC6F25237A9602006447F8 /* CategoryHeader.swift in Sources */,

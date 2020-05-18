@@ -26,6 +26,7 @@ protocol RegisterRouterProtocol: AnyObject {
 }
 
 protocol RegisterPresenterToInteractorProtocol: AnyObject {
+    func saveUserInfo(with object: RegisterEntity)
 }
 
 protocol RegisterInteractorToPresenterProtocol: AnyObject {
