@@ -19,9 +19,7 @@ final class Defaults {
     subscript(key: String) -> String? {
         get {
             return defaults.string(forKey: key)
-        }
-
-        set {
+        } set {
             defaults.set(newValue, forKey: key)
         }
     }

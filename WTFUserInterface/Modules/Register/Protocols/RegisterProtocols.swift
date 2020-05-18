@@ -14,6 +14,7 @@ protocol RegisterViewToPresenterProtocol: AnyObject {
     var router: RegisterRouterProtocol? { get set }
     
     func goToLogin(fromNavigationController nav: UINavigationController)
+    func validate(inputs: RegisterEntity)
 }
 
 protocol RegisterPresenterToViewProtocol: AnyObject {

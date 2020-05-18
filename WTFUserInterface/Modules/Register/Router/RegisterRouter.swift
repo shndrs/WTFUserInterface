@@ -16,10 +16,10 @@ final class RegisterRouter {
 // MARK: - Router Implementation
 
 extension RegisterRouter: RegisterRouterProtocol {
+    
     static func createModule() -> RegisterVC {
         
         let view = RegisterVC.instantiate(storyboard: .register)
-        
         let interactor = RegisterInteractor()
         let router = RegisterRouter()
         let presenter = RegisterPresenter(view: view,
@@ -29,14 +29,10 @@ extension RegisterRouter: RegisterRouterProtocol {
         interactor.presenter = presenter
         router.view = view
         return view
-        
-        
-        
     }
     
     func goToLogin(fromNavigationController nav: UINavigationController) {
         view?.navigationController?.popViewController(animated: true)
     }
-    
     
 }

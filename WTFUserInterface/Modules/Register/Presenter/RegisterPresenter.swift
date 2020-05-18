@@ -26,6 +26,19 @@ final class RegisterPresenter: RegisterViewToPresenterProtocol {
         router?.goToLogin(fromNavigationController: nav)
     }
     
+    func validate(inputs: RegisterEntity) {
+        if inputs.username.isEmpty {
+            self.view?.show(error: "username.isEmpty")
+        } else if inputs.password.isEmpty {
+            self.view?.show(error: "inputs.password.isEmpty")
+        } else if inputs.repeatPassword.isEmpty {
+            self.view?.show(error: "inputs.repeatPassword.isEmpty")
+        } else if inputs.email.isEmpty {
+            self.view?.show(error: "inputs.email.isEmpty")
+        } else {
+            interactor?.saveUserInfo(with: inputs)
+        }
+    }
 }
 
 // MARK: - Iteractor To Presenter
