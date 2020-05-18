@@ -51,6 +51,7 @@
 		F4960CF72472389F004B6212 /* DefaultsKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960CF62472389F004B6212 /* DefaultsKeys.swift */; };
 		F4960CFF2472397E004B6212 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960CFE2472397E004B6212 /* RegisterVC.swift */; };
 		F4960D0124723A2E004B6212 /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4960D0024723A2E004B6212 /* Register.storyboard */; };
+		F4960D0424723AD6004B6212 /* RegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0324723AD6004B6212 /* RegisterProtocols.swift */; };
 		F4961CA42351B4AF005C356E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA32351B4AF005C356E /* UITableView.swift */; };
 		F4961CA62351C36E005C356E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA52351C36E005C356E /* Strings.swift */; };
 		F4BC60B323825F64004A7EBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC60B223825F64004A7EBE /* BaseViewController.swift */; };
@@ -126,6 +127,7 @@
 		F4960CF62472389F004B6212 /* DefaultsKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultsKeys.swift; sourceTree = "<group>"; };
 		F4960CFE2472397E004B6212 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		F4960D0024723A2E004B6212 /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		F4960D0324723AD6004B6212 /* RegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterProtocols.swift; sourceTree = "<group>"; };
 		F4961CA32351B4AF005C356E /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		F4961CA52351C36E005C356E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		F4BC60B223825F64004A7EBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -456,6 +458,7 @@
 		F4960D0224723A83004B6212 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				F4960D0324723AD6004B6212 /* RegisterProtocols.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -773,6 +776,7 @@
 				F4784B69243DA92900821CDD /* LoginVC.swift in Sources */,
 				F417DE2123B9DA610017E773 /* Colors.swift in Sources */,
 				F4CEFA06237BC81400135AB7 /* CatSliderTVC.swift in Sources */,
+				F4960D0424723AD6004B6212 /* RegisterProtocols.swift in Sources */,
 				F4619E81238EACDB00F2FC7D /* BackView.swift in Sources */,
 				F40B6D9B23768B9600C5DA74 /* Images.swift in Sources */,
 				F408F7C22383E36B00BC8CA7 /* CurvedImages.swift in Sources */,
