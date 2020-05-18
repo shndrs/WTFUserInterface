@@ -9,15 +9,23 @@
 import UIKit
 
 public enum StoryboardId: String {
+    
     case main = "Main"
     case login = "Login"
-    
-    func raw() -> String {
+    case register = "Register"
+}
+
+// MARK: - Methods
+
+extension StoryboardId {
+    public func raw() -> String {
         switch self {
         case .main:
             return StoryboardId.main.rawValue
         case .login:
             return StoryboardId.login.rawValue
+        case .register:
+            return StoryboardId.register.rawValue
         }
     }
 }

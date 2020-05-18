@@ -10,6 +10,8 @@ import UIKit
 
 final class RegisterVC: BaseViewController {
     
+    public var presenter: RegisterViewToPresenterProtocol?
+    
 }
 
 // MARK: - Methods
@@ -24,5 +26,13 @@ extension RegisterVC {
 extension RegisterVC {
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+}
+
+// MARK: - Presenter to View Implementation
+
+extension RegisterVC: RegisterPresenterToViewProtocol {
+    func show(error: String) {
+        
     }
 }

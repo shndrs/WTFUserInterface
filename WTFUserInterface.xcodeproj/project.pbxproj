@@ -55,6 +55,7 @@
 		F4960D0624723BED004B6212 /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0524723BED004B6212 /* RegisterPresenter.swift */; };
 		F4960D0824723C95004B6212 /* RegisterEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0724723C95004B6212 /* RegisterEntity.swift */; };
 		F4960D0A24723D7C004B6212 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0924723D7C004B6212 /* RegisterInteractor.swift */; };
+		F4960D0C24724076004B6212 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0B24724076004B6212 /* RegisterRouter.swift */; };
 		F4961CA42351B4AF005C356E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA32351B4AF005C356E /* UITableView.swift */; };
 		F4961CA62351C36E005C356E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA52351C36E005C356E /* Strings.swift */; };
 		F4BC60B323825F64004A7EBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC60B223825F64004A7EBE /* BaseViewController.swift */; };
@@ -134,6 +135,7 @@
 		F4960D0524723BED004B6212 /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		F4960D0724723C95004B6212 /* RegisterEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterEntity.swift; sourceTree = "<group>"; };
 		F4960D0924723D7C004B6212 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		F4960D0B24724076004B6212 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 		F4961CA32351B4AF005C356E /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		F4961CA52351C36E005C356E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		F4BC60B223825F64004A7EBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -460,6 +462,7 @@
 		F4960CFD2472395E004B6212 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				F4960D0B24724076004B6212 /* RegisterRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -798,6 +801,7 @@
 				F4961CA62351C36E005C356E /* Strings.swift in Sources */,
 				F4C49AF0239539D300507EA0 /* ProductsTVC.swift in Sources */,
 				F408F7CD23841E3600BC8CA7 /* FavoritesTVC.swift in Sources */,
+				F4960D0C24724076004B6212 /* RegisterRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
