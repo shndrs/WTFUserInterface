@@ -1,20 +1,24 @@
 PODS:
   - EZProgressHUD (1.5.3)
+  - IQKeyboardManager (6.5.5)
   - SwiftyTabBarTransition (1.5.3)
 
 DEPENDENCIES:
   - EZProgressHUD
+  - IQKeyboardManager
   - SwiftyTabBarTransition
 
 SPEC REPOS:
   trunk:
     - EZProgressHUD
+    - IQKeyboardManager
     - SwiftyTabBarTransition
 
 SPEC CHECKSUMS:
   EZProgressHUD: ac65959b7a1f7eb3ccb9e4b176a77e27628e4174
+  IQKeyboardManager: 3a8b9e603f8b0eeaf5f096a1f2b2cfcf121992ef
   SwiftyTabBarTransition: 92a59df486be930c10d6c9303fcc35a2dd5fbf96
 
-PODFILE CHECKSUM: 36d3067ae1d07442d097e4acea468eb5a8606cd5
+PODFILE CHECKSUM: 7959bdb824b4b5c5a9d4e855a6d85a6c73c2bfec
 
 COCOAPODS: 1.8.4

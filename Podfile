@@ -5,5 +5,6 @@ target 'WTFUserInterface' do
 
   pod 'EZProgressHUD'
   pod 'SwiftyTabBarTransition'
+  pod 'IQKeyboardManager'
 
 end
