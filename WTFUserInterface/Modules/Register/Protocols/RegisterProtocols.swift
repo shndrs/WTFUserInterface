@@ -14,7 +14,6 @@ protocol RegisterViewToPresenterProtocol: AnyObject {
     var router: RegisterRouterProtocol? { get set }
     
     func goToLogin(fromNavigationController nav: UINavigationController)
-    func getVehicleList()
 }
 
 protocol RegisterPresenterToViewProtocol: AnyObject {
