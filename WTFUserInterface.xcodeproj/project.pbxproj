@@ -57,6 +57,7 @@
 		F4960D0A24723D7C004B6212 /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0924723D7C004B6212 /* RegisterInteractor.swift */; };
 		F4960D0C24724076004B6212 /* RegisterRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0B24724076004B6212 /* RegisterRouter.swift */; };
 		F4960D0E24724674004B6212 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0D24724674004B6212 /* AlertManager.swift */; };
+		F4960D1024724BF3004B6212 /* KeyboardManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4960D0F24724BF3004B6212 /* KeyboardManager.swift */; };
 		F4961CA42351B4AF005C356E /* UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA32351B4AF005C356E /* UITableView.swift */; };
 		F4961CA62351C36E005C356E /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4961CA52351C36E005C356E /* Strings.swift */; };
 		F4BC60B323825F64004A7EBE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4BC60B223825F64004A7EBE /* BaseViewController.swift */; };
@@ -138,6 +139,7 @@
 		F4960D0924723D7C004B6212 /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
 		F4960D0B24724076004B6212 /* RegisterRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRouter.swift; sourceTree = "<group>"; };
 		F4960D0D24724674004B6212 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		F4960D0F24724BF3004B6212 /* KeyboardManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardManager.swift; sourceTree = "<group>"; };
 		F4961CA32351B4AF005C356E /* UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableView.swift; sourceTree = "<group>"; };
 		F4961CA52351C36E005C356E /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		F4BC60B223825F64004A7EBE /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -280,6 +282,7 @@
 				F403CCB6241CC731000738C5 /* EmptyView.swift */,
 				F43A9C14244185D800003E1C /* TransBackgroundView.swift */,
 				F43A9C1624418CE700003E1C /* SubmitButton.swift */,
+				F4960D0F24724BF3004B6212 /* KeyboardManager.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -766,6 +769,7 @@
 				F4D3CC7D2356FAAC007BEF20 /* UIView.swift in Sources */,
 				F4E147042371A3260086D51A /* UICollectionView.swift in Sources */,
 				F4601F412397E62E00026362 /* LabelBold.swift in Sources */,
+				F4960D1024724BF3004B6212 /* KeyboardManager.swift in Sources */,
 				F4240EA32383D00E00E05520 /* SettingsPresenter.swift in Sources */,
 				F408F7C923841CE200BC8CA7 /* FavoritesPresenter.swift in Sources */,
 				F4601F3F2397E61500026362 /* LabelMedium.swift in Sources */,

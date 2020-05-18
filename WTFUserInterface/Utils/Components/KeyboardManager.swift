@@ -1,0 +1,21 @@
+//
+//  KeyboardManager.swift
+//  WTFUserInterface
+//
+//  Created by NP2 on 5/18/20.
+//  Copyright © 2020 shndrs. All rights reserved.
+//
+
+import IQKeyboardManager
+
+struct KeyboardManager {
+    
+    public static func applyConfig() {
+        let keyboardManager = IQKeyboardManager.shared()
+        keyboardManager.isEnabled = true
+        keyboardManager.toolbarTintColor = Colors.darkGray
+        keyboardManager.toolbarBarTintColor = Colors.lightGray
+        keyboardManager.toolbarDoneBarButtonItemText = Strings.done.rawValue
+        keyboardManager.isEnableAutoToolbar = true
+    }
+}

@@ -23,6 +23,7 @@ enum Strings: String {
     case yes = "Yes"
     case no = "No"
     case areYouSure = "Are you sure about this?"
+    case done = "Done"
     
     // MARK: - Category
     
