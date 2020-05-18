@@ -12,8 +12,22 @@ final class HUD: NSObject {
     
     public static let `default` = HUD()
     
-    private lazy var hud: EZProgress = {
-        
+    private override init() {}
+}
+
+// MARK: - Methods
+
+extension HUD {
+    
+    public func show() {
+        hud().show()
+    }
+    
+    public func dismiss() {
+        hud().dismiss(completion: nil)
+    }
+    
+    private func hud() -> EZProgress {
         let options = EZProgressOptions { (option) in
             option.radius = 120
             option.secondLayerStrokeColor = Colors.darkGray
@@ -23,19 +37,7 @@ final class HUD: NSObject {
             option.title = Strings.wait.rawValue
             option.animationOption = EZAnimationOptions.antColony
         }
-        
         let hud = EZProgressHUD.setProgress(with: options)
         return hud
-    }()
-    
-    private override init() {}
-    
-    public func show() {
-        hud.show()
     }
-    
-    public func dismiss() {
-        hud.dismiss(completion: nil)
-    }
-    
 }
