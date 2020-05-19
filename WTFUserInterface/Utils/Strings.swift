@@ -46,4 +46,13 @@ enum Strings: String {
     // MARK: - Buttons
     
     case submit = "Submit"
+    
+    // MARK: - Register
+    
+    case usernameIsEmpty = "Username is empty!"
+    case passIsEmpty = "Password is empty!"
+    case repeatPassIsEmpty = "Repeat password is empty!"
+    case repeatPassIsNotEqual = "Repeat password is not equal to password!"
+    case emailIsEmpty = "Email is empty!"
+    case emailIsInvalid = "Email is invalid"
 }
