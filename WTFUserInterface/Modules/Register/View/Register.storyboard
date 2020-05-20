@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fk4-pJ-YhC">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
@@ -15,14 +15,84 @@
                     <view key="view" contentMode="scaleToFill" id="nuP-qy-QRh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Drinks_Coffee_Grain" translatesAutoresizingMaskIntoConstraints="NO" id="Kh4-eY-Ybt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <visualEffectView opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Gy-3G-edt">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="phv-fa-YH9">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="XC1-y5-fZI">
+                                <rect key="frame" x="32" y="349" width="350" height="198"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1No-ox-7Vb">
+                                        <rect key="frame" x="0.0" y="0.0" width="350" height="45"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="X5N-Ci-trc"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JND-Tt-IqO">
+                                        <rect key="frame" x="0.0" y="51" width="350" height="45"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="RIC-xo-KMf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="78q-sd-ece">
+                                        <rect key="frame" x="0.0" y="102" width="350" height="45"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="4nY-2t-XjT"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hZv-QD-AcC">
+                                        <rect key="frame" x="0.0" y="153" width="350" height="45"/>
+                                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="k26-8B-emH"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aRu-rQ-Kkm" firstAttribute="trailing" secondItem="XC1-y5-fZI" secondAttribute="trailing" constant="32" id="G7d-nu-tar"/>
+                            <constraint firstItem="Kh4-eY-Ybt" firstAttribute="leading" secondItem="aRu-rQ-Kkm" secondAttribute="leading" id="J71-vU-cfR"/>
+                            <constraint firstAttribute="bottom" secondItem="7Gy-3G-edt" secondAttribute="bottom" id="Ron-fG-LOo"/>
+                            <constraint firstItem="Kh4-eY-Ybt" firstAttribute="top" secondItem="nuP-qy-QRh" secondAttribute="top" id="ZgZ-X8-WR2"/>
+                            <constraint firstItem="Kh4-eY-Ybt" firstAttribute="trailing" secondItem="aRu-rQ-Kkm" secondAttribute="trailing" id="i8d-75-3q6"/>
+                            <constraint firstItem="7Gy-3G-edt" firstAttribute="top" secondItem="nuP-qy-QRh" secondAttribute="top" id="iAr-Vb-dKE"/>
+                            <constraint firstItem="7Gy-3G-edt" firstAttribute="leading" secondItem="nuP-qy-QRh" secondAttribute="leading" id="keD-CC-eQY"/>
+                            <constraint firstAttribute="trailing" secondItem="7Gy-3G-edt" secondAttribute="trailing" id="nrp-tK-v0z"/>
+                            <constraint firstItem="XC1-y5-fZI" firstAttribute="leading" secondItem="aRu-rQ-Kkm" secondAttribute="leading" constant="32" id="rNL-rw-Ol5"/>
+                            <constraint firstItem="XC1-y5-fZI" firstAttribute="centerY" secondItem="nuP-qy-QRh" secondAttribute="centerY" id="sto-Uy-thk"/>
+                            <constraint firstAttribute="bottom" secondItem="Kh4-eY-Ybt" secondAttribute="bottom" id="zI1-ph-yfv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aRu-rQ-Kkm"/>
                     </view>
-                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgR-VI-bdy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136" y="165"/>
+            <point key="canvasLocation" x="134.78260869565219" y="164.73214285714286"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Drinks_Coffee_Grain" width="1080" height="1920"/>
+    </resources>
 </document>
