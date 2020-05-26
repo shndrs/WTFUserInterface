@@ -1,4 +1,4 @@
-        //
+//
 //  RegisterButton.swift
 //  WTFUserInterface
 //
@@ -6,4 +6,22 @@
 //  Copyright © 2020 shndrs. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+final class RegisterButton: UIButton {
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+}
+
+// MARK: - Methods
+
+fileprivate extension RegisterButton {
+    
+    func config() {
+        self.titleLabel?.font = Font.bold.return(size: 15)
+        self.backgroundColor = Colors.clear
+    }
+    
+}

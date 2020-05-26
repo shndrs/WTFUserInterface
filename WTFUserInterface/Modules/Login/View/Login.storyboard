@@ -87,12 +87,15 @@
                                             <action selector="loginButtonPressed:" destination="t0G-Jg-Hco" eventType="touchUpInside" id="kA4-cM-Rv9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr8-Wf-bAx">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr8-Wf-bAx" customClass="RegisterButton" customModule="WTFUserInterface" customModuleProvider="target">
                                         <rect key="frame" x="125" y="269" width="61" height="33"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
                                         <state key="normal" title="Register">
                                             <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="registerButtonPressed:" destination="t0G-Jg-Hco" eventType="touchUpInside" id="kIP-Qq-eAq"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>

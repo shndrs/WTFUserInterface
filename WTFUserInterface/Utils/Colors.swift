@@ -24,5 +24,6 @@ struct Colors {
                                             green: 148/255,
                                             blue: 84/255,
                                             alpha: 1.0)
+    public static let clear = UIColor.clear
       
 }
