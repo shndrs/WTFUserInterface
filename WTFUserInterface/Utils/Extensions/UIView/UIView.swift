@@ -62,18 +62,19 @@ extension UIView {
         return view
     }
     
-    func addCornerRadius(radius:CGFloat) {
+    public func addCornerRadius(radius:CGFloat) {
         self.clipsToBounds = true;
         self.layer.cornerRadius = CGFloat(radius)
     }
     
-    func addCornerRadius(radius:CGFloat,inset : UIEdgeInsets) {
+    public func addCornerRadius(radius:CGFloat, inset : UIEdgeInsets) {
         let padding = UIEdgeInsets(top: 5, left: 0, bottom: 5, right: 0)
         self.layer.frame = bounds.inset(by: padding)
         self.layer.cornerRadius = CGFloat(radius)
     }
     
-    func addBorder(color: UIColor = UIColor.white, thickness: CGFloat = 1.0) {
+    public func addBorder(color: UIColor = UIColor.white,
+                          thickness: CGFloat = 1.0) {
         self.layer.borderColor = color.cgColor
         self.layer.borderWidth = thickness
     }
@@ -84,7 +85,7 @@ extension UIView {
         self.layer.cornerRadius = 12
         
         if leftView {
-            self.layer.maskedCorners = [.layerMaxXMaxYCorner , .layerMaxXMinYCorner]
+            self.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
         } else {
             self.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMinXMinYCorner]
         }

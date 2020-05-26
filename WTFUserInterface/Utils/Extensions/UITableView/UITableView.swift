@@ -10,7 +10,7 @@ import UIKit
 
 extension UITableView {
     
-    func asyncReload() {
+    public func asyncReload() {
         DispatchQueue.main.async { [weak self] in
             
             guard self != nil else { return }
@@ -19,7 +19,7 @@ extension UITableView {
         }
     }
     
-    func cleanFooterView() {
+    public func cleanFooterView() {
         DispatchQueue.main.async { [weak self] in
             
             guard self != nil else { return }
@@ -32,7 +32,7 @@ extension UITableView {
         }
     }
     
-    func asyncReload(in section: Int, rowAnimation:UITableView.RowAnimation = .fade) {
+    public func asyncReload(in section: Int, rowAnimation: UITableView.RowAnimation = .fade) {
         DispatchQueue.main.async { [weak self] in
             
             guard self != nil else { return }

@@ -10,7 +10,7 @@ import UIKit
 
 extension UICollectionView {
     
-    func asyncReload() {
+    public func asyncReload() {
         
         DispatchQueue.main.async { [weak self] in
             
@@ -26,13 +26,13 @@ extension UICollectionView {
         self.register(nib, forCellWithReuseIdentifier: id)
     }
     
-    func categoryViewLayout() {
+    public func categoryViewLayout() {
         
         DispatchQueue.main.async { [weak self] in
             
             guard self != nil else { return }
             
-            let cellSize = CGSize(width:128, height:160)
+            let cellSize = CGSize(width: 128, height: 160)
             
             let layout = UICollectionViewFlowLayout()
             layout.scrollDirection = .horizontal
