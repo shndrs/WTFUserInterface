@@ -33,6 +33,11 @@ extension LoginVC {
                            password: userNameTextField.text ?? "")
         presenter.validate(object: object)
     }
+    
+    @IBAction private func registerButtonPressed(_ sender: UIButton) {
+        let viewController = RegisterRouter.createModule()
+        show(viewController, sender: nil)
+    }
 }
 
 // MARK: - Life Cycle

@@ -28,13 +28,13 @@
                                 <blurEffect style="regular"/>
                             </visualEffectView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Drink Your Coffee and Enjoy!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RYA-Kv-3h5" customClass="LabelLight" customModule="WTFUserInterface" customModuleProvider="target">
-                                <rect key="frame" x="101.00000000000001" y="248.33333333333334" width="173.33333333333337" height="15.666666666666657"/>
+                                <rect key="frame" x="101.00000000000001" y="223.33333333333334" width="173.33333333333337" height="15.666666666666657"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="WoL-0l-leI">
-                                <rect key="frame" x="32" y="280" width="311" height="252"/>
+                                <rect key="frame" x="32" y="255" width="311" height="302"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZV-vp-yF5" customClass="BackgroundView" customModule="WTFUserInterface" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="311" height="190"/>
@@ -86,6 +86,13 @@
                                         <connections>
                                             <action selector="loginButtonPressed:" destination="t0G-Jg-Hco" eventType="touchUpInside" id="kA4-cM-Rv9"/>
                                         </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zr8-Wf-bAx">
+                                        <rect key="frame" x="125" y="269" width="61" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="15"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
                                     </button>
                                 </subviews>
                                 <constraints>

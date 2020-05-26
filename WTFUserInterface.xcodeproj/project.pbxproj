@@ -44,6 +44,7 @@
 		F4601F412397E62E00026362 /* LabelBold.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4601F402397E62E00026362 /* LabelBold.swift */; };
 		F4601F432397E65E00026362 /* BaseLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4601F422397E65E00026362 /* BaseLabel.swift */; };
 		F4619E81238EACDB00F2FC7D /* BackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4619E80238EACDB00F2FC7D /* BackView.swift */; };
+		F4680A40247CD2B40024260C /* RegisterButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4680A3F247CD2B40024260C /* RegisterButton.swift */; };
 		F4784B63243DA6C300821CDD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4784B62243DA6C300821CDD /* Login.storyboard */; };
 		F4784B65243DA70200821CDD /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4784B64243DA70200821CDD /* Login.swift */; };
 		F4784B67243DA7B900821CDD /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4784B66243DA7B900821CDD /* LoginPresenter.swift */; };
@@ -127,6 +128,7 @@
 		F4601F402397E62E00026362 /* LabelBold.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelBold.swift; sourceTree = "<group>"; };
 		F4601F422397E65E00026362 /* BaseLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLabel.swift; sourceTree = "<group>"; };
 		F4619E80238EACDB00F2FC7D /* BackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackView.swift; sourceTree = "<group>"; };
+		F4680A3F247CD2B40024260C /* RegisterButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterButton.swift; sourceTree = "<group>"; };
 		F4784B62243DA6C300821CDD /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		F4784B64243DA70200821CDD /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		F4784B66243DA7B900821CDD /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
@@ -277,13 +279,13 @@
 		F40BFA0B2353513900E97E37 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F4680A3E247CD2780024260C /* Buttons */,
 				F4601F392397E5E100026362 /* Labels */,
 				F408F7C12383E36B00BC8CA7 /* CurvedImages.swift */,
 				F4619E80238EACDB00F2FC7D /* BackView.swift */,
 				F417DE1E23B9D1DA0017E773 /* CustomHUD.swift */,
 				F403CCB6241CC731000738C5 /* EmptyView.swift */,
 				F43A9C14244185D800003E1C /* TransBackgroundView.swift */,
-				F43A9C1624418CE700003E1C /* SubmitButton.swift */,
 				F4960D0F24724BF3004B6212 /* KeyboardManager.swift */,
 			);
 			path = Components;
@@ -382,6 +384,15 @@
 				F4601F422397E65E00026362 /* BaseLabel.swift */,
 			);
 			path = Labels;
+			sourceTree = "<group>";
+		};
+		F4680A3E247CD2780024260C /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F43A9C1624418CE700003E1C /* SubmitButton.swift */,
+				F4680A3F247CD2B40024260C /* RegisterButton.swift */,
+			);
+			path = Buttons;
 			sourceTree = "<group>";
 		};
 		F4784B5E243DA68B00821CDD /* Login */ = {
@@ -763,6 +774,7 @@
 				F4601F382397E3DF00026362 /* Font.swift in Sources */,
 				F4960CF5247237D4004B6212 /* Defaults.swift in Sources */,
 				F4E146FB23719C810086D51A /* CategoryPresenter.swift in Sources */,
+				F4680A40247CD2B40024260C /* RegisterButton.swift in Sources */,
 				F4784B67243DA7B900821CDD /* LoginPresenter.swift in Sources */,
 				F4200CF02473CE44006926CC /* String.swift in Sources */,
 				F427D4442378035A009B308D /* Register.swift in Sources */,

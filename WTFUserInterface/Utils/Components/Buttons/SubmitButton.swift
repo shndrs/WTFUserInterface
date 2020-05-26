@@ -14,7 +14,6 @@ final class SubmitButton: UIButton {
         super.awakeFromNib()
         setup()
     }
-    
 }
 
 // MARK: - Methods

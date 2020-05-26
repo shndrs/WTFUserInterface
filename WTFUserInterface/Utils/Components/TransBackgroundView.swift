@@ -9,6 +9,7 @@
 import UIKit
 
 final class TransBackgroundView: BackgroundView {
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
