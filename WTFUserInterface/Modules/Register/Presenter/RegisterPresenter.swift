@@ -13,6 +13,7 @@ final class RegisterPresenter: RegisterViewToPresenterProtocol {
     var view: RegisterPresenterToViewProtocol?
     var interactor: RegisterPresenterToInteractorProtocol?
     var router: RegisterRouterProtocol?
+    private var message: String!
     
     public init(view: RegisterPresenterToViewProtocol?,
                 interactor: RegisterPresenterToInteractorProtocol?,
