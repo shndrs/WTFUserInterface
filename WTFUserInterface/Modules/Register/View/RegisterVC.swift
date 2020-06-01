@@ -35,7 +35,8 @@ extension RegisterVC {
 
 extension RegisterVC: RegisterPresenterToViewProtocol {
     func registerSuccessfully() {
-        
+        guard let nav = self.navigationController else { return }
+        presenter?.goToLogin(fromNavigationController: nav)
     }
     
     func show(error: String) {
