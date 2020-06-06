@@ -29,7 +29,7 @@ final class LoginVC: BaseErrorViewController {
 extension LoginVC {
     @IBAction private func loginButtonPressed(_ sender: UIButton) {
         let object = Login(username: userNameTextField.text ?? "",
-                           password: userNameTextField.text ?? "")
+                           password: passwordTextField.text ?? "")
         presenter.validate(object: object)
     }
     

@@ -31,11 +31,12 @@ extension LoginPresenter {
     
     public func validate(object: Login) {
         
-        if (object.username != database[DefaultsKeys.username.rawValue])
-            || object.username != database[DefaultsKeys.email.rawValue]  {
-            view?.show(title: Strings.error.rawValue,
-                       message: Strings.inCorrectPassUser.rawValue)
-        } else if (object.password != database[DefaultsKeys.password.rawValue]) {
+        if object.username != database[DefaultsKeys.username.rawValue] {
+            if object.username != database[DefaultsKeys.email.rawValue] {
+                view?.show(title: Strings.error.rawValue,
+                           message: Strings.inCorrectPassUser.rawValue)
+            }
+        } else if object.password != database[DefaultsKeys.password.rawValue] {
             view?.show(title: Strings.error.rawValue,
                        message: Strings.inCorrectPassUser.rawValue)
         } else {
