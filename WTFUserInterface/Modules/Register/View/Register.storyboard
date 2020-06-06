@@ -19,7 +19,7 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Drinks_Coffee_Grain" translatesAutoresizingMaskIntoConstraints="NO" id="Kh4-eY-Ybt">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <visualEffectView opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Gy-3G-edt">
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Gy-3G-edt">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="phv-fa-YH9">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -28,13 +28,22 @@
                                 <blurEffect style="regular"/>
                             </visualEffectView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Aub-ac-Wey" customClass="BackgroundView" customModule="WTFUserInterface" customModuleProvider="target">
-                                <rect key="frame" x="32" y="314.5" width="350" height="267"/>
+                                <rect key="frame" x="32" y="308.5" width="350" height="279"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="XC1-y5-fZI">
-                                        <rect key="frame" x="32" y="32" width="286" height="198"/>
+                                        <rect key="frame" x="32" y="8" width="286" height="236"/>
                                         <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Register User" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ngt-qk-f0a" customClass="LabelBold" customModule="WTFUserInterface" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="286" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="32" id="ABS-jE-XnO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1No-ox-7Vb">
-                                                <rect key="frame" x="0.0" y="0.0" width="286" height="45"/>
+                                                <rect key="frame" x="0.0" y="38" width="286" height="45"/>
                                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="X5N-Ci-trc"/>
@@ -43,7 +52,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="JND-Tt-IqO">
-                                                <rect key="frame" x="0.0" y="51" width="286" height="45"/>
+                                                <rect key="frame" x="0.0" y="89" width="286" height="45"/>
                                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="RIC-xo-KMf"/>
@@ -52,7 +61,7 @@
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="78q-sd-ece">
-                                                <rect key="frame" x="0.0" y="102" width="286" height="45"/>
+                                                <rect key="frame" x="0.0" y="140" width="286" height="45"/>
                                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="4nY-2t-XjT"/>
@@ -61,7 +70,7 @@
                                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                             </textField>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Repeat Password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hZv-QD-AcC">
-                                                <rect key="frame" x="0.0" y="153" width="286" height="45"/>
+                                                <rect key="frame" x="0.0" y="191" width="286" height="45"/>
                                                 <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="k26-8B-emH"/>
@@ -74,14 +83,14 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="267" id="baF-Qx-fhY"/>
-                                    <constraint firstItem="XC1-y5-fZI" firstAttribute="top" secondItem="Aub-ac-Wey" secondAttribute="top" constant="32" id="dpp-En-yxH"/>
+                                    <constraint firstAttribute="height" constant="279" id="baF-Qx-fhY"/>
+                                    <constraint firstItem="XC1-y5-fZI" firstAttribute="top" secondItem="Aub-ac-Wey" secondAttribute="top" constant="8" id="dpp-En-yxH"/>
                                     <constraint firstItem="XC1-y5-fZI" firstAttribute="leading" secondItem="Aub-ac-Wey" secondAttribute="leading" constant="32" id="eJr-Su-QyO"/>
                                     <constraint firstAttribute="trailing" secondItem="XC1-y5-fZI" secondAttribute="trailing" constant="32" id="qQl-79-uAy"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sI2-3V-3Sh" customClass="SubmitButton" customModule="WTFUserInterface" customModuleProvider="target">
-                                <rect key="frame" x="32" y="613.5" width="350" height="45"/>
+                                <rect key="frame" x="32" y="619.5" width="350" height="45"/>
                                 <color key="backgroundColor" red="0.039215686270000001" green="0.5807807143" blue="0.32799887979999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="45" id="Rug-NO-ESR"/>

@@ -33,10 +33,16 @@ extension RegisterVC {
 // MARK: - Life Cycle
 
 extension RegisterVC {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.backBarButtonItem?.tintColor = .white
         title = Strings.register.rawValue
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
 }
 
