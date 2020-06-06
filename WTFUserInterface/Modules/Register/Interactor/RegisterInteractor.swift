@@ -19,11 +19,10 @@ final class RegisterInteractor {
 // MARK: - Presenter To Interactor
 
 extension RegisterInteractor: RegisterPresenterToInteractorProtocol {
+    
     func saveUserInfo(with object: RegisterEntity) {
-        
         database[DefaultsKeys.username.rawValue] = object.username
         database[DefaultsKeys.password.rawValue] = object.password
         database[DefaultsKeys.email.rawValue] = object.email
     }
-    
 }

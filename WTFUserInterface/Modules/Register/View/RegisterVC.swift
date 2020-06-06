@@ -36,15 +36,9 @@ extension RegisterVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationItem.backBarButtonItem?.tintColor = .white
         title = Strings.register.rawValue
+        self.navigationController?.setNavigationBarHidden(false, animated: true)
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
-    
 }
 
 // MARK: - Presenter to View Implementation
