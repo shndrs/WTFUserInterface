@@ -24,6 +24,8 @@ enum Strings: String {
     case no = "No"
     case areYouSure = "Are you sure about this?"
     case done = "Done"
+    case ok = "Okay"
+    case error = "Error"
     
     // MARK: - Category
     

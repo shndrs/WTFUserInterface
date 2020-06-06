@@ -18,6 +18,20 @@ final class AlertManager {
 // MARK: - Methods
 
 extension AlertManager {
+    
+    public func show(title: String = Strings.error.rawValue, message: String) {
+        let alertController = UIAlertController(title: title,
+                                                message: message,
+                                                preferredStyle: .actionSheet)
+        let no = UIAlertAction(title: Strings.ok.rawValue,
+                               style: .destructive) {
+            (action) in
+            alertController.dismiss(animated: true)
+        }
+        alertController.addAction(no)
+        alertController.view.tintColor = .gray
+        topViewController()?.present(alertController, animated: true)
+    }
 
     public func show(title: String, yesBlock: @escaping () -> Void) {
         

@@ -30,14 +30,14 @@ final class RegisterPresenter: RegisterViewToPresenterProtocol {
     func validate(inputs: RegisterEntity) {
         if inputs.username.isEmpty {
             self.view?.show(error: Strings.usernameIsEmpty.rawValue)
+        } else if !inputs.email.isEmailValid {
+            self.view?.show(error: Strings.emailIsInvalid.rawValue)
         } else if inputs.password.isEmpty {
             self.view?.show(error: Strings.passIsEmpty.rawValue)
         } else if inputs.repeatPassword.isEmpty {
             self.view?.show(error: Strings.repeatPassIsEmpty.rawValue)
         } else if inputs.password != inputs.repeatPassword {
             self.view?.show(error: Strings.repeatPassIsNotEqual.rawValue)
-        } else if !inputs.email.isEmailValid {
-            self.view?.show(error: Strings.emailIsInvalid.rawValue)
         } else {
             interactor?.saveUserInfo(with: inputs)
         }

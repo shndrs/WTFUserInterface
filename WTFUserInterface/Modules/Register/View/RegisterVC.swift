@@ -44,6 +44,7 @@ extension RegisterVC {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(false, animated: animated)
     }
+    
 }
 
 // MARK: - Presenter to View Implementation
@@ -55,6 +56,6 @@ extension RegisterVC: RegisterPresenterToViewProtocol {
     }
     
     func show(error: String) {
-        
+        AlertManager.default.show(message: error)
     }
 }
