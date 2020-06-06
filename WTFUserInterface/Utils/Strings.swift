@@ -63,4 +63,5 @@ enum Strings: String {
     case repeatPassIsNotEqual = "Repeat password is not equal to password!"
     case emailIsEmpty = "Email is empty!"
     case emailIsInvalid = "Email is invalid"
+    case successfulRegistration = "User registered successfully!!! :)"
 }
