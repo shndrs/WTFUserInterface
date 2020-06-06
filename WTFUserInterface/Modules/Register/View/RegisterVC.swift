@@ -35,6 +35,7 @@ extension RegisterVC {
 extension RegisterVC {
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.backBarButtonItem?.tintColor = .white
         title = Strings.register.rawValue
     }
 }

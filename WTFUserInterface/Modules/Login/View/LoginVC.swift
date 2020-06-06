@@ -43,6 +43,10 @@ extension LoginVC {
 // MARK: - Life Cycle
 
 extension LoginVC {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        title = Strings.login.rawValue
+    }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)

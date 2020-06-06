@@ -47,6 +47,10 @@ enum Strings: String {
     
     case submit = "Submit"
     
+    // MARK: - Login
+    
+    case login = "Login"
+    
     // MARK: - Register
     
     case register = "Register"
