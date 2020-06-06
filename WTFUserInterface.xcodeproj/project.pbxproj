@@ -33,6 +33,7 @@
 		F42A327723A6736B0053C739 /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F42A327623A6736B0053C739 /* ReusableView.swift */; };
 		F43A9C15244185D800003E1C /* TransBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A9C14244185D800003E1C /* TransBackgroundView.swift */; };
 		F43A9C1724418CE700003E1C /* SubmitButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43A9C1624418CE700003E1C /* SubmitButton.swift */; };
+		F43D52E9248B9B9000691091 /* BaseErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F43D52E8248B9B9000691091 /* BaseErrorViewController.swift */; };
 		F4433C9323929D9400FA8125 /* ProductsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4433C9223929D9400FA8125 /* ProductsPresenter.swift */; };
 		F4433C9523929E1C00FA8125 /* ProductsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4433C9423929E1C00FA8125 /* ProductsVC.swift */; };
 		F4445F40245FF16E00363272 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4445F3F245FF16E00363272 /* UIViewController.swift */; };
@@ -118,6 +119,7 @@
 		F42A327623A6736B0053C739 /* ReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		F43A9C14244185D800003E1C /* TransBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransBackgroundView.swift; sourceTree = "<group>"; };
 		F43A9C1624418CE700003E1C /* SubmitButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitButton.swift; sourceTree = "<group>"; };
+		F43D52E8248B9B9000691091 /* BaseErrorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseErrorViewController.swift; sourceTree = "<group>"; };
 		F4433C9223929D9400FA8125 /* ProductsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsPresenter.swift; sourceTree = "<group>"; };
 		F4433C9423929E1C00FA8125 /* ProductsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsVC.swift; sourceTree = "<group>"; };
 		F4445F3F245FF16E00363272 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
@@ -560,6 +562,7 @@
 				F4BC60B423825FEE004A7EBE /* TableBaseViewController.swift */,
 				F4240EA42383D07A00E05520 /* BaseViews.swift */,
 				F4F4D46B2418EC2F0033CD0F /* MainTabBarController.swift */,
+				F43D52E8248B9B9000691091 /* BaseErrorViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -825,6 +828,7 @@
 				F408F7C723841BE200BC8CA7 /* FavoritesVC.swift in Sources */,
 				F4DC6F25237A9602006447F8 /* CategoryHeader.swift in Sources */,
 				F4784B69243DA92900821CDD /* LoginVC.swift in Sources */,
+				F43D52E9248B9B9000691091 /* BaseErrorViewController.swift in Sources */,
 				F417DE2123B9DA610017E773 /* Colors.swift in Sources */,
 				F4CEFA06237BC81400135AB7 /* CatSliderTVC.swift in Sources */,
 				F4960D0424723AD6004B6212 /* RegisterProtocols.swift in Sources */,

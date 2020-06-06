@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class LoginVC: BaseViewController {
+final class LoginVC: BaseErrorViewController {
 
     private lazy var presenter: LoginPresenter = {
         return LoginPresenter(view: self)
@@ -55,9 +55,6 @@ extension LoginVC {
 // MARK: - View Implementation
 
 extension LoginVC: LoginView {
-    func show(title: String, message: String) {
-        AlertManager.default.show(title: title, message: message)
-    }
     
     func startLoading() {
         HUD.default.show()

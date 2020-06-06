@@ -52,7 +52,7 @@ enum Strings: String {
     // MARK: - Login
     
     case login = "Login"
-    case inCorrectPassUser
+    case inCorrectPassUser = "Username or Password is Incorrect"
     
     // MARK: - Register
     
