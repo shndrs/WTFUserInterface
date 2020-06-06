@@ -11,14 +11,21 @@ import UIKit
 final class RegisterVC: BaseViewController {
     
     public var presenter: RegisterViewToPresenterProtocol?
+    @IBOutlet private weak var userNameTextField: UITextField!
+    @IBOutlet private weak var emailTextField: UITextField!
+    @IBOutlet private weak var passwordTextField: UITextField!
+    @IBOutlet private weak var repeatPasswordTextField: UITextField!
     
 }
 
 // MARK: - Methods
 
 extension RegisterVC {
-    @IBAction private func registerButtonPressed(_ sender: Any) {
-        let object = RegisterEntity()
+    @IBAction private func registerButtonPressed(_ sender: SubmitButton) {
+        let object = RegisterEntity(username: userNameTextField.text ?? "",
+                                    password: passwordTextField.text ?? "",
+                                    repeatPassword: repeatPasswordTextField.text ?? "",
+                                    email: emailTextField.text ?? "")
         presenter?.validate(inputs: object)
     }
 }

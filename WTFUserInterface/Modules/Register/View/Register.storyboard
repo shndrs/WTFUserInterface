@@ -28,7 +28,7 @@
                                 <blurEffect style="regular"/>
                             </visualEffectView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="XC1-y5-fZI">
-                                <rect key="frame" x="32" y="349" width="350" height="198"/>
+                                <rect key="frame" x="32" y="323.5" width="350" height="249"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1No-ox-7Vb">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="45"/>
@@ -66,6 +66,19 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sI2-3V-3Sh" customClass="SubmitButton" customModule="WTFUserInterface" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="204" width="350" height="45"/>
+                                        <color key="backgroundColor" red="0.039215686270000001" green="0.5807807143" blue="0.32799887979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45" id="Rug-NO-ESR"/>
+                                        </constraints>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registerButtonPressed:" destination="fk4-pJ-YhC" eventType="touchUpInside" id="ld3-GD-of3"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -86,6 +99,12 @@
                         <viewLayoutGuide key="safeArea" id="aRu-rQ-Kkm"/>
                     </view>
                     <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="JND-Tt-IqO" id="J24-OU-NXZ"/>
+                        <outlet property="passwordTextField" destination="78q-sd-ece" id="6VI-Ep-78z"/>
+                        <outlet property="repeatPasswordTextField" destination="hZv-QD-AcC" id="R3j-6C-4Lb"/>
+                        <outlet property="userNameTextField" destination="1No-ox-7Vb" id="mFe-W1-cmE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vgR-VI-bdy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
