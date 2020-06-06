@@ -28,6 +28,7 @@ extension RegisterVC {
 extension RegisterVC {
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = Strings.register.rawValue
     }
 }
 

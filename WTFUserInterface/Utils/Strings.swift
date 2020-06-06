@@ -49,6 +49,7 @@ enum Strings: String {
     
     // MARK: - Register
     
+    case register = "Register"
     case usernameIsEmpty = "Username is empty!"
     case passIsEmpty = "Password is empty!"
     case repeatPassIsEmpty = "Repeat password is empty!"
