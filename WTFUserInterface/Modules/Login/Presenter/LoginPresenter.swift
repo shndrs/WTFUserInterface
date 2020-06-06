@@ -8,26 +8,38 @@
 
 import UIKit
 
-protocol LoginView: ServiceView {
+protocol LoginView: ServiceView, ErrorView {
     func loggedInSuccessfully()
 }
 
 final class LoginPresenter: NSObject {
+    
+    private lazy var database: Defaults = {
+        return Defaults()
+    }()
 
     private weak var view: LoginView?
     
     public init(view: LoginView) {
         self.view = view
     }
-    
 }
 
 // MARK: - Methods
 
 extension LoginPresenter {
+    
     public func validate(object: Login) {
-        if !object.username.isEmpty && !object.password.isEmpty {
-            login()
+        
+        if (object.username != database[DefaultsKeys.username.rawValue])
+            || object.username != database[DefaultsKeys.email.rawValue]  {
+            view?.show(title: Strings.error.rawValue,
+                       message: Strings.inCorrectPassUser.rawValue)
+        } else if (object.password != database[DefaultsKeys.password.rawValue]) {
+            view?.show(title: Strings.error.rawValue,
+                       message: Strings.inCorrectPassUser.rawValue)
+        } else {
+            view?.loggedInSuccessfully()
         }
     }
     

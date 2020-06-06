@@ -10,6 +10,10 @@ import Foundation
 
 protocol BaseView: AnyObject {}
 
+protocol ErrorView: AnyObject {
+    func show(title: String, message: String)
+}
+
 protocol ServiceView: BaseView {
     
     func startLoading() -> Void

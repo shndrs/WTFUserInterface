@@ -52,6 +52,7 @@ enum Strings: String {
     // MARK: - Login
     
     case login = "Login"
+    case inCorrectPassUser
     
     // MARK: - Register
     

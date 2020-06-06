@@ -22,7 +22,6 @@ final class LoginVC: BaseViewController {
     
     @IBOutlet private weak var userNameTextField: UITextField!
     @IBOutlet private weak var passwordTextField: UITextField!
-    
 }
 
 // MARK: - Methods
@@ -51,15 +50,15 @@ extension LoginVC {
         super.viewWillAppear(animated)
         self.navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-//        self.navigationController?.setNavigationBarHidden(false, animated: animated)
-    }
 }
 
 // MARK: - View Implementation
 
 extension LoginVC: LoginView {
+    func show(title: String, message: String) {
+        AlertManager.default.show(title: title, message: message)
+    }
+    
     func startLoading() {
         HUD.default.show()
     }

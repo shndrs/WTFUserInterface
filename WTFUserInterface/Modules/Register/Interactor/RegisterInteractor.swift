@@ -24,5 +24,6 @@ extension RegisterInteractor: RegisterPresenterToInteractorProtocol {
         database[DefaultsKeys.username.rawValue] = object.username
         database[DefaultsKeys.password.rawValue] = object.password
         database[DefaultsKeys.email.rawValue] = object.email
+        presenter?.registerSuccessfully()
     }
 }
