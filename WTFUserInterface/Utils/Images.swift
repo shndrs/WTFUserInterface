@@ -10,9 +10,9 @@ import UIKit
 
 struct Images {
     public static let newspaper = UIImage(named: "newspaper")!
-    public static let robusta = UIImage(named: "espresso")!
-    public static let liberica = UIImage(named: "coff")!
-    public static let excelsa = UIImage(named: "florentine")!
+    public static let robusta = UIImage(named: "takht-jamshid")!
+    public static let liberica = UIImage(named: "latest-news")!
+    public static let excelsa = UIImage(named: "iran-news")!
     public static let like = UIImage(named: "like")!
     public static let login = UIImage(named: "Drinks_Coffee_Grain")
 }

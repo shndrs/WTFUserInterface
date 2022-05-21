@@ -118,6 +118,7 @@ extension CategoryVC: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return (indexPath.section == 0) ? 0:165.0
     }
+    
 }
 
 // MARK: - More Button Delegate

@@ -58,11 +58,10 @@ extension CategoryPresenter {
     private func getSections(rows: Array<CategoryItems>) -> Array<CategoryModel> {
         
         let sections = [
+            CategoryModel(sectionTitle: "BBC Persia", sectionImage: Images.newspaper, items: rows),
             CategoryModel(sectionTitle: "VOA", sectionImage: Images.newspaper, items: rows),
             CategoryModel(sectionTitle: "رادیو فردا", sectionImage: Images.newspaper, items: rows),
-            CategoryModel(sectionTitle: "DW News", sectionImage: Images.newspaper, items: rows),
-            CategoryModel(sectionTitle: "Excelsa", sectionImage: Images.newspaper, items: rows),
-            CategoryModel(sectionTitle: "BBC Persia", sectionImage: Images.newspaper, items: rows),
+            CategoryModel(sectionTitle: "DW News", sectionImage: Images.newspaper, items: rows)
         ]
         
         return sections

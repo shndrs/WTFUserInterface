@@ -10,10 +10,10 @@ import UIKit
 
 enum Font: String {
     
-    case bold = "AvenirNext-Bold"
-    case medium = "AvenirNext-Medium"
-    case regular = "AvenirNext-Regular"
-    case light = "AvenirNext-UltraLigh"
+    case bold = "IRANSansMonoSpacedNum-Bold"
+    case medium = "IRANSansMonoSpacedNum-Medium"
+    case regular = "IRANSansMonoSpacedNum"
+    case light = "IRANSansMonoSpacedNum-Light"
     
     func `return`(size: CGFloat) -> UIFont {
         
@@ -22,11 +22,12 @@ enum Font: String {
             case .bold:
                 return UIFont(name: Font.bold.rawValue, size: size)!
             case .medium:
-                return UIFont(name: Font.medium.rawValue, size: size)!
+                return UIFont(name: Font.bold.rawValue, size: size)!
             case .regular:
                 return UIFont(name: Font.regular.rawValue, size: size)!
             case .light:
                 return UIFont(name: Font.regular.rawValue, size: size)!
         }
     }
+    
 }

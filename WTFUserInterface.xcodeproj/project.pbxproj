@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1858741C2839782A0077DAE8 /* IRANSansMonoSpacedNum_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 185874192839782A0077DAE8 /* IRANSansMonoSpacedNum_Bold.ttf */; };
+		1858741D2839782A0077DAE8 /* IRANSansMonoSpacedNum.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1858741A2839782A0077DAE8 /* IRANSansMonoSpacedNum.ttf */; };
+		1858741E2839782A0077DAE8 /* IRANSansMonoSpacedNum_Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1858741B2839782A0077DAE8 /* IRANSansMonoSpacedNum_Light.ttf */; };
 		2F413152233DD8E900DA0C11 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F413151233DD8E900DA0C11 /* AppDelegate.swift */; };
 		2F413157233DD8E900DA0C11 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F413155233DD8E900DA0C11 /* Main.storyboard */; };
 		2F413159233DD8EB00DA0C11 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F413158233DD8EB00DA0C11 /* Assets.xcassets */; };
@@ -89,6 +92,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185874192839782A0077DAE8 /* IRANSansMonoSpacedNum_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMonoSpacedNum_Bold.ttf; sourceTree = "<group>"; };
+		1858741A2839782A0077DAE8 /* IRANSansMonoSpacedNum.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMonoSpacedNum.ttf; sourceTree = "<group>"; };
+		1858741B2839782A0077DAE8 /* IRANSansMonoSpacedNum_Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = IRANSansMonoSpacedNum_Light.ttf; sourceTree = "<group>"; };
 		2F41314E233DD8E900DA0C11 /* WTFUserInterface.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WTFUserInterface.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F413151233DD8E900DA0C11 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F413156233DD8E900DA0C11 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -186,6 +192,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		18587418283978170077DAE8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				185874192839782A0077DAE8 /* IRANSansMonoSpacedNum_Bold.ttf */,
+				1858741B2839782A0077DAE8 /* IRANSansMonoSpacedNum_Light.ttf */,
+				1858741A2839782A0077DAE8 /* IRANSansMonoSpacedNum.ttf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		2F413145233DD8E900DA0C11 = {
 			isa = PBXGroup;
 			children = (
@@ -207,6 +223,7 @@
 		2F413150233DD8E900DA0C11 /* WTFUserInterface */ = {
 			isa = PBXGroup;
 			children = (
+				18587418283978170077DAE8 /* Resource */,
 				F49F3807233F3E3B00E1703B /* Utils */,
 				F49F3806233F3E3800E1703B /* Models */,
 				F4E146F323719C030086D51A /* Modules */,
@@ -708,11 +725,14 @@
 				F4E147082371A7CF0086D51A /* CategoryCVC.xib in Resources */,
 				F4960D0124723A2E004B6212 /* Register.storyboard in Resources */,
 				F408F7CE23841E3600BC8CA7 /* FavoritesTVC.xib in Resources */,
+				1858741C2839782A0077DAE8 /* IRANSansMonoSpacedNum_Bold.ttf in Resources */,
 				2F41315C233DD8EB00DA0C11 /* LaunchScreen.storyboard in Resources */,
 				2F413159233DD8EB00DA0C11 /* Assets.xcassets in Resources */,
 				F4DC6F2C237ADBF1006447F8 /* LeftCatHeader.xib in Resources */,
 				F4DC6F30237ADD33006447F8 /* RightCatHeader.xib in Resources */,
 				F4E1470123719F9F0086D51A /* CategoryTVC.xib in Resources */,
+				1858741E2839782A0077DAE8 /* IRANSansMonoSpacedNum_Light.ttf in Resources */,
+				1858741D2839782A0077DAE8 /* IRANSansMonoSpacedNum.ttf in Resources */,
 				F4784B63243DA6C300821CDD /* Login.storyboard in Resources */,
 				F4CEFA07237BC81400135AB7 /* CatSliderTVC.xib in Resources */,
 				F408F7C02383DAE600BC8CA7 /* SettingsTVC.xib in Resources */,

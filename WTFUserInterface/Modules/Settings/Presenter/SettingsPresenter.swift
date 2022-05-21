@@ -40,16 +40,8 @@ extension SettingsPresenter {
     }
     
     fileprivate func setItems() -> Array<SettingsModel> {
-        
-        let cart = SettingsModel(icon: Images.newspaper, title: Strings.cart.rawValue) {
+        let favorites = SettingsModel(icon: Images.newspaper, title: Strings.favorites.rawValue) {
         }
-        
-        let favorites = SettingsModel(icon: Images.robusta, title: Strings.favorites.rawValue) {
-        }
-        
-        let transactions = SettingsModel(icon: Images.excelsa, title: Strings.archive.rawValue) {
-        }
-        
         let logout = SettingsModel(icon: Images.like, title: Strings.logout.rawValue) {
         }
         
