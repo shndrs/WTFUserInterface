@@ -9,7 +9,7 @@
 import UIKit
 
 struct Images {
-    public static let arabica = UIImage(named: "blackcoffe")!
+    public static let newspaper = UIImage(named: "newspaper")!
     public static let robusta = UIImage(named: "espresso")!
     public static let liberica = UIImage(named: "coff")!
     public static let excelsa = UIImage(named: "florentine")!

@@ -31,6 +31,7 @@ enum Strings: String {
     
     case category = "Category"
     case byMe = "by shndrs"
+    case news = "News"
     
     // MARK: - Settings Items
     

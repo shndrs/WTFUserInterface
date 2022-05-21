@@ -35,8 +35,8 @@ extension CategoryVC {
     }
     
     fileprivate func searchSetup() {
-        let searchController = UISearchController(searchResultsController: nil)
-        navigationItem.searchController = searchController
+//        let searchController = UISearchController(searchResultsController: nil)
+//        navigationItem.searchController = searchController
     }
     
     override func tableSetup() {
@@ -53,7 +53,7 @@ extension CategoryVC {
         super.viewDidLoad()
         largeTitle = true
         searchSetup()
-        self.title = Strings.category.rawValue
+        self.title = Strings.news.rawValue
         navigationItem.setRightBarButton(menuButton, animated: true)
         presenter.getItems()
     }

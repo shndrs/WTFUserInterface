@@ -371,13 +371,6 @@
 			path = UIViewController;
 			sourceTree = "<group>";
 		};
-		F45B5B8D23816762007C1001 /* ProductDetails */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ProductDetails;
-			sourceTree = "<group>";
-		};
 		F4601F392397E5E100026362 /* Labels */ = {
 			isa = PBXGroup;
 			children = (
@@ -593,7 +586,6 @@
 				F408F7C32383F7BE00BC8CA7 /* Favorites */,
 				F4240E9D2383CE5000E05520 /* Settings */,
 				F4BC60B123825F4D004A7EBE /* Base */,
-				F45B5B8D23816762007C1001 /* ProductDetails */,
 				F4E146F723719C440086D51A /* Category */,
 			);
 			path = Modules;

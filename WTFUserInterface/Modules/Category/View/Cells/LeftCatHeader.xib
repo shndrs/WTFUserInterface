@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -20,7 +21,7 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lW2-CB-GTq">
                         <rect key="frame" x="-1" y="0.0" width="285" height="65"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Yf-cQ-fYB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7Yf-cQ-fYB">
                                 <rect key="frame" x="9" y="18.5" width="28" height="28"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="7Yf-cQ-fYB" secondAttribute="height" multiplier="1:1" id="3ch-5K-g3s"/>
@@ -34,7 +35,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="7Yf-cQ-fYB" firstAttribute="leading" secondItem="lW2-CB-GTq" secondAttribute="leading" constant="9" id="Ban-ve-oAt"/>
                             <constraint firstItem="vTv-Rj-Tuo" firstAttribute="leading" secondItem="7Yf-cQ-fYB" secondAttribute="trailing" constant="16" id="afl-HK-0Z9"/>
@@ -48,14 +49,14 @@
                             <constraint firstAttribute="width" constant="28" id="RNf-YT-NGr"/>
                             <constraint firstAttribute="width" secondItem="ug4-ga-dqf" secondAttribute="height" multiplier="1:1" id="VQJ-DU-0B6"/>
                         </constraints>
-                        <color key="tintColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="tintColor" systemColor="labelColor"/>
                         <state key="normal" image="chevron.right.2" catalog="system"/>
                         <connections>
                             <action selector="moreButtonPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="xfh-wb-yL7"/>
                         </connections>
                     </button>
                 </subviews>
-                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                 <constraints>
                     <constraint firstAttribute="bottom" secondItem="lW2-CB-GTq" secondAttribute="bottom" id="3RC-4L-OWz"/>
                     <constraint firstItem="lW2-CB-GTq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="8Ln-y5-Ht9"/>
@@ -75,6 +76,15 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="chevron.right.2" catalog="system" width="64" height="52"/>
+        <image name="chevron.right.2" catalog="system" width="128" height="105"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

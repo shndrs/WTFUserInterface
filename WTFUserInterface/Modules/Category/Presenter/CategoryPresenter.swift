@@ -46,11 +46,11 @@ extension CategoryPresenter {
     private func getDetails() -> Array<CategoryItems> {
         
         let details = [
-            CategoryItems(title: "Colombia", image: Images.robusta, description: "18.99 US$"),
-            CategoryItems(title: "Brazilian", image: Images.excelsa, description: "27.99 US$"),
-            CategoryItems(title: "Italian", image: Images.arabica, description: "23.99 US$"),
-            CategoryItems(title: "American", image: Images.liberica, description: "11.99 US$"),
-            CategoryItems(title: "French", image: Images.excelsa, description: "17.49 US$"),
+            CategoryItems(title: "آخرین خبرها", image: Images.robusta, description: "امروز"),
+            CategoryItems(title: "گزارش خبری", image: Images.excelsa, description: "اردیبهشت ۳۱"),
+            CategoryItems(title: "ایران", image: Images.liberica, description: "اردیبهشت ۳۰"),
+            CategoryItems(title: "گزارش‌ها", image: Images.liberica, description: "اردیبهشت ۲۹"),
+            CategoryItems(title: "اقتصاد", image: Images.excelsa, description: "اردیبهشت ۲۸"),
         ]
         return details
     }
@@ -58,12 +58,11 @@ extension CategoryPresenter {
     private func getSections(rows: Array<CategoryItems>) -> Array<CategoryModel> {
         
         let sections = [
-            CategoryModel(sectionTitle: "Arabica", sectionImage: Images.arabica, items: rows),
-            CategoryModel(sectionTitle: "Robusta", sectionImage: Images.robusta, items: rows),
-            CategoryModel(sectionTitle: "Liberica", sectionImage: Images.excelsa, items: rows),
-            CategoryModel(sectionTitle: "Excelsa", sectionImage: Images.arabica, items: rows),
-            CategoryModel(sectionTitle: "Excelsa-Liberica", sectionImage: Images.excelsa, items: rows),
-            CategoryModel(sectionTitle: "Robusta-Liberica", sectionImage: Images.liberica, items: rows)
+            CategoryModel(sectionTitle: "VOA", sectionImage: Images.newspaper, items: rows),
+            CategoryModel(sectionTitle: "رادیو فردا", sectionImage: Images.newspaper, items: rows),
+            CategoryModel(sectionTitle: "DW News", sectionImage: Images.newspaper, items: rows),
+            CategoryModel(sectionTitle: "Excelsa", sectionImage: Images.newspaper, items: rows),
+            CategoryModel(sectionTitle: "BBC Persia", sectionImage: Images.newspaper, items: rows),
         ]
         
         return sections

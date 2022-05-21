@@ -41,7 +41,7 @@ extension SettingsPresenter {
     
     fileprivate func setItems() -> Array<SettingsModel> {
         
-        let cart = SettingsModel(icon: Images.arabica, title: Strings.cart.rawValue) {
+        let cart = SettingsModel(icon: Images.newspaper, title: Strings.cart.rawValue) {
         }
         
         let favorites = SettingsModel(icon: Images.robusta, title: Strings.favorites.rawValue) {

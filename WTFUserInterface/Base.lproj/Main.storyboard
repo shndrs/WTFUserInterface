@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jxN-Ix-xQG">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jxN-Ix-xQG">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,17 +19,17 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bpf-eL-gNh">
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Z5z-tb-TKY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="bpf-eL-gNh" secondAttribute="bottom" id="7xh-td-9Cv"/>
                             <constraint firstItem="bpf-eL-gNh" firstAttribute="leading" secondItem="Z5z-tb-TKY" secondAttribute="leading" id="YfB-rr-82T"/>
                             <constraint firstItem="bpf-eL-gNh" firstAttribute="trailing" secondItem="Z5z-tb-TKY" secondAttribute="trailing" id="ZfU-av-S8p"/>
                             <constraint firstItem="bpf-eL-gNh" firstAttribute="top" secondItem="Z5z-tb-TKY" secondAttribute="top" id="w0S-pO-zMQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="Z5z-tb-TKY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Category" largeTitleDisplayMode="always" id="zzx-w5-Iw7"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -50,18 +51,18 @@
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4fM-Ga-9DX">
                                 <rect key="frame" x="0.0" y="88" width="375" height="724"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="58" minY="0.0" maxX="0.0" maxY="0.0"/>
                             </tableView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dEb-d6-Mh4"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="4fM-Ga-9DX" firstAttribute="top" secondItem="dEb-d6-Mh4" secondAttribute="top" id="FXo-jw-hpB"/>
                             <constraint firstItem="4fM-Ga-9DX" firstAttribute="trailing" secondItem="dEb-d6-Mh4" secondAttribute="trailing" id="bec-34-vXW"/>
                             <constraint firstAttribute="bottom" secondItem="4fM-Ga-9DX" secondAttribute="bottom" id="fJf-6h-BmI"/>
                             <constraint firstItem="4fM-Ga-9DX" firstAttribute="leading" secondItem="dEb-d6-Mh4" secondAttribute="leading" id="oL7-sH-932"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="dEb-d6-Mh4"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="CXr-as-RxS"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
@@ -92,11 +93,11 @@
             </objects>
             <point key="canvasLocation" x="174" y="1858"/>
         </scene>
-        <!--Category-->
+        <!--News-->
         <scene sceneID="kgC-sw-7jV">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hmf-wm-7gk" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Category" image="square.split.1x2" catalog="system" id="TVI-ge-efm"/>
+                    <tabBarItem key="tabBarItem" title="News" image="square.split.1x2" catalog="system" id="TVI-ge-efm"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="8Xi-G0-eCd">
                         <rect key="frame" x="0.0" y="44" width="375" height="44"/>
@@ -132,7 +133,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="gear" catalog="system" width="64" height="58"/>
-        <image name="square.split.1x2" catalog="system" width="64" height="56"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
+        <image name="square.split.1x2" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>
