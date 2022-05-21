@@ -29,6 +29,9 @@ class TableBaseViewController: UIViewController {
 extension TableBaseViewController {
     @objc func tableSetup() {
         tableView.cleanFooterView()
+        if #available(iOS 15.0, *) {
+            self.tableView.sectionHeaderTopPadding = 0
+        }
     }
     
     func register(reuseIds: Array<String>) {

@@ -25,7 +25,7 @@ final class SettingsVC: TableBaseViewController {
 extension SettingsVC {
     override func viewDidLoad() {
         super.viewDidLoad()
-        largeTitle = true
+        title = Strings.settings.rawValue
         presenter.getItems()
     }
 }

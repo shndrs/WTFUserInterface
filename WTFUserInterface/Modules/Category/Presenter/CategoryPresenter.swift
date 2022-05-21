@@ -49,8 +49,8 @@ extension CategoryPresenter {
             CategoryItems(title: "آخرین خبرها", image: Images.robusta, description: "امروز"),
             CategoryItems(title: "گزارش خبری", image: Images.excelsa, description: "اردیبهشت ۳۱"),
             CategoryItems(title: "ایران", image: Images.liberica, description: "اردیبهشت ۳۰"),
-            CategoryItems(title: "گزارش‌ها", image: Images.liberica, description: "اردیبهشت ۲۹"),
             CategoryItems(title: "اقتصاد", image: Images.excelsa, description: "اردیبهشت ۲۸"),
+            CategoryItems(title: "گزارش‌ها", image: Images.liberica, description: "اردیبهشت ۲۹"),
         ]
         return details
     }
@@ -58,9 +58,9 @@ extension CategoryPresenter {
     private func getSections(rows: Array<CategoryItems>) -> Array<CategoryModel> {
         
         let sections = [
-            CategoryModel(sectionTitle: "BBC Persia", sectionImage: Images.newspaper, items: rows),
+            CategoryModel(sectionTitle: "BBC Persia", sectionImage: Images.newspaper, items: rows.reversed()),
             CategoryModel(sectionTitle: "VOA", sectionImage: Images.newspaper, items: rows),
-            CategoryModel(sectionTitle: "رادیو فردا", sectionImage: Images.newspaper, items: rows),
+            CategoryModel(sectionTitle: "رادیو فردا", sectionImage: Images.newspaper, items: rows.reversed()),
             CategoryModel(sectionTitle: "DW News", sectionImage: Images.newspaper, items: rows)
         ]
         

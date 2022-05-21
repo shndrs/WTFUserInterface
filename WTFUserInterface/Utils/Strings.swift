@@ -31,14 +31,14 @@ enum Strings: String {
     
     case category = "Category"
     case byMe = "by shndrs"
-    case news = "News"
+    case news = "اخبار"
     
     // MARK: - Settings Items
     
-    case settings = "Settings"
-    case favorites = "Favorites"
+    case settings = "تنظیمات"
+    case favorites = "مورد علاقه‌ها"
     case cart = "Your Cart"
-    case logout = "Logout"
+    case logout = "خروج"
     case archive = "Transactions Archive"
     
     // MARK: - CAKeyframeAnimation

@@ -45,7 +45,7 @@ extension SettingsPresenter {
         let logout = SettingsModel(icon: Images.like, title: Strings.logout.rawValue) {
         }
         
-        return [cart, favorites, transactions, logout]
+        return [favorites, logout]
     }
     
     

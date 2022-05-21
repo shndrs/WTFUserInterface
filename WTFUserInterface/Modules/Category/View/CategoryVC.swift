@@ -51,7 +51,7 @@ extension CategoryVC {
 extension CategoryVC {
     override func viewDidLoad() {
         super.viewDidLoad()
-        largeTitle = true
+        largeTitle = false
         searchSetup()
         self.title = Strings.news.rawValue
         navigationItem.setRightBarButton(menuButton, animated: true)
