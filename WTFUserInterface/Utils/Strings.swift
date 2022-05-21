@@ -19,7 +19,7 @@ enum Strings: String {
     
     case expand = "Expand"
     case collapse = "Collapse"
-    case wait = "Please Wait"
+    case wait = "بارگذاری"
     case yes = "Yes"
     case no = "No"
     case areYouSure = "Are you sure about this?"

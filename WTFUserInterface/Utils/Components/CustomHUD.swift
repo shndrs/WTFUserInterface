@@ -22,6 +22,7 @@ struct HUD {
         options.firstLayerStrokeColor = .orange
         options.title = Strings.wait.rawValue
         options.animationOption = EZAnimationOptions.antColony
+        options.font = Font.light.return(size: 17)
         let hud = EZProgressHUD.setProgress(with: options)
         return hud
     }()

@@ -30,7 +30,7 @@ extension TableBaseViewController {
     @objc func tableSetup() {
         tableView.cleanFooterView()
         if #available(iOS 15.0, *) {
-            self.tableView.sectionHeaderTopPadding = 0
+            tableView.sectionHeaderTopPadding = 0
         }
     }
     

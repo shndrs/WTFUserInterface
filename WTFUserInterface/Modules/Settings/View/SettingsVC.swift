@@ -26,6 +26,7 @@ extension SettingsVC {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = Strings.settings.rawValue
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: Font.bold.return(size: 17)]
         presenter.getItems()
     }
 }

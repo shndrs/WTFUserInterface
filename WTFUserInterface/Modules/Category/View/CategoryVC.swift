@@ -55,6 +55,7 @@ extension CategoryVC {
         searchSetup()
         self.title = Strings.news.rawValue
         navigationItem.setRightBarButton(menuButton, animated: true)
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: Font.bold.return(size: 17)]
         presenter.getItems()
     }
 }

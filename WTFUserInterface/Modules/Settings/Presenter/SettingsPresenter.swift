@@ -42,10 +42,14 @@ extension SettingsPresenter {
     fileprivate func setItems() -> Array<SettingsModel> {
         let favorites = SettingsModel(icon: Images.newspaper, title: Strings.favorites.rawValue) {
         }
+        let favorites1 = SettingsModel(icon: Images.newspaper, title: Strings.settings.rawValue) {
+        }
+        let favorites2 = SettingsModel(icon: Images.newspaper, title: Strings.news.rawValue) {
+        }
         let logout = SettingsModel(icon: Images.like, title: Strings.logout.rawValue) {
         }
         
-        return [favorites, logout]
+        return [favorites, favorites1, favorites2, logout]
     }
     
     
