@@ -1,5 +1,4 @@
 # WTFUserInterface
-<a href="https://codebeat.co/projects/github-com-shndrs-wtfuserinterface-master"><img alt="codebeat badge" src="https://codebeat.co/badges/acd52221-c6b1-4dd8-809e-22d4162da2cf" /></a>
 ![swift-version](https://img.shields.io/badge/Swift-5-blueviolet.svg)
 ## Software Architecture
 <p>VIPER and MVP</p>
